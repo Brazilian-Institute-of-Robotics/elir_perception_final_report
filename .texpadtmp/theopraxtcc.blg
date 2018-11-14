@@ -31,70 +31,382 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ../References/referencias.bib
+You're missing a field name---line 909 of file ../References/referencias.bib
+ : 
+ : % title={ROB{\^O} AUTON{\^O}MO PARA INSPE{\c{C}}{\~A}O DE LINHAS DE ALTA TENS{\~A}O},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1447 of file ../References/referencias.bib
+ : 
+ : % title={ROB{\^O} AUTON{\^O}MO PARA INSPE{\c{C}}{\~A}O DE LINHAS DE ALTA TENS{\~A}O},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1463 of file ../References/referencias.bib
+ : 
+ : % title={Expliner-Robot for inspection of transmission lines},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1472 of file ../References/referencias.bib
+ : 
+ : % title={Rob{\^o} m{\'o}vel aplicado {\`a} inspe{\c{c}}{\~a}o em linhas de transmiss{\~a}o},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1480 of file ../References/referencias.bib
+ : 
+ : % title={Control of an inspection robot for 110KV power transmission lines based on expert system design methods},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1489 of file ../References/referencias.bib
+ : 
+ : % title={Design and validation of a mobile robot for power line inspection and maintenance},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1538 of file ../References/referencias.bib
+ : 
+ : % title={Autonomous overhead transmission line inspection robot (TI) development and demonstration},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1831 of file ../References/referencias.bib
+ : 
+ : booktitle={Anais do XX Congresso Brasileiro de Automática, Setembro 20 24 de 2014},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1864 of file ../References/referencias.bib
+ : @article{pagnano2013roadmap
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1905 of file ../References/referencias.bib
+ : @inproceedings{rangel2009sistema
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1930 of file ../References/referencias.bib
+ : @article{li2010autonomous
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1958 of file ../References/referencias.bib
+ : @misc{ons2013dados
+ :                   ,
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2091 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2091 of file abntex2-alf.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2146 of file abntex2-alf.bst
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2146 of file abntex2-alf.bst
-Name 1 in "Mark Newman, Albert-L\'aszl\'o Barab\'asi, and Duncan J. Watts" has a comma at the end for entry NBW2006
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
+while executing---line 2146 of file abntex2-alf.bst
+Too many commas in name 1 of "Mourão, Miguel A. M., Lima II, Eduardo J., Bracarense, Alexandre Q., Gontijo, Roberto A., Bomfim, Marcelo H. S., Reis, Marco A., Nascimento, Samy M., Almeida, Cleber V. R., Alcantara, Pedro X., Lepikson, Herman A." for entry mourao2015robolinhas
 while executing---line 2146 of file abntex2-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 4 entries,
+You've used 21 entries,
             6714 wiz_defined-function locations,
-            1235 strings with 10318 characters,
-and the built_in function-call counts, 2930 in all, are:
-= -- 345
-> -- 62
-< -- 0
-+ -- 69
-- -- 20
-* -- 163
-:= -- 456
-add.period$ -- 9
-call.type$ -- 4
-change.case$ -- 25
-chr.to.int$ -- 4
-cite$ -- 3
-duplicate$ -- 120
-empty$ -- 227
-format.name$ -- 93
-if$ -- 695
+            1332 strings with 14996 characters,
+and the built_in function-call counts, 21646 in all, are:
+= -- 1945
+> -- 766
+< -- 163
++ -- 460
+- -- 226
+* -- 1567
+:= -- 2806
+add.period$ -- 89
+call.type$ -- 21
+change.case$ -- 261
+chr.to.int$ -- 51
+cite$ -- 20
+duplicate$ -- 1227
+empty$ -- 1409
+format.name$ -- 1095
+if$ -- 5034
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 68
-newline$ -- 20
-num.names$ -- 15
-pop$ -- 108
+missing$ -- 368
+newline$ -- 97
+num.names$ -- 100
+pop$ -- 532
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 93
 quote$ -- 0
-skip$ -- 194
+skip$ -- 1385
 stack$ -- 1
-substring$ -- 101
-swap$ -- 44
-text.length$ -- 0
+substring$ -- 841
+swap$ -- 559
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 5
 warning$ -- 0
-while$ -- 20
+while$ -- 155
 width$ -- 0
-write$ -- 50
-(There were 8 error messages)
+write$ -- 340
+(There were 148 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.25)  12 NOV 2018 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.25)  14 NOV 2018 01:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -365,104 +365,78 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rotFPbot=\skip82
 \rot@float@box=\box34
 \rot@mess@toks=\toks30
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count120
-\float@exts=\toks31
-\float@box=\box35
-\@float@everytoks=\toks32
-\@floatcapt=\box36
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip83
-\subfigcapskip=\skip84
-\subfigcaptopadj=\dimen125
-\subfigbottomskip=\skip85
-\subfigcapmargin=\dimen126
-\subfiglabelskip=\skip86
-\c@subfigure=\count121
-\c@lofdepth=\count122
-\c@subtable=\count123
-\c@lotdepth=\count124
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip87
-\subfig@bottom=\skip88
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count125
-\Gm@cntv=\count126
-\c@Gm@tempcnt=\count127
-\Gm@bindingoffset=\dimen127
-\Gm@wd@mp=\dimen128
-\Gm@odd@mp=\dimen129
-\Gm@even@mp=\dimen130
-\Gm@layoutwidth=\dimen131
-\Gm@layoutheight=\dimen132
-\Gm@layouthoffset=\dimen133
-\Gm@layoutvoffset=\dimen134
-\Gm@dimlist=\toks33
+\Gm@cnth=\count120
+\Gm@cntv=\count121
+\c@Gm@tempcnt=\count122
+\Gm@bindingoffset=\dimen125
+\Gm@wd@mp=\dimen126
+\Gm@odd@mp=\dimen127
+\Gm@even@mp=\dimen128
+\Gm@layoutwidth=\dimen129
+\Gm@layoutheight=\dimen130
+\Gm@layouthoffset=\dimen131
+\Gm@layoutvoffset=\dimen132
+\Gm@dimlist=\toks31
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
  (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count128
-\calc@Bcount=\count129
-\calc@Adimen=\dimen135
-\calc@Bdimen=\dimen136
-\calc@Askip=\skip89
-\calc@Bskip=\skip90
+\calc@Acount=\count123
+\calc@Bcount=\count124
+\calc@Adimen=\dimen133
+\calc@Bdimen=\dimen134
+\calc@Askip=\skip83
+\calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count130
-\calc@Cskip=\skip91
+\calc@Ccount=\count125
+\calc@Cskip=\skip85
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip92
-\ABCIauxlen=\skip93
-\c@ABCIaux=\count131
-\c@ABCImax=\count132
+\minimumbiblabelwidth=\skip86
+\ABCIauxlen=\skip87
+\c@ABCIaux=\count126
+\c@ABCImax=\count127
  (/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip94
+\biblabelsep=\skip88
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 LaTeX Info: Redefining \citeonline on input line 677.
-\ABCItoken=\toks34
+\ABCItoken=\toks32
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/shadow/shadow.sty
 Package: shadow 2003/02/19 v1.3 shadow boxes (M.O.)
-\txtwdth=\dimen137
-\sht=\dimen138
-\shw=\dimen139
-\shbox=\box37
-\sboxsep=\dimen140
-\sboxrule=\dimen141
-\sdim=\dimen142
+\txtwdth=\dimen135
+\sht=\dimen136
+\shw=\dimen137
+\shbox=\box35
+\sboxsep=\dimen138
+\sboxrule=\dimen139
+\sdim=\dimen140
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen143
-\WF@size=\dimen144
-\c@WF@wrappedlines=\count133
-\WF@box=\box38
-\WF@everypar=\toks35
+\wrapoverhang=\dimen141
+\WF@size=\dimen142
+\c@WF@wrappedlines=\count128
+\WF@box=\box36
+\WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/local/texlive/2018/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box39
-\UL@hyphenbox=\box40
-\UL@skip=\skip95
-\UL@hook=\toks36
-\UL@height=\dimen145
-\UL@pe=\count134
-\UL@pixel=\dimen146
-\ULC@box=\box41
+\UL@box=\box37
+\UL@hyphenbox=\box38
+\UL@skip=\skip89
+\UL@hook=\toks34
+\UL@height=\dimen143
+\UL@pe=\count129
+\UL@pixel=\dimen144
+\ULC@box=\box39
 Package: ulem 2012/05/18
-\ULdepth=\dimen147
+\ULdepth=\dimen145
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/yfonts/yfonts.sty
@@ -472,13 +446,37 @@ Now handling font encoding LY ...
 Now handling font encoding LYG ...
 ... no UTF-8 mapping file for font encoding LYG
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-\@indexfile=\write3
-\openout3 = `theopraxtcc.idx'.
-
-
-Writing index file theopraxtcc.idx
-(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen146
+\AM@pageheight=\dimen147
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box40
+\AM@global@opts=\toks35
+\AM@toc@title=\toks36
+\c@AM@survey=\count130
+\AM@templatesizebox=\box41
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
@@ -491,50 +489,58 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen153
 \caption@hangindent=\dimen154
 )
-\c@ContinuedFloat=\count135
-Package caption Info: float package is loaded.
+\c@ContinuedFloat=\count131
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
-Package caption Info: subfigure package is loaded.
 Package caption Info: wrapfig package is loaded.
-) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux)
-(/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count132
+\c@subtable=\count133
+)
+\@indexfile=\write3
+\openout3 = `theopraxtcc.idx'.
+
+
+Writing index file theopraxtcc.idx
+(/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux)
+(/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
 \openout1 = `theopraxtcc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
+\scratchcounter=\count134
 \scratchdimen=\dimen155
 \scratchbox=\box42
-\nofMPsegments=\count137
-\nofMParguments=\count138
+\nofMPsegments=\count135
+\nofMParguments=\count136
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count139
+\MPscratchCnt=\count137
 \MPscratchDim=\dimen156
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks38
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -549,30 +555,23 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box43
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 169.
+Package hyperref Info: Link coloring ON on input line 172.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 169.
-LaTeX Info: Redefining \pageref on input line 169.
-LaTeX Info: Redefining \nameref on input line 169.
+LaTeX Info: Redefining \ref on input line 172.
+LaTeX Info: Redefining \pageref on input line 172.
+LaTeX Info: Redefining \nameref on input line 172.
  (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.out) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.out)
 \@outlinefile=\write4
 \openout4 = `theopraxtcc.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 169.
+LaTeX Info: Redefining \selectfont on input line 172.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -608,14 +607,18 @@ LaTeX Info: Redefining \selectfont on input line 169.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 <Figures/LogoFIEBSENAI.png, id=292, 654.2844pt x 207.4149pt>
 File: Figures/LogoFIEBSENAI.png Graphic file (type png)
 <use Figures/LogoFIEBSENAI.png>
-Package pdftex.def Info: Figures/LogoFIEBSENAI.png  used on input line 206.
+Package pdftex.def Info: Figures/LogoFIEBSENAI.png  used on input line 209.
 (pdftex.def)             Requested size: 196.28682pt x 62.22495pt.
-[1
+ [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figures/LogoFIEBSENAI.png>]
 \openout2 = `Others/FolhaRosto.aux'.
@@ -954,82 +957,331 @@ Cap\'{\i }tulo 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \section
-             {Organização do \thetypework} [1
+l.15 
+      [1
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+<Figures/./insphelic.jpg, id=498, 602.25pt x 517.935pt>
+File: Figures/./insphelic.jpg Graphic file (type jpg)
+<use Figures/./insphelic.jpg>
+Package pdftex.def Info: Figures/./insphelic.jpg  used on input line 19.
+(pdftex.def)             Requested size: 273.14923pt x 234.9179pt.
+<Figures/./insphelichuma.jpg, id=499, 719.0865pt x 469.755pt>
+File: Figures/./insphelichuma.jpg Graphic file (type jpg)
+<use Figures/./insphelichuma.jpg>
+Package pdftex.def Info: Figures/./insphelichuma.jpg  used on input line 28.
+(pdftex.def)             Requested size: 273.14923pt x 178.44424pt.
+<Figures/./insphuma.jpg, id=500, 417.05812pt x 313.17pt>
+File: Figures/./insphuma.jpg Graphic file (type jpg)
+<use Figures/./insphuma.jpg>
+Package pdftex.def Info: Figures/./insphuma.jpg  used on input line 39.
+(pdftex.def)             Requested size: 273.14923pt x 205.12067pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 
+      [2 <./Figures/./insphelic.jpg> <./Figures/./insphelichuma.jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 
+      [3 <./Figures/./insphuma.jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 
+      [4] [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.236     \include{Chapters/ChapterOne}
-                                        [2]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+) [6]
 \openout2 = `Chapters/ChapterTwo.aux'.
 
  (./Chapters/ChapterTwo.tex
 Cap\'{\i }tulo 2.
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61 \subsection
-                {Requisitos técnicos} [3
+<Figures/./roboventrella.jpg, id=535, 259.97125pt x 194.7275pt>
+File: Figures/./roboventrella.jpg Graphic file (type jpg)
+<use Figures/./roboventrella.jpg>
+Package pdftex.def Info: Figures/./roboventrella.jpg  used on input line 44.
+(pdftex.def)             Requested size: 227.62206pt x 170.49606pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/./campos.png, id=543, 240.4182pt x 161.403pt>
+File: Figures/./campos.png Graphic file (type png)
+<use Figures/./campos.png>
+Package pdftex.def Info: Figures/./campos.png  used on input line 56.
+(pdftex.def)             Requested size: 273.14923pt x 183.38316pt.
+[7
 
 
 
-])pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.237     \include{Chapters/ChapterTwo}
-                                        [4]
+]
+<Figures/./zhou.png, id=555, 257.763pt x 127.1952pt>
+File: Figures/./zhou.png Graphic file (type png)
+<use Figures/./zhou.png>
+Package pdftex.def Info: Figures/./zhou.png  used on input line 68.
+(pdftex.def)             Requested size: 273.14923pt x 134.79326pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./Figures/./roboventrella.jpg> <./Figures/./campos.png>]
+<Figures/./linescout1.jpg, id=571, 561.69342pt x 421.72746pt>
+File: Figures/./linescout1.jpg Graphic file (type jpg)
+<use Figures/./linescout1.jpg>
+Package pdftex.def Info: Figures/./linescout1.jpg  used on input line 83.
+(pdftex.def)             Requested size: 204.85846pt x 153.8102pt.
+<Figures/./linescout2.jpg, id=572, 612.2875pt x 664.4825pt>
+File: Figures/./linescout2.jpg Graphic file (type jpg)
+<use Figures/./linescout2.jpg>
+Package pdftex.def Info: Figures/./linescout2.jpg  used on input line 90.
+(pdftex.def)             Requested size: 136.57462pt x 148.21443pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 81--98
+[][] []
+ []
+
+[9 <./Figures/./zhou.png> <./Figures/./linescout1.jpg> <./Figures/./linescout2.jpg>]
+<Figures/./katrasnik.png, id=588, 311.7246pt x 113.223pt>
+File: Figures/./katrasnik.png Graphic file (type png)
+<use Figures/./katrasnik.png>
+Package pdftex.def Info: Figures/./katrasnik.png  used on input line 109.
+(pdftex.def)             Requested size: 364.19667pt x 132.28378pt.
+<Figures/./expliner.png, id=593, 765.86125pt x 430.60875pt>
+File: Figures/./expliner.png Graphic file (type png)
+<use Figures/./expliner.png>
+Package pdftex.def Info: Figures/./expliner.png  used on input line 122.
+(pdftex.def)             Requested size: 204.85846pt x 115.18176pt.
+<Figures/./expliner2.jpg, id=594, 641.39626pt x 543.02875pt>
+File: Figures/./expliner2.jpg Graphic file (type jpg)
+<use Figures/./expliner2.jpg>
+Package pdftex.def Info: Figures/./expliner2.jpg  used on input line 129.
+(pdftex.def)             Requested size: 136.57462pt x 115.62201pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 120--137
+[][] []
+ []
+
+[10 <./Figures/./katrasnik.png> <./Figures/./expliner.png> <./Figures/./expliner2.jpg>]
+<Figures/./rangel.png, id=607, 393.1488pt x 142.131pt>
+File: Figures/./rangel.png Graphic file (type png)
+<use Figures/./rangel.png>
+Package pdftex.def Info: Figures/./rangel.png  used on input line 149.
+(pdftex.def)             Requested size: 273.14923pt x 98.75363pt.
+<Figures/./rangel2.png, id=608, 191.2746pt x 142.131pt>
+File: Figures/./rangel2.png Graphic file (type png)
+<use Figures/./rangel2.png>
+Package pdftex.def Info: Figures/./rangel2.png  used on input line 159.
+(pdftex.def)             Requested size: 273.14923pt x 202.99419pt.
+ [11 <./Figures/./rangel.png> <./Figures/./rangel2.png>]
+<Figures/./li.png, id=619, 204.2832pt x 169.5936pt>
+File: Figures/./li.png Graphic file (type png)
+<use Figures/./li.png>
+Package pdftex.def Info: Figures/./li.png  used on input line 172.
+(pdftex.def)             Requested size: 273.14923pt x 226.76512pt.
+<Figures/./wang.png, id=623, 200.4288pt x 169.5936pt>
+File: Figures/./wang.png Graphic file (type png)
+<use Figures/./wang.png>
+Package pdftex.def Info: Figures/./wang.png  used on input line 184.
+(pdftex.def)             Requested size: 273.14923pt x 231.15143pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/./buehringer.png, id=628, 463.4916pt x 113.223pt>
+File: Figures/./buehringer.png Graphic file (type png)
+<use Figures/./buehringer.png>
+Package pdftex.def Info: Figures/./buehringer.png  used on input line 197.
+(pdftex.def)             Requested size: 273.14923pt x 66.72842pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (15.85248pt too wide) in paragraph at lines 202--203
+[]\OT1/cmr/m/n/12 Gon^^Xcalves e Car-va-lho em seus tra-ba-lhos ([][]GON-CAL-VES; CAR-VA-LHO[][], [][]2010[][][]) ([][]GON[]ALVES;
+ []
+
+[12 <./Figures/./li.png>]
+<Figures/./goncalves.png, id=647, 227.4096pt x 141.1674pt>
+File: Figures/./goncalves.png Graphic file (type png)
+<use Figures/./goncalves.png>
+Package pdftex.def Info: Figures/./goncalves.png  used on input line 209.
+(pdftex.def)             Requested size: 273.14923pt x 169.56155pt.
+ [13 <./Figures/./wang.png> <./Figures/./buehringer.png> <./Figures/./goncalves.png>]
+<Figures/./lee.png, id=667, 202.356pt x 141.1674pt>
+File: Figures/./lee.png Graphic file (type png)
+<use Figures/./lee.png>
+Package pdftex.def Info: Figures/./lee.png  used on input line 222.
+(pdftex.def)             Requested size: 273.14923pt x 190.56343pt.
+<Figures/./phillip.png, id=673, 205.7286pt x 127.1952pt>
+File: Figures/./phillip.png Graphic file (type png)
+<use Figures/./phillip.png>
+Package pdftex.def Info: Figures/./phillip.png  used on input line 236.
+(pdftex.def)             Requested size: 273.14923pt x 168.88606pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./Figures/./lee.png>]
+<Figures/./goncalvesecarvalho.png, id=686, 273.6624pt x 127.1952pt>
+File: Figures/./goncalvesecarvalho.png Graphic file (type png)
+<use Figures/./goncalvesecarvalho.png>
+Package pdftex.def Info: Figures/./goncalvesecarvalho.png  used on input line 248.
+(pdftex.def)             Requested size: 273.14923pt x 126.9581pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 257.
+
+[15 <./Figures/./phillip.png> <./Figures/./goncalvesecarvalho.png>]
+<Figures/./piro.png, id=701, 270.7716pt x 127.1952pt>
+File: Figures/./piro.png Graphic file (type png)
+<use Figures/./piro.png>
+Package pdftex.def Info: Figures/./piro.png  used on input line 264.
+(pdftex.def)             Requested size: 273.14923pt x 128.32057pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 280.
+
+<Figures/./dubois.png, id=707, 171.5208pt x 84.315pt>
+File: Figures/./dubois.png Graphic file (type png)
+<use Figures/./dubois.png>
+Package pdftex.def Info: Figures/./dubois.png  used on input line 287.
+(pdftex.def)             Requested size: 273.14923pt x 134.28789pt.
+[16 <./Figures/./piro.png>]
+<Figures/./piro2.png, id=713, 255.8358pt x 156.585pt>
+File: Figures/./piro2.png Graphic file (type png)
+<use Figures/./piro2.png>
+Package pdftex.def Info: Figures/./piro2.png  used on input line 297.
+(pdftex.def)             Requested size: 273.14923pt x 167.19545pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 304.
+
+[17 <./Figures/./dubois.png> <./Figures/./piro2.png>]
+
+LaTeX Warning: Reference `appendix:meca' on page 18 undefined on input line 314.
+
+<Figures/./elir.png, id=733, 306.9066pt x 217.7736pt>
+File: Figures/./elir.png Graphic file (type png)
+<use Figures/./elir.png>
+Package pdftex.def Info: Figures/./elir.png  used on input line 321.
+(pdftex.def)             Requested size: 318.66948pt x 226.14024pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18]
+<Figures/./vistaselir.png, id=741, 449.5194pt x 212.4738pt>
+File: Figures/./vistaselir.png Graphic file (type png)
+<use Figures/./vistaselir.png>
+Package pdftex.def Info: Figures/./vistaselir.png  used on input line 335.
+(pdftex.def)             Requested size: 318.66948pt x 150.6305pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/./esquemaelir.png, id=744, 396.0396pt x 212.4738pt>
+File: Figures/./esquemaelir.png Graphic file (type png)
+<use Figures/./esquemaelir.png>
+Package pdftex.def Info: Figures/./esquemaelir.png  used on input line 347.
+(pdftex.def)             Requested size: 318.66948pt x 170.9681pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./Figures/./elir.png>]
+<Figures/./esquemaelirdim.png, id=755, 460.6008pt x 255.8358pt>
+File: Figures/./esquemaelirdim.png Graphic file (type png)
+<use Figures/./esquemaelirdim.png>
+Package pdftex.def Info: Figures/./esquemaelirdim.png  used on input line 377.
+(pdftex.def)             Requested size: 409.71692pt x 227.57213pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20 <./Figures/./vistaselir.png> <./Figures/./esquemaelir.png>] [21 <./Figures/./esquemaelirdim.png>]
+<Figures/./modeloesquematico2.png, id=785, 584.9052pt x 406.1574pt>
+File: Figures/./modeloesquematico2.png Graphic file (type png)
+<use Figures/./modeloesquematico2.png>
+Package pdftex.def Info: Figures/./modeloesquematico2.png  used on input line 443.
+(pdftex.def)             Requested size: 455.24411pt x 316.13217pt.
+ [22 <./Figures/./modeloesquematico2.png>]
+
+LaTeX Warning: Reference `appendix:elet' on page 23 undefined on input line 468.
+
+<Figures/./arquitetura2.png, id=794, 596.9502pt x 377.2494pt>
+File: Figures/./arquitetura2.png Graphic file (type png)
+<use Figures/./arquitetura2.png>
+Package pdftex.def Info: Figures/./arquitetura2.png  used on input line 484.
+(pdftex.def)             Requested size: 455.24411pt x 287.69685pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23]) [24 <./Figures/./arquitetura2.png>]
 \openout2 = `Chapters/ChapterThree.aux'.
 
  (./Chapters/ChapterThree.tex
 Cap\'{\i }tulo 3.
-[5
+[25
 
 
 
-] [6]
-<Figures/motion_plan_func.png, id=468, 563.10374pt x 698.61pt>
+]
+
+LaTeX Warning: Reference `chapter:introducao' on page 26 undefined on input line 40.
+
+<Figures/flxinfofunctionalities.png, id=810, 6414.96625pt x 4600.18625pt>
+File: Figures/flxinfofunctionalities.png Graphic file (type png)
+<use Figures/flxinfofunctionalities.png>
+Package pdftex.def Info: Figures/flxinfofunctionalities.png  used on input line 64.
+(pdftex.def)             Requested size: 455.24411pt x 326.39792pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26] [27 <./Figures/flxinfofunctionalities.png>]
+<Figures/motion_plan_func.png, id=830, 563.10374pt x 698.61pt>
 File: Figures/motion_plan_func.png Graphic file (type png)
 <use Figures/motion_plan_func.png>
-Package pdftex.def Info: Figures/motion_plan_func.png  used on input line 70.
+Package pdftex.def Info: Figures/motion_plan_func.png  used on input line 99.
 (pdftex.def)             Requested size: 364.19667pt x 451.84187pt.
- [7] [8 <./Figures/motion_plan_func.png>]
-<Figures/actuation_depen.png, id=479, 371.3875pt x 482.80376pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28] [29 <./Figures/motion_plan_func.png>]
+<Figures/actuation_depen.png, id=841, 371.3875pt x 482.80376pt>
 File: Figures/actuation_depen.png Graphic file (type png)
 <use Figures/actuation_depen.png>
-Package pdftex.def Info: Figures/actuation_depen.png  used on input line 99.
+Package pdftex.def Info: Figures/actuation_depen.png  used on input line 128.
 (pdftex.def)             Requested size: 273.14923pt x 355.1033pt.
- [9] [10 <./Figures/actuation_depen.png>]
-<Figures/power_management_hardware.png, id=489, 520.94624pt x 167.62625pt>
+ [30] [31 <./Figures/actuation_depen.png>]
+<Figures/power_management_hardware.png, id=852, 520.94624pt x 167.62625pt>
 File: Figures/power_management_hardware.png Graphic file (type png)
 <use Figures/power_management_hardware.png>
-Package pdftex.def Info: Figures/power_management_hardware.png  used on input line 126.
+Package pdftex.def Info: Figures/power_management_hardware.png  used on input line 155.
 (pdftex.def)             Requested size: 455.24411pt x 146.48587pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12 <./Figures/power_management_hardware.png>] [13]
-<Figures/sys_check_flux.png, id=505, 530.98375pt x 713.66624pt>
+[32] [33 <./Figures/power_management_hardware.png>] [34]
+<Figures/sys_check_flux.png, id=868, 530.98375pt x 713.66624pt>
 File: Figures/sys_check_flux.png Graphic file (type png)
 <use Figures/sys_check_flux.png>
-Package pdftex.def Info: Figures/sys_check_flux.png  used on input line 192.
+Package pdftex.def Info: Figures/sys_check_flux.png  used on input line 221.
 (pdftex.def)             Requested size: 273.14923pt x 367.13385pt.
- [14 <./Figures/sys_check_flux.png>]) [15]
+ [35 <./Figures/sys_check_flux.png>]) [36]
 \openout2 = `Chapters/ChapterFour.aux'.
 
  (./Chapters/ChapterFour.tex
 Cap\'{\i }tulo 4.
-) [16
+) [37
 
 
 
@@ -1038,7 +1290,7 @@ Cap\'{\i }tulo 4.
 
  (./Chapters/ChapterConsideracoesfinais.tex
 Cap\'{\i }tulo 5.
-) [17
+) [38
 
 
 
@@ -1047,7 +1299,7 @@ Cap\'{\i }tulo 5.
 
  (./Appendices/qfd.tex
 Ap\^endice A.
-) [18
+) [39
 
 
 
@@ -1056,7 +1308,7 @@ Ap\^endice A.
 
  (./Appendices/diagmec.tex
 Ap\^endice B.
-) [19
+) [40
 
 
 
@@ -1065,7 +1317,7 @@ Ap\^endice B.
 
  (./Appendices/diagele.tex
 Ap\^endice C.
-) [20
+) [41
 
 
 
@@ -1074,7 +1326,7 @@ Ap\^endice C.
 
  (./Appendices/wireframes.tex
 Ap\^endice D.
-) [21
+) [42
 
 
 
@@ -1083,7 +1335,7 @@ Ap\^endice D.
 
  (./Appendices/logbook.tex
 Ap\^endice E.
-) [22
+) [43
 
 
 
@@ -1091,10 +1343,17 @@ Ap\^endice E.
 \tf@brf=\write8
 \openout8 = `theopraxtcc.brf'.
 
-) [23
+ [44
 
 
-]
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.07225pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45]
 \openout2 = `Others/ultimafolha.aux'.
 
  (./Others/ultimafolha.tex
@@ -1242,38 +1501,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--31
 
  []
 
-) [24
+) [46
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
  (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux)
 (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 Package rerunfilecheck Info: File `theopraxtcc.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 Package rerunfilecheck Info: File `theopraxtcc.brf' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
  ) 
 Here is how much of TeX's memory you used:
- 10375 strings out of 492646
- 162353 string characters out of 6129563
- 272983 words of memory out of 5000000
- 13786 multiletter control sequences out of 15000+600000
- 13973 words of font info for 53 fonts, out of 8000000 for 9000
+ 11640 strings out of 492646
+ 183261 string characters out of 6129563
+ 300935 words of memory out of 5000000
+ 14923 multiletter control sequences out of 15000+600000
+ 15221 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,45p,924b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (36 pages, 944080 bytes).
+ 39i,12n,45p,1412b,533s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on /Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (58 pages, 7216539 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 558 compressed objects within 6 object streams
- 117 named destinations out of 1000 (max. 500000)
- 602 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 917 compressed objects within 10 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 752 words of extra memory for PDF output out of 10000 (max. 10000000)
 

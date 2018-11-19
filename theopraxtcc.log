@@ -1,0 +1,2208 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.25)  19 NOV 2018 14:34
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/mhar-vell/Documents/@mhar-vell/github/elir_perception_final_report/theopraxtcc.tex
+(/Users/mhar-vell/Documents/@mhar-vell/github/elir_perception_final_report/theopraxtcc.tex
+LaTeX2e <2018-04-01> patch level 5
+(./Classes/THEOPRAX.cls
+Document Class: Classes/THEOPRAX 2017/10/31 v0.0.0
+---------------------------------------------------------
+Esta classe LaTeX est\IeC {\'a} de acordo com os requerimentos do 
+programa de p\IeC {\'o}s-gradua\IeC {\c c}\IeC {\~a}o para a submiss\IeC {\~a}o de uma disser-
+ta\IeC {\c c}\IeC {\~a}o de mestrado ou tese de doutorado ao SENAI Cimatec 
+implementada inicialmente por Israel Vieira para atender 
+os requisitos da University of Southampton e, posterior- 
+mente, modificada por Hernane Pereira. 
+---------------------------------------------------------
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip41
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen102
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen103
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count80
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count81
+\leftroot@=\count82
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count83
+\DOTSCASE@=\count84
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
+\dotsspace@=\muskip10
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
+\tag@help=\toks15
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
+\andhelp@=\toks16
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks17
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip44
+\thm@postskip=\skip45
+\thm@headsep=\skip46
+\dth@everypar=\toks24
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/eucal.sty
+Package: eucal 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
+\f@nch@headwidth=\skip47
+\f@nch@O@elh=\skip48
+\f@nch@O@erh=\skip49
+\f@nch@O@olh=\skip50
+\f@nch@O@orh=\skip51
+\f@nch@O@elf=\skip52
+\f@nch@O@erf=\skip53
+\f@nch@O@olf=\skip54
+\f@nch@O@orf=\skip55
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+---------------------------------------------------------
+THEOPRAX usar\IeC {\'a} a classe de documento -> report.
+THEOPRAX gerar\IeC {\'a} um arquivo PDF.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count92
+\c@chapter=\count93
+\c@section=\count94
+\c@subsection=\count95
+\c@subsubsection=\count96
+\c@paragraph=\count97
+\c@subparagraph=\count98
+\c@figure=\count99
+\c@table=\count100
+\abovecaptionskip=\skip56
+\belowcaptionskip=\skip57
+\bibindent=\dimen111
+)
+---------------------------------------------------------
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen112
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count103
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+
+Package hyperref Warning: Values of option `pdfpagelayout':
+(hyperref)                * `SinglePage'
+(hyperref)                * `OneColumn'
+(hyperref)                * `TwoColumnLeft'
+(hyperref)                * `TwoColumnRight'
+(hyperref)                * `TwoPageLeft' (PDF 1.5)
+(hyperref)                * `TwoPageRight' (PDF 1.5)
+(hyperref)                * An empty value disables the option.
+(hyperref)                Unknown value `useoutlines' on input line 4383.
+
+Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4383.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4383.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4383.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing ON on input line 4527.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2016/05/21 v1.39 Bibliographical back referencing
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+))
+\c@Hy@tempcnt=\count104
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen113
+\Fld@menulength=\count105
+\Field@Width=\dimen114
+\Fld@charsize=\dimen115
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing ON on input line 6382.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
+)
+Package hyperref Info: Driver: hpdftex.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
+\Hy@SectionHShift=\skip58
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+\rightmargin=\dimen118
+\botmargin=\dimen119
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/06/05 3.22 The Babel package
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/06/05 3.22 Babel switching mechanism
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/06/05 3.22 Babel common definitions
+\babel@savecnt=\count111
+\U@D=\dimen120
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count112
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip59
+\RaggedLeftLeftskip=\skip60
+\RaggedRightLeftskip=\skip61
+\CenteringRightskip=\skip62
+\RaggedLeftRightskip=\skip63
+\RaggedRightRightskip=\skip64
+\CenteringParfillskip=\skip65
+\RaggedLeftParfillskip=\skip66
+\RaggedRightParfillskip=\skip67
+\JustifyingParfillskip=\skip68
+\CenteringParindent=\skip69
+\RaggedLeftParindent=\skip70
+\RaggedRightParindent=\skip71
+\JustifyingParindent=\skip72
+))
+
+Package hyperref Warning: Option `backref' has already been used,
+(hyperref)                setting the option has no effect on input line 106.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 106.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count113
+\LTcapwidth=\dimen121
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count114
+\LT@rows=\count115
+\c@LT@tables=\count116
+\c@LT@chunks=\count117
+\LT@p@ftn=\toks28
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+\col@sep=\dimen122
+\ar@mcellbox=\box32
+\extrarowheight=\dimen123
+\NC@list=\toks29
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box33
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip79
+\multirow@cntb=\count118
+\multirow@dima=\skip80
+\bigstrutjot=\dimen124
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count119
+\rotFPtop=\skip81
+\rotFPbot=\skip82
+\rot@float@box=\box34
+\rot@mess@toks=\toks30
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count120
+\Gm@cntv=\count121
+\c@Gm@tempcnt=\count122
+\Gm@bindingoffset=\dimen125
+\Gm@wd@mp=\dimen126
+\Gm@odd@mp=\dimen127
+\Gm@even@mp=\dimen128
+\Gm@layoutwidth=\dimen129
+\Gm@layoutheight=\dimen130
+\Gm@layouthoffset=\dimen131
+\Gm@layoutvoffset=\dimen132
+\Gm@dimlist=\toks31
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count123
+\calc@Bcount=\count124
+\calc@Adimen=\dimen133
+\calc@Bdimen=\dimen134
+\calc@Askip=\skip83
+\calc@Bskip=\skip84
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count125
+\calc@Cskip=\skip85
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip86
+\ABCIauxlen=\skip87
+\c@ABCIaux=\count126
+\c@ABCImax=\count127
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip88
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+LaTeX Info: Redefining \citeonline on input line 677.
+\ABCItoken=\toks32
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/shadow/shadow.sty
+Package: shadow 2003/02/19 v1.3 shadow boxes (M.O.)
+\txtwdth=\dimen135
+\sht=\dimen136
+\shw=\dimen137
+\shbox=\box35
+\sboxsep=\dimen138
+\sboxrule=\dimen139
+\sdim=\dimen140
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen141
+\WF@size=\dimen142
+\c@WF@wrappedlines=\count128
+\WF@box=\box36
+\WF@everypar=\toks33
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box37
+\UL@hyphenbox=\box38
+\UL@skip=\skip89
+\UL@hook=\toks34
+\UL@height=\dimen143
+\UL@pe=\count129
+\UL@pixel=\dimen144
+\ULC@box=\box39
+Package: ulem 2012/05/18
+\ULdepth=\dimen145
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/yfonts/yfonts.sty
+Package: yfonts 2003/01/08 v1.3 (WaS)
+Now handling font encoding LY ...
+... no UTF-8 mapping file for font encoding LY
+Now handling font encoding LYG ...
+... no UTF-8 mapping file for font encoding LYG
+LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen146
+\AM@pageheight=\dimen147
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box40
+\AM@global@opts=\toks35
+\AM@toc@title=\toks36
+\c@AM@survey=\count130
+\AM@templatesizebox=\box41
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen148
+\captionmargin@=\dimen149
+\captionwidth=\dimen150
+\caption@tempdima=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
+)
+\c@ContinuedFloat=\count131
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: wrapfig package is loaded.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count132
+\c@subtable=\count133
+)
+\@indexfile=\write3
+\openout3 = `theopraxtcc.idx'.
+
+
+Writing index file theopraxtcc.idx
+(./theopraxtcc.aux)
+\openout1 = `theopraxtcc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count134
+\scratchdimen=\dimen155
+\scratchbox=\box42
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen156
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks38
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.jpg,.mps,.pdf,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box43
+Package hyperref Info: Link coloring ON on input line 172.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count140
+)
+LaTeX Info: Redefining \ref on input line 172.
+LaTeX Info: Redefining \pageref on input line 172.
+LaTeX Info: Redefining \nameref on input line 172.
+\@outlinefile=\write4
+\openout4 = `theopraxtcc.out'.
+
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 172.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.91173pt
+* \headheight=12.0pt
+* \headsep=20.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<Figures/LogoFIEBSENAI.png, id=4, 654.2844pt x 207.4149pt>
+File: Figures/LogoFIEBSENAI.png Graphic file (type png)
+<use Figures/LogoFIEBSENAI.png>
+Package pdftex.def Info: Figures/LogoFIEBSENAI.png  used on input line 209.
+(pdftex.def)             Requested size: 196.28682pt x 62.22495pt.
+ [1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figures/LogoFIEBSENAI.png>]
+\openout2 = `Others/FolhaRosto.aux'.
+
+ (./Others/FolhaRosto.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+
+ []
+
+) [2
+
+]
+\openout2 = `Others/dedicatoria.aux'.
+
+ (./Others/dedicatoria.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--38
+
+ []
+
+) [3
+
+
+]
+\openout2 = `Others/agradecimentos.aux'.
+
+ (./Others/agradecimentos.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+) [4
+
+
+]
+\openout2 = `Others/resumo.aux'.
+
+ (./Others/resumo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) [1
+
+
+]
+\openout2 = `Others/abstract.aux'.
+
+ (./Others/abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+) [2
+
+
+]
+\tf@toc=\write5
+\openout5 = `theopraxtcc.toc'.
+
+ [3
+
+
+]
+\tf@lot=\write6
+\openout6 = `theopraxtcc.lot'.
+
+ [4
+
+]
+\tf@lof=\write7
+\openout7 = `theopraxtcc.lof'.
+
+ [5
+
+]
+\openout2 = `Others/abbreviation.aux'.
+
+ (./Others/abbreviation.tex) [6
+
+]
+\openout2 = `Others/simbolos.aux'.
+
+ (./Others/simbolos.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) [7
+
+
+]
+\openout2 = `Chapters/ChapterOne.aux'.
+
+ (./Chapters/ChapterOne.tex
+Cap\'{\i }tulo 1.
+
+LaTeX Warning: Citation `rangel2009sistema' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ons2013dados' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Reference `img:ihelic' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Reference `img:ihelichuma' on page 1 undefined on input line 14.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 
+      [1
+
+
+
+]
+<Figures/./insphelic.jpg, id=77, 602.25pt x 517.935pt>
+File: Figures/./insphelic.jpg Graphic file (type jpg)
+<use Figures/./insphelic.jpg>
+Package pdftex.def Info: Figures/./insphelic.jpg  used on input line 19.
+(pdftex.def)             Requested size: 273.14923pt x 234.9179pt.
+<Figures/./insphelichuma.jpg, id=78, 719.0865pt x 469.755pt>
+File: Figures/./insphelichuma.jpg Graphic file (type jpg)
+<use Figures/./insphelichuma.jpg>
+Package pdftex.def Info: Figures/./insphelichuma.jpg  used on input line 28.
+(pdftex.def)             Requested size: 273.14923pt x 178.44424pt.
+<Figures/./insphuma.jpg, id=79, 417.05812pt x 313.17pt>
+File: Figures/./insphuma.jpg Graphic file (type jpg)
+<use Figures/./insphuma.jpg>
+Package pdftex.def Info: Figures/./insphuma.jpg  used on input line 39.
+(pdftex.def)             Requested size: 273.14923pt x 205.12067pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `img:ihuma' on page 2 undefined on input line 45.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 
+      [2 <./Figures/./insphelic.jpg> <./Figures/./insphelichuma.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \end{itemize}
+                   [3 <./Figures/./insphuma.jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 
+      [4]
+
+LaTeX Warning: Citation `pagnano2013roadmap' on page 5 undefined on input line 80.
+
+[5]
+
+LaTeX Warning: Reference `chap:intro' on page 6 undefined on input line 113.
+
+
+LaTeX Warning: Reference `chap:concep' on page 6 undefined on input line 115.
+
+
+LaTeX Warning: Reference `chap:mat' on page 6 undefined on input line 117.
+
+[6]
+
+LaTeX Warning: Reference `chap:result' on page 7 undefined on input line 119.
+
+
+LaTeX Warning: Reference `chap:conc' on page 7 undefined on input line 121.
+
+) [7]
+\openout2 = `Chapters/ChapterTwo.aux'.
+
+ (./Chapters/ChapterTwo.tex
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `perc_michaelis' on page 8 undefined on input line 3.
+
+
+LaTeX Warning: Citation `chuck' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Fitzpatrick' on page 8 undefined on input line 25.
+
+
+LaTeX Warning: Citation `pagnano2013roadmap' on page 8 undefined on input line 33.
+
+
+LaTeX Warning: Citation `ventrella2003robo' on page 8 undefined on input line 35.
+
+
+LaTeX Warning: Reference `img:roboventrella' on page 8 undefined on input line 35.
+
+[8
+
+
+
+]
+<Figures/./roboventrella.jpg, id=121, 259.97125pt x 194.7275pt>
+File: Figures/./roboventrella.jpg Graphic file (type jpg)
+<use Figures/./roboventrella.jpg>
+Package pdftex.def Info: Figures/./roboventrella.jpg  used on input line 42.
+(pdftex.def)             Requested size: 227.62206pt x 170.49606pt.
+
+
+LaTeX Warning: Reference `img:campos' on page 9 undefined on input line 47.
+
+
+LaTeX Warning: Citation `campos2002mobile' on page 9 undefined on input line 47.
+
+
+LaTeX Warning: Citation `gonccalves2013review' on page 9 undefined on input line 47.
+
+
+LaTeX Warning: Citation `campos2002mobile' on page 9 undefined on input line 47.
+
+<Figures/./campos.png, id=122, 240.4182pt x 161.403pt>
+File: Figures/./campos.png Graphic file (type png)
+<use Figures/./campos.png>
+Package pdftex.def Info: Figures/./campos.png  used on input line 54.
+(pdftex.def)             Requested size: 273.14923pt x 183.38316pt.
+
+LaTeX Warning: Citation `zhou2005control' on page 9 undefined on input line 59.
+
+
+LaTeX Warning: Reference `img:zhou' on page 9 undefined on input line 59.
+
+[9 <./Figures/./roboventrella.jpg> <./Figures/./campos.png>]
+<Figures/./zhou.png, id=130, 257.763pt x 127.1952pt>
+File: Figures/./zhou.png Graphic file (type png)
+<use Figures/./zhou.png>
+Package pdftex.def Info: Figures/./zhou.png  used on input line 66.
+(pdftex.def)             Requested size: 273.14923pt x 134.79326pt.
+
+
+LaTeX Warning: Reference `img:zhou' on page 10 undefined on input line 71.
+
+
+LaTeX Warning: Citation `zhou2005control' on page 10 undefined on input line 71.
+
+
+LaTeX Warning: Citation `montambault2007design' on page 10 undefined on input line 73.
+
+
+LaTeX Warning: Reference `fig:linescout' on page 10 undefined on input line 73.
+
+
+LaTeX Warning: Citation `montambault2007design' on page 10 undefined on input line 73.
+
+
+Overfull \hbox (29.63387pt too wide) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/12 Como parte do pro-grama de pes-quisa Hydro-Qu^^Sebec Mon-tam-bault e Pou-liot (\OT1/cmr/bx/n/12 ??[]\OT1/cmr/m/n/12 ) encarregaram-
+ []
+
+<Figures/./linescout1.jpg, id=131, 561.69342pt x 421.72746pt>
+File: Figures/./linescout1.jpg Graphic file (type jpg)
+<use Figures/./linescout1.jpg>
+Package pdftex.def Info: Figures/./linescout1.jpg  used on input line 81.
+(pdftex.def)             Requested size: 204.85846pt x 153.8102pt.
+<Figures/./linescout2.jpg, id=132, 612.2875pt x 664.4825pt>
+File: Figures/./linescout2.jpg Graphic file (type jpg)
+<use Figures/./linescout2.jpg>
+Package pdftex.def Info: Figures/./linescout2.jpg  used on input line 88.
+(pdftex.def)             Requested size: 136.57462pt x 148.21443pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 79--96
+[][] []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:linescout' on page 10 undefined on input line 99.
+
+
+LaTeX Warning: Reference `fig:linescout2' on page 10 undefined on input line 99.
+
+
+LaTeX Warning: Citation `katrasnik2010climbing' on page 10 undefined on input line 100.
+
+
+LaTeX Warning: Reference `img:katrasnik' on page 10 undefined on input line 100.
+
+
+LaTeX Warning: Citation `katrasnik2010climbing' on page 10 undefined on input line 100.
+
+[10 <./Figures/./zhou.png>]
+<Figures/./katrasnik.png, id=140, 311.7246pt x 113.223pt>
+File: Figures/./katrasnik.png Graphic file (type png)
+<use Figures/./katrasnik.png>
+Package pdftex.def Info: Figures/./katrasnik.png  used on input line 107.
+(pdftex.def)             Requested size: 364.19667pt x 132.28378pt.
+
+
+LaTeX Warning: Reference `img:expliner1' on page 11 undefined on input line 112.
+
+
+LaTeX Warning: Citation `debenest2008expliner' on page 11 undefined on input line 112.
+
+
+LaTeX Warning: Reference `img:expliner2' on page 11 undefined on input line 112.
+
+<Figures/./expliner.png, id=141, 765.86125pt x 430.60875pt>
+File: Figures/./expliner.png Graphic file (type png)
+<use Figures/./expliner.png>
+Package pdftex.def Info: Figures/./expliner.png  used on input line 120.
+(pdftex.def)             Requested size: 204.85846pt x 115.18176pt.
+<Figures/./expliner2.jpg, id=142, 641.39626pt x 543.02875pt>
+File: Figures/./expliner2.jpg Graphic file (type jpg)
+<use Figures/./expliner2.jpg>
+Package pdftex.def Info: Figures/./expliner2.jpg  used on input line 127.
+(pdftex.def)             Requested size: 136.57462pt x 115.62201pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 118--135
+[][] []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `debenest2008expliner' on page 11 undefined on input line 138.
+
+
+LaTeX Warning: Citation `rangel2009sistema' on page 11 undefined on input line 140.
+
+
+LaTeX Warning: Reference `img:rangel2' on page 11 undefined on input line 140.
+
+
+LaTeX Warning: Reference `img:rangel2' on page 11 undefined on input line 140.
+
+[11 <./Figures/./linescout1.jpg> <./Figures/./linescout2.jpg> <./Figures/./katrasnik.png>]
+<Figures/./rangel.png, id=150, 393.1488pt x 142.131pt>
+File: Figures/./rangel.png Graphic file (type png)
+<use Figures/./rangel.png>
+Package pdftex.def Info: Figures/./rangel.png  used on input line 147.
+(pdftex.def)             Requested size: 273.14923pt x 98.75363pt.
+<Figures/./rangel2.png, id=151, 191.2746pt x 142.131pt>
+File: Figures/./rangel2.png Graphic file (type png)
+<use Figures/./rangel2.png>
+Package pdftex.def Info: Figures/./rangel2.png  used on input line 157.
+(pdftex.def)             Requested size: 273.14923pt x 202.99419pt.
+
+
+LaTeX Warning: Citation `li2010autonomous' on page 12 undefined on input line 163.
+
+
+LaTeX Warning: Reference `img:li' on page 12 undefined on input line 163.
+
+[12 <./Figures/./expliner.png> <./Figures/./expliner2.jpg> <./Figures/./rangel.png> <./Figures/./rangel2.png>]
+<Figures/./li.png, id=162, 204.2832pt x 169.5936pt>
+File: Figures/./li.png Graphic file (type png)
+<use Figures/./li.png>
+Package pdftex.def Info: Figures/./li.png  used on input line 170.
+(pdftex.def)             Requested size: 273.14923pt x 226.76512pt.
+
+
+LaTeX Warning: Citation `wang2010design' on page 13 undefined on input line 175.
+
+
+LaTeX Warning: Reference `img:wang' on page 13 undefined on input line 175.
+
+<Figures/./wang.png, id=163, 200.4288pt x 169.5936pt>
+File: Figures/./wang.png Graphic file (type png)
+<use Figures/./wang.png>
+Package pdftex.def Info: Figures/./wang.png  used on input line 182.
+(pdftex.def)             Requested size: 273.14923pt x 231.15143pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `wang2010design' on page 13 undefined on input line 187.
+
+
+LaTeX Warning: Citation `buhringer2010cable' on page 13 undefined on input line 188.
+
+[13 <./Figures/./li.png>]
+<Figures/./buehringer.png, id=170, 463.4916pt x 113.223pt>
+File: Figures/./buehringer.png Graphic file (type png)
+<use Figures/./buehringer.png>
+Package pdftex.def Info: Figures/./buehringer.png  used on input line 195.
+(pdftex.def)             Requested size: 273.14923pt x 66.72842pt.
+
+
+LaTeX Warning: Citation `goncalves2010graphical' on page 14 undefined on input line 200.
+
+
+LaTeX Warning: Citation `gonccalves2013review' on page 14 undefined on input line 200.
+
+
+LaTeX Warning: Citation `gonccalves2006kinematics' on page 14 undefined on input line 200.
+
+<Figures/./goncalves.png, id=171, 227.4096pt x 141.1674pt>
+File: Figures/./goncalves.png Graphic file (type png)
+<use Figures/./goncalves.png>
+Package pdftex.def Info: Figures/./goncalves.png  used on input line 207.
+(pdftex.def)             Requested size: 273.14923pt x 169.56155pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `img:goncalves' on page 14 undefined on input line 212.
+
+
+LaTeX Warning: Citation `gonccalves2006kinematics' on page 14 undefined on input line 212.
+
+
+LaTeX Warning: Citation `goncalves2010graphical' on page 14 undefined on input line 212.
+
+
+LaTeX Warning: Citation `lee2011development' on page 14 undefined on input line 213.
+
+[14 <./Figures/./wang.png> <./Figures/./buehringer.png>]
+<Figures/./lee.png, id=181, 202.356pt x 141.1674pt>
+File: Figures/./lee.png Graphic file (type png)
+<use Figures/./lee.png>
+Package pdftex.def Info: Figures/./lee.png  used on input line 220.
+(pdftex.def)             Requested size: 273.14923pt x 190.56343pt.
+
+
+LaTeX Warning: Reference `img:lee' on page 15 undefined on input line 225.
+
+
+LaTeX Warning: Citation `gonccalves2013review' on page 15 undefined on input line 225.
+
+
+LaTeX Warning: Citation `phillips2012autonomous' on page 15 undefined on input line 227.
+
+[15 <./Figures/./goncalves.png> <./Figures/./lee.png>]
+<Figures/./phillip.png, id=190, 205.7286pt x 127.1952pt>
+File: Figures/./phillip.png Graphic file (type png)
+<use Figures/./phillip.png>
+Package pdftex.def Info: Figures/./phillip.png  used on input line 234.
+(pdftex.def)             Requested size: 273.14923pt x 168.88606pt.
+
+
+LaTeX Warning: Citation `katrasnik2010climbing' on page 16 undefined on input line 239.
+
+
+LaTeX Warning: Citation `gonccalves2013review' on page 16 undefined on input line 239.
+
+
+LaTeX Warning: Reference `img:goncalvesecarvalho' on page 16 undefined on input line 239.
+
+<Figures/./goncalvesecarvalho.png, id=191, 273.6624pt x 127.1952pt>
+File: Figures/./goncalvesecarvalho.png Graphic file (type png)
+<use Figures/./goncalvesecarvalho.png>
+Package pdftex.def Info: Figures/./goncalvesecarvalho.png  used on input line 246.
+(pdftex.def)             Requested size: 273.14923pt x 126.9581pt.
+
+LaTeX Warning: Citation `gonccalves2013review' on page 16 undefined on input line 251.
+
+
+LaTeX Warning: Citation `iirobo' on page 16 undefined on input line 255.
+
+
+LaTeX Warning: Citation `mourao2015robolinhas' on page 16 undefined on input line 255.
+
+[16 <./Figures/./phillip.png> <./Figures/./goncalvesecarvalho.png>]
+<Figures/./piro.png, id=200, 270.7716pt x 127.1952pt>
+File: Figures/./piro.png Graphic file (type png)
+<use Figures/./piro.png>
+Package pdftex.def Info: Figures/./piro.png  used on input line 262.
+(pdftex.def)             Requested size: 273.14923pt x 128.32057pt.
+
+
+LaTeX Warning: Citation `iirobo' on page 17 undefined on input line 278.
+
+
+LaTeX Warning: Citation `mourao2015robolinhas' on page 17 undefined on input line 278.
+
+
+LaTeX Warning: Reference `img:dubois' on page 17 undefined on input line 278.
+
+
+LaTeX Warning: Reference `img:piro2' on page 17 undefined on input line 278.
+
+[17 <./Figures/./piro.png>]
+<Figures/./dubois.png, id=207, 171.5208pt x 84.315pt>
+File: Figures/./dubois.png Graphic file (type png)
+<use Figures/./dubois.png>
+Package pdftex.def Info: Figures/./dubois.png  used on input line 285.
+(pdftex.def)             Requested size: 273.14923pt x 134.28789pt.
+<Figures/./piro2.png, id=208, 255.8358pt x 156.585pt>
+File: Figures/./piro2.png Graphic file (type png)
+<use Figures/./piro2.png>
+Package pdftex.def Info: Figures/./piro2.png  used on input line 295.
+(pdftex.def)             Requested size: 273.14923pt x 167.19545pt.
+
+
+LaTeX Warning: Citation `mourao2015robolinhas' on page 18 undefined on input line 301.
+
+
+LaTeX Warning: Citation `iirobo' on page 18 undefined on input line 302.
+
+
+LaTeX Warning: Citation `montambault2007design' on page 18 undefined on input line 302.
+
+[18 <./Figures/./dubois.png> <./Figures/./piro2.png>]
+
+LaTeX Warning: Citation `mourao2015robolinhas' on page 19 undefined on input line 308.
+
+
+LaTeX Warning: Reference `appendix:meca' on page 19 undefined on input line 312.
+
+
+LaTeX Warning: Citation `mourao2015robolinhas' on page 19 undefined on input line 312.
+
+
+LaTeX Warning: Citation `mourao2015robolinhas' on page 19 undefined on input line 312.
+
+
+LaTeX Warning: Reference `img:elir' on page 19 undefined on input line 312.
+
+<Figures/./elir.png, id=217, 306.9066pt x 217.7736pt>
+File: Figures/./elir.png Graphic file (type png)
+<use Figures/./elir.png>
+Package pdftex.def Info: Figures/./elir.png  used on input line 319.
+(pdftex.def)             Requested size: 318.66948pt x 226.14024pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19]
+
+LaTeX Warning: Citation `sartori2018' on page 20 undefined on input line 326.
+
+
+LaTeX Warning: Reference `img:vistaselir' on page 20 undefined on input line 326.
+
+<Figures/./vistaselir.png, id=223, 449.5194pt x 212.4738pt>
+File: Figures/./vistaselir.png Graphic file (type png)
+<use Figures/./vistaselir.png>
+Package pdftex.def Info: Figures/./vistaselir.png  used on input line 333.
+(pdftex.def)             Requested size: 318.66948pt x 150.6305pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `img:vistaselir' on page 20 undefined on input line 338.
+
+
+LaTeX Warning: Reference `img:esquemaelir' on page 20 undefined on input line 338.
+
+<Figures/./esquemaelir.png, id=224, 396.0396pt x 212.4738pt>
+File: Figures/./esquemaelir.png Graphic file (type png)
+<use Figures/./esquemaelir.png>
+Package pdftex.def Info: Figures/./esquemaelir.png  used on input line 345.
+(pdftex.def)             Requested size: 318.66948pt x 170.9681pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `tab:parametrodhelir' on page 20 undefined on input line 350.
+
+
+LaTeX Warning: Reference `img:esquemaelirdim' on page 20 undefined on input line 350.
+
+[20 <./Figures/./elir.png>]
+<Figures/./esquemaelirdim.png, id=232, 460.6008pt x 255.8358pt>
+File: Figures/./esquemaelirdim.png Graphic file (type png)
+<use Figures/./esquemaelirdim.png>
+Package pdftex.def Info: Figures/./esquemaelirdim.png  used on input line 375.
+(pdftex.def)             Requested size: 409.71692pt x 227.57213pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `eq:mathomog' on page 21 undefined on input line 380.
+
+
+LaTeX Warning: Reference `eq:mathomogbase' on page 21 undefined on input line 396.
+
+[21 <./Figures/./vistaselir.png> <./Figures/./esquemaelir.png>]
+
+LaTeX Warning: Citation `sartori2018' on page 22 undefined on input line 413.
+
+
+LaTeX Warning: Reference `img:esquemaelirdim' on page 22 undefined on input line 413.
+
+
+LaTeX Warning: Reference `eq:mathomognum' on page 22 undefined on input line 413.
+
+
+LaTeX Warning: Reference `Append:diagmec' on page 22 undefined on input line 432.
+
+
+LaTeX Warning: Citation `sartori2018' on page 22 undefined on input line 432.
+
+[22 <./Figures/./esquemaelirdim.png>]
+
+LaTeX Warning: Reference `img:elirmodesq' on page 23 undefined on input line 434.
+
+<Figures/./modeloesquematico2.png, id=256, 584.9052pt x 406.1574pt>
+File: Figures/./modeloesquematico2.png Graphic file (type png)
+<use Figures/./modeloesquematico2.png>
+Package pdftex.def Info: Figures/./modeloesquematico2.png  used on input line 441.
+(pdftex.def)             Requested size: 455.24411pt x 316.13217pt.
+[23 <./Figures/./modeloesquematico2.png>]
+
+LaTeX Warning: Reference `img:elirmodesq' on page 24 undefined on input line 466.
+
+
+LaTeX Warning: Reference `appendix:elet' on page 24 undefined on input line 466.
+
+
+LaTeX Warning: Reference `img:elirarq' on page 24 undefined on input line 484.
+
+[24]
+<Figures/./arquitetura2.png, id=268, 596.9502pt x 377.2494pt>
+File: Figures/./arquitetura2.png Graphic file (type png)
+<use Figures/./arquitetura2.png>
+Package pdftex.def Info: Figures/./arquitetura2.png  used on input line 491.
+(pdftex.def)             Requested size: 455.24411pt x 287.69685pt.
+ [25 <./Figures/./arquitetura2.png>]
+
+LaTeX Warning: Reference `arqsoft' on page 26 undefined on input line 514.
+
+
+./Chapters/ChapterTwo.tex:516: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.516 \begin{figure}[H]
+                       
+Option `H' ignored and `p' used.
+
+<Figures/ArquiteturadeSoftware.png, id=277, 593.21625pt x 395.4775pt>
+File: Figures/ArquiteturadeSoftware.png Graphic file (type png)
+<use Figures/ArquiteturadeSoftware.png>
+Package pdftex.def Info: Figures/ArquiteturadeSoftware.png  used on input line 518.
+(pdftex.def)             Requested size: 426.79134pt x 284.5384pt.
+
+Overfull \hbox (10.54208pt too wide) in paragraph at lines 527--528
+\OT1/cmr/m/it/12 Ac-qui-si-tion \OT1/cmr/m/n/12 e \OT1/cmr/m/it/12 So-nar Data Ac-qui-si-tion \OT1/cmr/m/n/12 s~ao res-pons^^Saveis por ad-qui-rir as in-forma^^Xc~oes anal^^Sogicas
+ []
+
+
+LaTeX Warning: Reference `Append:diagele' on page 26 undefined on input line 534.
+
+[26]
+
+LaTeX Warning: Reference `UI' on page 27 undefined on input line 546.
+
+
+LaTeX Warning: Reference `Append:wireframes' on page 27 undefined on input line 546.
+
+
+LaTeX Warning: Reference `UI2' on page 27 undefined on input line 546.
+
+
+LaTeX Warning: Reference `Append:wireframes' on page 27 undefined on input line 546.
+
+) [27] [28 <./Figures/ArquiteturadeSoftware.png>]
+\openout2 = `Chapters/ChapterThree.aux'.
+
+ (./Chapters/ChapterThree.tex
+Cap\'{\i }tulo 3.
+
+LaTeX Warning: Reference `fig:list_mat' on page 29 undefined on input line 33.
+
+[29
+
+
+
+]
+
+./Chapters/ChapterThree.tex:35: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \begin{figure}[H]
+                      
+Option `H' ignored and `p' used.
+
+<Figures/lista_materiais.png, id=305, 839.135pt x 278.03876pt>
+File: Figures/lista_materiais.png Graphic file (type png)
+<use Figures/lista_materiais.png>
+Package pdftex.def Info: Figures/lista_materiais.png  used on input line 37.
+(pdftex.def)             Requested size: 455.24408pt x 150.8387pt.
+
+LaTeX Warning: Reference `Prateleira' on page 30 undefined on input line 58.
+
+
+LaTeX Warning: Reference `Prateleiracsensor' on page 30 undefined on input line 58.
+
+
+./Chapters/ChapterThree.tex:60: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60  \begin{figure}[H]
+                       
+Option `H' ignored and `p' used.
+
+<Figures/prateleira.png, id=306, 961.5925pt x 512.91624pt>
+File: Figures/prateleira.png Graphic file (type png)
+<use Figures/prateleira.png>
+Package pdftex.def Info: Figures/prateleira.png  used on input line 62.
+(pdftex.def)             Requested size: 398.33858pt x 212.4806pt.
+
+./Chapters/ChapterThree.tex:66: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66   \begin{figure}[H]
+                        
+Option `H' ignored and `p' used.
+
+<Figures/prateleiracsensores.png, id=307, 1134.2375pt x 570.13pt>
+File: Figures/prateleiracsensores.png Graphic file (type png)
+<use Figures/prateleiracsensores.png>
+Package pdftex.def Info: Figures/prateleiracsensores.png  used on input line 68.
+(pdftex.def)             Requested size: 455.24408pt x 228.83092pt.
+
+LaTeX Warning: Reference `pecaaliment' on page 30 undefined on input line 73.
+
+
+./Chapters/ChapterThree.tex:75: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \begin{figure}[H]
+                      
+Option `H' ignored and `p' used.
+
+<Figures/pecadebaixo.png, id=308, 1048.91875pt x 655.44875pt>
+File: Figures/pecadebaixo.png Graphic file (type png)
+<use Figures/pecadebaixo.png>
+Package pdftex.def Info: Figures/pecadebaixo.png  used on input line 77.
+(pdftex.def)             Requested size: 398.33858pt x 248.91309pt.
+[30] [31 <./Figures/lista_materiais.png> <./Figures/prateleira.png> <./Figures/prateleiracsensores.png>]
+
+LaTeX Warning: Reference `Append:diagele' on page 32 undefined on input line 97.
+
+
+Overfull \hbox (0.94952pt too wide) in paragraph at lines 97--98
+\OT1/cmr/m/n/12 O di-a-grama el^^Setrico do sis-tema est^^Sa dis-pon^^S^^Pvel no ap^endice []. Neste di-a-grama encontram-
+ []
+
+
+LaTeX Warning: Reference `Append:diagele' on page 32 undefined on input line 106.
+
+[32]
+
+LaTeX Warning: Reference `chapter:introducao' on page 33 undefined on input line 112.
+
+
+LaTeX Warning: Reference `img:elirfluxo' on page 33 undefined on input line 129.
+
+<Figures/flxinfofunctionalities.png, id=335, 6414.96625pt x 4600.18625pt>
+File: Figures/flxinfofunctionalities.png Graphic file (type png)
+<use Figures/flxinfofunctionalities.png>
+Package pdftex.def Info: Figures/flxinfofunctionalities.png  used on input line 136.
+(pdftex.def)             Requested size: 455.24411pt x 326.39792pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33] [34]
+
+LaTeX Warning: Reference `FuncAquisition' on page 35 undefined on input line 177.
+
+<Figures/Fluxograma_Aquisition.jpg, id=361, 1941.2525pt x 1106.1325pt>
+File: Figures/Fluxograma_Aquisition.jpg Graphic file (type jpg)
+<use Figures/Fluxograma_Aquisition.jpg>
+Package pdftex.def Info: Figures/Fluxograma_Aquisition.jpg  used on input line 181.
+(pdftex.def)             Requested size: 398.34442pt x 199.16277pt.
+<Figures/criticidade.jpg, id=362, 482.80376pt x 201.75375pt>
+File: Figures/criticidade.jpg Graphic file (type jpg)
+<use Figures/criticidade.jpg>
+Package pdftex.def Info: Figures/criticidade.jpg  used on input line 196.
+(pdftex.def)             Requested size: 398.35486pt x 199.17038pt.
+[35]
+Overfull \hbox (1.54178pt too wide) in paragraph at lines 207--208
+[]\OT1/cmr/m/n/12 Thermal Image Data Mes-sage: Men-sa-gem ex-clu-siva para os da-dos da c^amera t^^Sermica. 
+ []
+
+[36]
+
+LaTeX Warning: Reference `fluxlocal' on page 37 undefined on input line 230.
+
+<Figures/Fluxograma_Localization.png, id=377, 910.40125pt x 131.49126pt>
+File: Figures/Fluxograma_Localization.png Graphic file (type png)
+<use Figures/Fluxograma_Localization.png>
+Package pdftex.def Info: Figures/Fluxograma_Localization.png  used on input line 234.
+(pdftex.def)             Requested size: 455.24408pt x 65.75348pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37] [38]
+<Figures/Fluxograma_Detection.png, id=394, 1081.03876pt x 442.65375pt>
+File: Figures/Fluxograma_Detection.png Graphic file (type png)
+<use Figures/Fluxograma_Detection.png>
+Package pdftex.def Info: Figures/Fluxograma_Detection.png  used on input line 271.
+(pdftex.def)             Requested size: 455.24408pt x 186.40636pt.
+ [39]) [40] [41 <./Figures/pecadebaixo.png> <./Figures/flxinfofunctionalities.png>] [42 <./Figures/Fluxograma_Aquisition.jpg> <./Figures/criticidade.jpg> <./Figures/Fluxograma_Localization.png>] [43 <./Figures/Fluxograma_Detection.png>]
+\openout2 = `Chapters/ChapterFour.aux'.
+
+ (./Chapters/ChapterFour.tex
+Cap\'{\i }tulo 4.
+
+LaTeX Warning: Reference `Append:diagele' on page 44 undefined on input line 6.
+
+
+LaTeX Warning: Citation `groupgets' on page 44 undefined on input line 14.
+
+<Figures/lepton_flir.jpg, id=426, 144.54pt x 144.54pt>
+File: Figures/lepton_flir.jpg Graphic file (type jpg)
+<use Figures/lepton_flir.jpg>
+Package pdftex.def Info: Figures/lepton_flir.jpg  used on input line 18.
+(pdftex.def)             Requested size: 170.71652pt x 170.72551pt.
+<Figures/frame_msg.png, id=427, 492.84125pt x 74.2775pt>
+File: Figures/frame_msg.png Graphic file (type png)
+<use Figures/frame_msg.png>
+Package pdftex.def Info: Figures/frame_msg.png  used on input line 27.
+(pdftex.def)             Requested size: 398.33858pt x 60.03749pt.
+
+LaTeX Warning: Reference `fig:frame_esque' on page 44 undefined on input line 32.
+
+[44
+
+
+
+ <./Figures/lepton_flir.jpg>]
+<Figures/frame_esque.png, id=437, 402.50375pt x 319.1925pt>
+File: Figures/frame_esque.png Graphic file (type png)
+<use Figures/frame_esque.png>
+Package pdftex.def Info: Figures/frame_esque.png  used on input line 38.
+(pdftex.def)             Requested size: 284.52756pt x 225.63467pt.
+ [45 <./Figures/frame_msg.png> <./Figures/frame_esque.png>]
+<Figures/ez1.jpg, id=448, 879.285pt x 793.46437pt>
+File: Figures/ez1.jpg Graphic file (type jpg)
+<use Figures/ez1.jpg>
+Package pdftex.def Info: Figures/ez1.jpg  used on input line 54.
+(pdftex.def)             Requested size: 227.62204pt x 205.39993pt.
+<Figures/proximity_sensor.jpg, id=449, 803.0pt x 497.86pt>
+File: Figures/proximity_sensor.jpg Graphic file (type jpg)
+<use Figures/proximity_sensor.jpg>
+Package pdftex.def Info: Figures/proximity_sensor.jpg  used on input line 70.
+(pdftex.def)             Requested size: 227.62204pt x 141.1243pt.
+ [46 <./Figures/ez1.jpg>]
+<Figures/batt_protocol.png, id=456, 1073.00874pt x 163.61125pt>
+File: Figures/batt_protocol.png Graphic file (type png)
+<use Figures/batt_protocol.png>
+Package pdftex.def Info: Figures/batt_protocol.png  used on input line 85.
+(pdftex.def)             Requested size: 455.24408pt x 69.41527pt.
+ [47 <./Figures/proximity_sensor.jpg> <./Figures/batt_protocol.png>]
+<Figures/lm35.jpg, id=465, 652.4375pt x 652.4375pt>
+File: Figures/lm35.jpg Graphic file (type jpg)
+<use Figures/lm35.jpg>
+Package pdftex.def Info: Figures/lm35.jpg  used on input line 102.
+(pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
+<Figures/gps.jpg, id=466, 622.325pt x 359.3425pt>
+File: Figures/gps.jpg Graphic file (type jpg)
+<use Figures/gps.jpg>
+Package pdftex.def Info: Figures/gps.jpg  used on input line 117.
+(pdftex.def)             Requested size: 170.71652pt x 98.57549pt.
+ [48 <./Figures/lm35.jpg>]
+<Figures/imu.jpg, id=475, 642.4pt x 642.4pt>
+File: Figures/imu.jpg Graphic file (type jpg)
+<use Figures/imu.jpg>
+Package pdftex.def Info: Figures/imu.jpg  used on input line 132.
+(pdftex.def)             Requested size: 227.62204pt x 227.6174pt.
+ [49 <./Figures/gps.jpg> <./Figures/imu.jpg>]
+<Figures/batt_protocol_2.png, id=483, 666.49pt x 93.34875pt>
+File: Figures/batt_protocol_2.png Graphic file (type png)
+<use Figures/batt_protocol_2.png>
+Package pdftex.def Info: Figures/batt_protocol_2.png  used on input line 162.
+(pdftex.def)             Requested size: 455.24408pt x 63.7626pt.
+ [50]
+<Figures/image_proc.png, id=492, 584.1825pt x 463.7325pt>
+File: Figures/image_proc.png Graphic file (type png)
+<use Figures/image_proc.png>
+Package pdftex.def Info: Figures/image_proc.png  used on input line 190.
+(pdftex.def)             Requested size: 398.33858pt x 316.21841pt.
+ [51 <./Figures/batt_protocol_2.png>]
+
+LaTeX Warning: Citation `ethz' on page 52 undefined on input line 196.
+
+[52 <./Figures/image_proc.png>]) [53]
+\openout2 = `Chapters/ChapterConsideracoesfinais.aux'.
+
+ (./Chapters/ChapterConsideracoesfinais.tex
+Cap\'{\i }tulo 5.
+) [54
+
+
+
+]
+\openout2 = `Appendices/qfd.aux'.
+
+ (./Appendices/qfd.tex
+Ap\^endice A.
+) [55
+
+
+
+]
+\openout2 = `Appendices/diagmec.aux'.
+
+ (./Appendices/diagmec.tex
+Ap\^endice B.
+<Appendices/desenhosmeca.pdf, id=526, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf  used on input line 6.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf  used on input line 6.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf  used on input line 6.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+<Appendices/desenhosmeca.pdf, id=530, page=1, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.5064pt x 845.0448pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+[56
+
+
+
+]
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [57]
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 1>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page1 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [58 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=559, page=2, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 2>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page2 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 2>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page2 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 2>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page2 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [59 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=566, page=3, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 3>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page3 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 3>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page3 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 3>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page3 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [60 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=573, page=4, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 4>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page4 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 4>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page4 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 4>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page4 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [61 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=580, page=5, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 5>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page5 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 5>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page5 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 5>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page5 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [62 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=588, page=6, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 6>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page6 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 6>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page6 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 6>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page6 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [63 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=595, page=7, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 7>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page7 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 7>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page7 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 7>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page7 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [64 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=602, page=8, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 8>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page8 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 8>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page8 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 8>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page8 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [65 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=609, page=9, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 9>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page9 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 9>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page9 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 9>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page9 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [66 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=616, page=10, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 10>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page10 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 10>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page10 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 10>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page10 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [67 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=623, page=11, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 11>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page11 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 11>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page11 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 11>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page11 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [68 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=632, page=12, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 12>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page12 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 12>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page12 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 12>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page12 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [69 <./Appendices/desenhosmeca.pdf>]
+<Appendices/desenhosmeca.pdf, id=639, page=13, 597.50786pt x 845.04686pt>
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 13>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page13 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 13>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page13 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+File: Appendices/desenhosmeca.pdf Graphic file (type pdf)
+<use Appendices/desenhosmeca.pdf, page 13>
+Package pdftex.def Info: Appendices/desenhosmeca.pdf , page13 used on input line 6.
+(pdftex.def)             Requested size: 597.53374pt x 845.08348pt.
+ [70 <./Appendices/desenhosmeca.pdf>])
+\openout2 = `Appendices/diagele.aux'.
+
+ (./Appendices/diagele.tex
+Ap\^endice C.
+) [71
+
+
+
+]
+\openout2 = `Appendices/wireframes.aux'.
+
+ (./Appendices/wireframes.tex
+Ap\^endice D.
+) [72
+
+
+
+]
+\openout2 = `Appendices/logbook.aux'.
+
+ (./Appendices/logbook.tex
+Ap\^endice E.
+) [73
+
+
+
+]
+No file theopraxtcc.bbl.
+\openout2 = `Others/ultimafolha.aux'.
+
+(./Others/ultimafolha.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--31
+
+ []
+
+) [74
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+ (./theopraxtcc.aux (./Others/FolhaRosto.aux) (./Others/dedicatoria.aux) (./Others/agradecimentos.aux) (./Others/resumo.aux) (./Others/abstract.aux) (./Others/abbreviation.aux) (./Others/simbolos.aux) (./Chapters/ChapterOne.aux) (./Chapters/ChapterTwo.aux) (./Chapters/ChapterThree.aux) (./Chapters/ChapterFour.aux) (./Chapters/ChapterConsideracoesfinais.aux) (./Appendices/qfd.aux) (./Appendices/diagmec.aux) (./Appendices/diagele.aux) (./Appendices/wireframes.aux) (./Appendices/logbook.aux) (./Others/ultimafolha.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
+
+
+Package rerunfilecheck Warning: File `theopraxtcc.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `theopraxtcc.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  FC26B6C31E2AE60165F2E34951817F2D;6011.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
+ ) 
+Here is how much of TeX's memory you used:
+ 11570 strings out of 492646
+ 174994 string characters out of 6129563
+ 280027 words of memory out of 5000000
+ 14857 multiletter control sequences out of 15000+600000
+ 15398 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,18n,48p,1486b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on theopraxtcc.pdf (85 pages, 9711779 bytes).
+PDF statistics:
+ 774 PDF objects out of 1000 (max. 8388607)
+ 548 compressed objects within 6 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+

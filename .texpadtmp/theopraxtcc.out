@@ -19,9 +19,11 @@
 \BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Especifica\347\343o t\351cnica}{section.2.2}% 19
 \BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Arquitetura geral do sistema}{section.2.2}% 20
 \BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Arquitetura de software}{section.2.2}% 21
+<<<<<<< HEAD
 \BOOKMARK [1][]{section.2.3}{2.3 Desdobramento da fun\347\343o qualidade}{chapter.2}% 22
 \BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Requisitos t\351cnicos}{section.2.3}% 23
 \BOOKMARK [0][]{chapter.3}{3 Materiais e M\351todos}{}% 24
+<<<<<<< HEAD
 \BOOKMARK [1][]{section.3.1}{3.1 Estrutura anal\355tica do prot\363tipo}{chapter.3}% 25
 \BOOKMARK [1][]{section.3.2}{3.2 Lista de componentes}{chapter.3}% 26
 \BOOKMARK [1][]{section.3.3}{3.3 Diagramas mec\342nicos}{chapter.3}% 27
@@ -63,3 +65,122 @@
 \BOOKMARK [0][]{appendix.D}{D Wireframes}{}% 63
 \BOOKMARK [0][]{appendix.E}{E Logbook}{}% 64
 \BOOKMARK [0][]{appendix.E}{Refer\352ncias}{}% 65
+=======
+\BOOKMARK [1][]{section.3.1}{3.1 Especifica\347\343o dos componentes}{chapter.3}% 25
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Estrutura anal\355tica do prot\363tipo}{section.3.1}% 26
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Lista de componentes}{section.3.1}% 27
+\BOOKMARK [1][]{section.3.2}{3.2 Diagramas mec\342nicos}{chapter.3}% 28
+\BOOKMARK [1][]{section.3.3}{3.3 Modelo esquem\341tico de alimenta\347\343o e comunica\347\343o}{chapter.3}% 29
+\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Diagramas el\351tricos}{section.3.3}% 30
+\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Esquemas eletr\364nicos}{section.3.3}% 31
+\BOOKMARK [1][]{section.3.4}{3.4 Especifica\347\343o das funcionalidades}{chapter.3}% 32
+\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Fluxo das informa\347\365es}{section.3.4}% 33
+\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Motion Planning}{section.3.4}% 34
+\BOOKMARK [3][]{subsubsection.3.4.2.1}{3.4.2.1 Defini\347\343o da funcionalidade}{subsection.3.4.2}% 35
+\BOOKMARK [3][]{subsubsection.3.4.2.2}{3.4.2.2 Depend\352ncias}{subsection.3.4.2}% 36
+\BOOKMARK [3][]{subsubsection.3.4.2.3}{3.4.2.3 Premissas Necess\341rias}{subsection.3.4.2}% 37
+\BOOKMARK [3][]{subsubsection.3.4.2.4}{3.4.2.4 Descri\347\343o da Funcionalidade}{subsection.3.4.2}% 38
+\BOOKMARK [3][]{subsubsection.3.4.2.5}{3.4.2.5 Sa\355das}{subsection.3.4.2}% 39
+\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Actuation }{section.3.4}% 40
+\BOOKMARK [3][]{subsubsection.3.4.3.1}{3.4.3.1 Defini\347\343o da funcionalidade}{subsection.3.4.3}% 41
+\BOOKMARK [3][]{subsubsection.3.4.3.2}{3.4.3.2 Depend\352ncias}{subsection.3.4.3}% 42
+\BOOKMARK [3][]{subsubsection.3.4.3.3}{3.4.3.3 Premissas Necess\341rias}{subsection.3.4.3}% 43
+\BOOKMARK [3][]{subsubsection.3.4.3.4}{3.4.3.4 Descri\347\343o da Funcionalidade}{subsection.3.4.3}% 44
+\BOOKMARK [3][]{subsubsection.3.4.3.5}{3.4.3.5 Sa\355das}{subsection.3.4.3}% 45
+\BOOKMARK [2][]{subsection.3.4.4}{3.4.4 Power Management}{section.3.4}% 46
+\BOOKMARK [3][]{subsubsection.3.4.4.1}{3.4.4.1 Defini\347\343o da funcionalidade}{subsection.3.4.4}% 47
+\BOOKMARK [3][]{subsubsection.3.4.4.2}{3.4.4.2 Depend\352ncias}{subsection.3.4.4}% 48
+\BOOKMARK [3][]{subsubsection.3.4.4.3}{3.4.4.3 Premissas Necess\341rias}{subsection.3.4.4}% 49
+\BOOKMARK [3][]{subsubsection.3.4.4.4}{3.4.4.4 Descri\347\343o da Funcionalidade}{subsection.3.4.4}% 50
+\BOOKMARK [3][]{subsubsection.3.4.4.5}{3.4.4.5 Sa\355das}{subsection.3.4.4}% 51
+\BOOKMARK [2][]{subsection.3.4.5}{3.4.5 System Integrity Check}{section.3.4}% 52
+\BOOKMARK [3][]{subsubsection.3.4.5.1}{3.4.5.1 Defini\347\343o da funcionalidade}{subsection.3.4.5}% 53
+\BOOKMARK [3][]{subsubsection.3.4.5.2}{3.4.5.2 Depend\352ncias}{subsection.3.4.5}% 54
+\BOOKMARK [3][]{subsubsection.3.4.5.3}{3.4.5.3 Premissas Necess\341rias}{subsection.3.4.5}% 55
+\BOOKMARK [3][]{subsubsection.3.4.5.4}{3.4.5.4 Descri\347\343o da Funcionalidade}{subsection.3.4.5}% 56
+\BOOKMARK [3][]{subsubsection.3.4.5.5}{3.4.5.5 Sa\355das}{subsection.3.4.5}% 57
+\BOOKMARK [1][]{section.3.5}{3.5 Interface do Usu\341rio}{chapter.3}% 58
+\BOOKMARK [1][]{section.3.6}{3.6 Simula\347\343o do sistema}{chapter.3}% 59
+\BOOKMARK [0][]{chapter.4}{4 Resultados}{}% 60
+\BOOKMARK [1][]{section.4.1}{4.1 Testes unit\341rios}{chapter.4}% 61
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 C\342mera T\351rmica}{section.4.1}% 62
+\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Sonar EZ-1}{section.4.1}% 63
+\BOOKMARK [2][]{subsection.4.1.3}{4.1.3 Sensor de Proximidade}{section.4.1}% 64
+\BOOKMARK [2][]{subsection.4.1.4}{4.1.4 Smart Charger}{section.4.1}% 65
+\BOOKMARK [2][]{subsection.4.1.5}{4.1.5 Sensor de Temperatura}{section.4.1}% 66
+\BOOKMARK [2][]{subsection.4.1.6}{4.1.6 GPS}{section.4.1}% 67
+\BOOKMARK [2][]{subsection.4.1.7}{4.1.7 IMU}{section.4.1}% 68
+\BOOKMARK [1][]{section.4.2}{4.2 Integra\347\343o no ROS}{chapter.4}% 69
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Phidgets}{section.4.2}% 70
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Smart Charger}{section.4.2}% 71
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 C\342mera T\351rmica}{section.4.2}% 72
+\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 GPS}{section.4.2}% 73
+\BOOKMARK [2][]{subsection.4.2.5}{4.2.5 IMU}{section.4.2}% 74
+\BOOKMARK [1][]{section.4.3}{4.3 Testes integrados}{chapter.4}% 75
+\BOOKMARK [1][]{section.4.4}{4.4 Avalia\347\343o da prontid\343o tecnol\363gica}{chapter.4}% 76
+\BOOKMARK [1][]{section.4.5}{4.5 Trabalhos futuros}{chapter.4}% 77
+\BOOKMARK [0][]{chapter.5}{5 Conclus\343o}{}% 78
+\BOOKMARK [1][]{section.5.1}{5.1 Considera\347\365es finais}{chapter.5}% 79
+\BOOKMARK [0][]{appendix.A}{A QFD}{}% 80
+\BOOKMARK [0][]{appendix.B}{B Diagramas mec\342nicos}{}% 81
+\BOOKMARK [0][]{appendix.C}{C Diagramas eletro-eletr\364nicos}{}% 82
+\BOOKMARK [0][]{appendix.D}{D Wireframes}{}% 83
+\BOOKMARK [0][]{appendix.E}{E Logbook}{}% 84
+\BOOKMARK [0][]{appendix.E}{Refer\352ncias}{}% 85
+=======
+\BOOKMARK [3][]{subsubsection.2.2.3.1}{2.2.3.1 Driver Layer}{subsection.2.2.3}% 22
+\BOOKMARK [3][]{subsubsection.2.2.3.2}{2.2.3.2 Business Layer}{subsection.2.2.3}% 23
+\BOOKMARK [3][]{subsubsection.2.2.3.3}{2.2.3.3 User Interface Layer}{subsection.2.2.3}% 24
+\BOOKMARK [1][]{section.2.3}{2.3 Desdobramento da fun\347\343o qualidade}{chapter.2}% 25
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Requisitos t\351cnicos}{section.2.3}% 26
+\BOOKMARK [0][]{chapter.3}{3 Materiais e M\351todos}{}% 27
+\BOOKMARK [1][]{section.3.1}{3.1 Especifica\347\343o dos componentes}{chapter.3}% 28
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Estrutura anal\355tica do prot\363tipo}{section.3.1}% 29
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Lista de componentes}{section.3.1}% 30
+\BOOKMARK [1][]{section.3.2}{3.2 Diagramas mec\342nicos}{chapter.3}% 31
+\BOOKMARK [1][]{section.3.3}{3.3 Modelo esquem\341tico de alimenta\347\343o e comunica\347\343o}{chapter.3}% 32
+\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Diagramas el\351tricos}{section.3.3}% 33
+\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Esquemas eletr\364nicos}{section.3.3}% 34
+\BOOKMARK [1][]{section.3.4}{3.4 Especifica\347\343o das funcionalidades}{chapter.3}% 35
+\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Fluxo das informa\347\365es}{section.3.4}% 36
+\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Motion Planning}{section.3.4}% 37
+\BOOKMARK [3][]{subsubsection.3.4.2.1}{3.4.2.1 Defini\347\343o da funcionalidade}{subsection.3.4.2}% 38
+\BOOKMARK [3][]{subsubsection.3.4.2.2}{3.4.2.2 Depend\352ncias}{subsection.3.4.2}% 39
+\BOOKMARK [3][]{subsubsection.3.4.2.3}{3.4.2.3 Premissas Necess\341rias}{subsection.3.4.2}% 40
+\BOOKMARK [3][]{subsubsection.3.4.2.4}{3.4.2.4 Descri\347\343o da Funcionalidade}{subsection.3.4.2}% 41
+\BOOKMARK [3][]{subsubsection.3.4.2.5}{3.4.2.5 Sa\355das}{subsection.3.4.2}% 42
+\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Actuation }{section.3.4}% 43
+\BOOKMARK [3][]{subsubsection.3.4.3.1}{3.4.3.1 Defini\347\343o da funcionalidade}{subsection.3.4.3}% 44
+\BOOKMARK [3][]{subsubsection.3.4.3.2}{3.4.3.2 Depend\352ncias}{subsection.3.4.3}% 45
+\BOOKMARK [3][]{subsubsection.3.4.3.3}{3.4.3.3 Premissas Necess\341rias}{subsection.3.4.3}% 46
+\BOOKMARK [3][]{subsubsection.3.4.3.4}{3.4.3.4 Descri\347\343o da Funcionalidade}{subsection.3.4.3}% 47
+\BOOKMARK [3][]{subsubsection.3.4.3.5}{3.4.3.5 Sa\355das}{subsection.3.4.3}% 48
+\BOOKMARK [2][]{subsection.3.4.4}{3.4.4 Power Management}{section.3.4}% 49
+\BOOKMARK [3][]{subsubsection.3.4.4.1}{3.4.4.1 Defini\347\343o da funcionalidade}{subsection.3.4.4}% 50
+\BOOKMARK [3][]{subsubsection.3.4.4.2}{3.4.4.2 Depend\352ncias}{subsection.3.4.4}% 51
+\BOOKMARK [3][]{subsubsection.3.4.4.3}{3.4.4.3 Premissas Necess\341rias}{subsection.3.4.4}% 52
+\BOOKMARK [3][]{subsubsection.3.4.4.4}{3.4.4.4 Descri\347\343o da Funcionalidade}{subsection.3.4.4}% 53
+\BOOKMARK [3][]{subsubsection.3.4.4.5}{3.4.4.5 Sa\355das}{subsection.3.4.4}% 54
+\BOOKMARK [2][]{subsection.3.4.5}{3.4.5 System Integrity Check}{section.3.4}% 55
+\BOOKMARK [3][]{subsubsection.3.4.5.1}{3.4.5.1 Defini\347\343o da funcionalidade}{subsection.3.4.5}% 56
+\BOOKMARK [3][]{subsubsection.3.4.5.2}{3.4.5.2 Depend\352ncias}{subsection.3.4.5}% 57
+\BOOKMARK [3][]{subsubsection.3.4.5.3}{3.4.5.3 Premissas Necess\341rias}{subsection.3.4.5}% 58
+\BOOKMARK [3][]{subsubsection.3.4.5.4}{3.4.5.4 Descri\347\343o da Funcionalidade}{subsection.3.4.5}% 59
+\BOOKMARK [3][]{subsubsection.3.4.5.5}{3.4.5.5 Sa\355das}{subsection.3.4.5}% 60
+\BOOKMARK [1][]{section.3.5}{3.5 Interface do Usu\341rio}{chapter.3}% 61
+\BOOKMARK [1][]{section.3.6}{3.6 Simula\347\343o do sistema}{chapter.3}% 62
+\BOOKMARK [0][]{chapter.4}{4 Resultados}{}% 63
+\BOOKMARK [1][]{section.4.1}{4.1 Testes unit\341rios}{chapter.4}% 64
+\BOOKMARK [1][]{section.4.2}{4.2 Testes integrados}{chapter.4}% 65
+\BOOKMARK [1][]{section.4.3}{4.3 Avalia\347\343o da prontid\343o tecnol\363gica}{chapter.4}% 66
+\BOOKMARK [1][]{section.4.4}{4.4 Trabalhos futuros}{chapter.4}% 67
+\BOOKMARK [0][]{chapter.5}{5 Conclus\343o}{}% 68
+\BOOKMARK [1][]{section.5.1}{5.1 Considera\347\365es finais}{chapter.5}% 69
+\BOOKMARK [0][]{appendix.A}{A QFD}{}% 70
+\BOOKMARK [0][]{appendix.B}{B Diagramas mec\342nicos}{}% 71
+\BOOKMARK [0][]{appendix.C}{C Diagramas eletro-eletr\364nicos}{}% 72
+\BOOKMARK [0][]{appendix.D}{D Wireframes}{}% 73
+\BOOKMARK [0][]{appendix.E}{E Logbook}{}% 74
+\BOOKMARK [0][]{appendix.E}{Refer\352ncias}{}% 75
+>>>>>>> chapter/2
+>>>>>>> chapter/4

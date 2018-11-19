@@ -43,57 +43,66 @@ Durante vários anos, a inspeção de linhas de transmissão de alta tensão tem
 
 Outra maneira de inspecionar as linhas de transmissão é através de eletricistas que literalmente caminham sobre os cabos de linhas de transmissão de alta tensão (Figura \ref{img:ihuma}), realizando inspeção visual e termográfica. Esse tipo de inspeção é lenta e não é viável, tendo em vista que o país possui milhares de quilômetros de linhas de transmissão.
 
-Neste contexto vários robôs de inspeção de linhas de transmissão foram desenvolvidos, porém poucos deles consistiram em projetos de engenharia que sejam aplicáveis no mundo real, além disso a maioria eram robôs tele-operados, ou seja robôs controlados por seres humanos. Um dos pontos diferenciais deste projeto de tese é a proposição de um desenvolvimento de uma navegação autônoma utilizando técnicas de aprendizagem de máquinas até então não utilizadas em robôs de inspeção de linhas de transmissão de alta tensão.
+Neste contexto vários robôs de inspeção de linhas de transmissão foram desenvolvidos, porém poucos deles consistiram em projetos de engenharia que sejam aplicáveis no mundo real, além disso a maioria eram robôs tele-operados, ou seja robôs controlados por seres humanos. Um dos pontos diferenciais deste projeto conclusão de curso é a proposição de um desenvolvimento de uma navegação autônoma utilizando técnicas de aprendizagem de máquinas até então não utilizadas em robôs de inspeção de linhas de transmissão de alta tensão.
 
 %--------- NEW SECTION ----------------------
 \section{Objetivos}
 \label{sec:obj}
 
-veja
-
-Nesta se\c{c}\~ao os objetivos principal (tamb\'em
-pode-se se utilizar a palavra meta) da monografia de
-gradua\c{c}\~ao ou especializa\c{c}\~ao, disserta\c{c}\~ao de
-mestrado ou tese de doutorado s\~ao apresentados.
+O  objetivo geral deste  trabalho   é  desenvolver o sistema de percepção para um robô de inspeção de linhas de transmissão ELIR (Electrical Line Inspection Robot).
 
 
 \subsection{Objetivos Específicos}
 \label{ssec:objesp}
 
-Nesta se\c{c}\~ao os objetivos espec\'ificos (tamb\'em
-pode-se se utilizar a palavra meta) da monografia de
-gradua\c{c}\~ao ou especializa\c{c}\~ao, disserta\c{c}\~ao de
-mestrado ou tese de doutorado s\~ao apresentados.
+\begin{itemize}
+\item Detectar pontos quentes nas linhas de transmissão;
+\item Desenvolver o sistema georeferenciamento do robô;
+\item Elaborar o sistema de segurança do robô (Análise de temperatura, consumo e Capacidade da Bateria);
+\item Construir interface de comunicação com o usuário para apresentar as informações de segurança do robô, informação dos atuadores e todas as ocorrências da missão.
+\end{itemize}
 
 %--------- NEW SECTION ----------------------
 \section{Justificativa}
 \label{sec:justi}
 
-O pesquisador/estudante deve apresentar os aspectos mais
-relevantes da pesquisa ressaltando os impactos (e.g. cient\'ifico,
-tecnol\'ogico, econ\^omico, social e ambiental) que a pesquisa
-causar\'a. Deve-se ter cuidado com a ingenuidade no momento em que
-os argumentos forem apresentados.
+%O pesquisador/estudante deve apresentar os aspectos mais
+%relevantes da pesquisa ressaltando os impactos (e.g. cient\'ifico,
+%tecnol\'ogico, econ\^omico, social e ambiental) que a pesquisa
+%causar\'a. Deve-se ter cuidado com a ingenuidade no momento em que
+%os argumentos forem apresentados.
 
 %--------- NEW SECTION ----------------------
 \section{Requisitos do cliente}
 \label{sec:reqc}
-asjdflkasjdlfjsdlk;f
+
+O desenvolvimento do sistema de percepção para o robô ELIR teve como fundamento os requisitos técnicos proposto pelo cliente do projeto. Os requisitos estão apresentados detalhadamente nos tópicos a seguir.
+    
+    \begin{itemize}
+    	\item{\textbf{Inspeção de Temperatura dos cabos, estrutura e obstáculos}}: Devem ser disponibilizadas as informações de medição de temperatura dos cabos, estrutura da linha e de seus obstáculos. Esses dados devem ser obtidos através da câmera térmica para inspeção
+    	\item{\textbf{Georreferenciamento dos eventos}}: Todos os eventos de detecção de pontos quentes, sobretemperatura e sobrecorrente devem ser sinalizados em um \textit{logfile} informando a data, horário e coordenadas geográficas obtidos pelo GPS.
+    	\item{\textbf{Disponibilizar os videos dos eventos}}: A inspeção realizada pela câmera térmica deve ser disponibilizada em tempo real na interface gráfica do robô.
+    	\item{\textbf{Identificação de posicionamento da garra no cabo}}: A fim de garantir a confiabilidade da operação, deve ser realizado uma verificação do alinhamento das garras no cabo da linha de alta tensão.
+    	\item{\textbf{Inspeção da linha de servidão}}: Devem ser disponibilizadas informações de objetivos até sete metros abaixo do robô
+	\end{itemize}
 
 %--------- NEW SECTION ----------------------
 \section{Organização do \thetypework}
 \label{section:organizacao}
 
-Este documento apresenta $x$ capítulos e está estruturado da seguinte forma:
+Este documento apresenta 5 (cinco) capítulos e está estruturado da seguinte forma:
 
 \begin{itemize}
 
-  \item \textbf{Capítulo \ref{chap:intro} - Introdução}: Contextualiza o âmbito, no qual a pesquisa proposta está inserida. Apresenta, portanto, a definição do problema, objetivos e justificativas da pesquisa e como este \thetypeworkthree está estruturado;
+  \item \textbf{Capítulo \ref{chap:intro} - Introdução}: Contextualiza o âmbito no qual a pesquisa proposta está inserida. Apresenta, portanto, a definição do problema, objetivos e justificativas da pesquisa e como este \thetypeworkthree está estruturado;
 
-  \item \textbf{Capítulo \ref{chap:concep} - Nome do capítulo}: XXX;
-
-
-  \item \textbf{Capítulo \ref{chap:conc} - Conclusão}: Apresenta as conclusóes, contribuições
-  e algumas sugestões de atividades de pesquisa a serem desenvolvidas no futuro.
+  \item \textbf{Capítulo \ref{chap:concep} - Conceito do Sistema}: Descreve como o sistema de Percepção é composto, apresenta a especificação técnica, a arquitetura geral do sistema, a arquitetura de software e os requisitos técnicos;
+  
+  \item \textbf{Capítulo \ref{chap:mat} - Materiais e Métodos}: Apresenta os materiais utilizados no projeto, explica os suportes mecânicos criados, o diagrama elétrico e o desenho da placa desenvolvida, além das especificações de cada funcionalidade do sistema;
+  
+  \item \textbf{Capítulo \ref{chap:result} - Resultados}: Apresenta a descrição dos testes unitários e integrados realizados;
+ 
+  \item \textbf{Capítulo \ref{chap:conc} - Conclusão}: Apresenta as conclusóes, contribuições e algumas sugestões de atividades de pesquisa a serem desenvolvidas no futuro.
 
 \end{itemize}
+

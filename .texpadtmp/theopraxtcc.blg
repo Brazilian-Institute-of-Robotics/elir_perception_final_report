@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: /Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux
+The top-level auxiliary file: /Users/mhar-vell/Documents/@mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux
 A level-1 auxiliary file: Others/FolhaRosto.aux
 A level-1 auxiliary file: Others/dedicatoria.aux
 A level-1 auxiliary file: Others/agradecimentos.aux
@@ -370,7 +370,7 @@ while executing---line 2146 of file abntex2-alf.bst
 +---------------------------------------------------------+
 You've used 21 entries,
             6714 wiz_defined-function locations,
-            1332 strings with 14996 characters,
+            1332 strings with 14998 characters,
 and the built_in function-call counts, 21646 in all, are:
 = -- 1945
 > -- 766

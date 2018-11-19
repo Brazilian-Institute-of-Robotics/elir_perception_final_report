@@ -463,13 +463,13 @@ Como pode-se observar e de forma abrangente, os principais elementos que compõe
 	\item 02 baterias de 12V
 \end{itemize}
 
-A Figura \ref{img:elirmodesq} é somente uma representação esquemática para o desenvolvimento da tese, no Apêndice \ref{appendix:elet} é apresentado os diagramas elétricos e eletrônicos para a compreensão total do sistema eletro-eletrônico considerado para este trabalho.
+A Figura \ref{img:elirmodesq} é somente uma representação esquemática para o desenvolvimento da tese, no Apêndice \ref{Append:diagele} é apresentado os diagramas elétricos e eletrônicos para a compreensão total do sistema eletro-eletrônico considerado para este trabalho.
 
 
 \subsection{Especificação técnica}
 \label{ssec:espt}
 
-A construção do sistema de Percepção teve como base os requisitos técnicos do cliente. As especificações podem ser observadas abaixo.
+A construção do sistema de Percepção teve como base os requisitos técnicos do cliente. As especificações podem ser observadas abaixo:
 \begin{itemize}
 \item O sistema foi projetado para trabalhar com alimentação de 14V proveniente de baterias LiPo.
 \item A máxima temperatura de trabalho na \textit{housing} é de 50 graus Celsius.
@@ -513,7 +513,7 @@ A arquitetura de software foi projetada em três camadas a fim de facilitar o de
  
 As camadas e seus componentes podem ser vistos na Fig.\ref{arqsoft}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm]{Figures/ArquiteturadeSoftware.png}
 	\caption{Arquitetura Geral da Perception}
@@ -543,7 +543,7 @@ A camada de \textit{User Interface} foi projetada para disponibilizar os dados p
 
 A subcamada \textit{Robot Status Display} disponibiliza os dados de integridade do robô como temperatura, corrente, tensão, nível de bateria, entre outras informações. A subcamada de \textit{Actuators Display} disponibiliza o dados de todos os motores do robô, como carga, temperatura, status e corrente. Por último, a subcamada de \textit{Video Display} mostra em tempo real o monitoramento realizado pela câmera térmica, possibilitando o usuário ver os componentes da linha que estão com temperatura elevada e até mesmo identificar pontos quentes.
 
-A interface irá se resumir em duas telas: A tela principal com um layout de \textit{dashboard}, e outra que terá as informações dos atuadores. O \textit{dashboard} será um painel de monitoramento, no qual haverá as informações mais importantes da missão, como pode ser visto na Fig. \ref{UI} no apêndice \ref{Append:wireframes}. Essa tela irá mostrar as informações de integridade do robô, ocorrências e a imagem térmica. A tela dos atuadores irá mostrar de forma organizada, as informações já mencionadas, além da corrente total de cada HUB de motores. Pode-se observar a tela de atuadores na Fig. \ref{UI2} no apêndice \ref{Append:wireframes}.
+A interface irá se resumir em duas telas: A tela principal com um layout de \textit{dashboard}, e outra que terá as informações dos atuadores. O \textit{dashboard} será um painel de monitoramento, no qual haverá as informações mais importantes da missão, como pode ser visto na Fig. \ref{UI} no apêndice \ref{Append:wireframes}. Essa tela irá mostrar as informações de integridade do robô, ocorrências e a imagem térmica. A tela dos atuadores irá mostrar de forma organizada, as informações já mencionadas, além da corrente total de cada HUB de motores. Pode-se observar a tela de atuadores na Figura \ref{fig:batt_protocol} no apêndice \ref{Append:wireframes}.
 
 
 

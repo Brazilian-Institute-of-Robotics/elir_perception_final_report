@@ -5,6 +5,7 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+<<<<<<< HEAD
 \bibitem[Fitzpatrick 2003]{Fitzpatrick}
 \abntrefinfo{Fitzpatrick}{FITZPATRICK}{2003}
 {FITZPATRICK, P. \emph{Perception and Perspective in Robotics}.
@@ -19,4 +20,6 @@ Cambridge, MA, 2003.}
 {THORPE, C. et al. \emph{Dependable Perception for Robots}.
 [S.l.], 2003.}
 
+=======
+>>>>>>> chapter/1
 \end{thebibliography}

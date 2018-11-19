@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 NOV 2018 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 NOV 2018 13:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1010,21 +1010,12 @@ l.236     \include{Chapters/ChapterOne}
 
  (./Chapters/ChapterTwo.tex
 Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `perc_michaelis' on page 5 undefined on input line 3.
-
-
-LaTeX Warning: Citation `chuck' on page 5 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Fitzpatrick' on page 5 undefined on input line 25.
-
 [5
 
 
 
 ]
-<Figures/ArquiteturadeSoftware.png, id=483, 593.21625pt x 395.4775pt>
+<Figures/ArquiteturadeSoftware.png, id=492, 593.21625pt x 395.4775pt>
 File: Figures/ArquiteturadeSoftware.png Graphic file (type png)
 <use Figures/ArquiteturadeSoftware.png>
 Package pdftex.def Info: Figures/ArquiteturadeSoftware.png  used on input line 73.
@@ -1051,19 +1042,19 @@ Cap\'{\i }tulo 3.
 
 
 ] [11]
-<Figures/motion_plan_func.png, id=515, 563.10374pt x 698.61pt>
+<Figures/motion_plan_func.png, id=524, 563.10374pt x 698.61pt>
 File: Figures/motion_plan_func.png Graphic file (type png)
 <use Figures/motion_plan_func.png>
 Package pdftex.def Info: Figures/motion_plan_func.png  used on input line 70.
 (pdftex.def)             Requested size: 364.19667pt x 451.84187pt.
  [12] [13 <./Figures/motion_plan_func.png>]
-<Figures/actuation_depen.png, id=526, 371.3875pt x 482.80376pt>
+<Figures/actuation_depen.png, id=535, 371.3875pt x 482.80376pt>
 File: Figures/actuation_depen.png Graphic file (type png)
 <use Figures/actuation_depen.png>
 Package pdftex.def Info: Figures/actuation_depen.png  used on input line 99.
 (pdftex.def)             Requested size: 273.14923pt x 355.1033pt.
  [14] [15 <./Figures/actuation_depen.png>]
-<Figures/power_management_hardware.png, id=536, 520.94624pt x 167.62625pt>
+<Figures/power_management_hardware.png, id=545, 520.94624pt x 167.62625pt>
 File: Figures/power_management_hardware.png Graphic file (type png)
 <use Figures/power_management_hardware.png>
 Package pdftex.def Info: Figures/power_management_hardware.png  used on input line 126.
@@ -1073,7 +1064,7 @@ Package pdftex.def Info: Figures/power_management_hardware.png  used on input li
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16] [17 <./Figures/power_management_hardware.png>] [18]
-<Figures/sys_check_flux.png, id=551, 530.98375pt x 713.66624pt>
+<Figures/sys_check_flux.png, id=560, 530.98375pt x 713.66624pt>
 File: Figures/sys_check_flux.png Graphic file (type png)
 <use Figures/sys_check_flux.png>
 Package pdftex.def Info: Figures/sys_check_flux.png  used on input line 192.
@@ -1144,10 +1135,6 @@ Ap\^endice E.
 ] (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.bbl (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.brf)
 \tf@brf=\write8
 \openout8 = `theopraxtcc.brf'.
-
-
-
-LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
 ) [28
 
@@ -1316,21 +1303,24 @@ Package rerunfilecheck Info: File `theopraxtcc.brf' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 10362 strings out of 492649
- 161558 string characters out of 6129622
- 271196 words of memory out of 5000000
- 13750 multiletter control sequences out of 15000+600000
+ 10377 strings out of 492649
+ 161780 string characters out of 6129622
+ 271682 words of memory out of 5000000
+ 13762 multiletter control sequences out of 15000+600000
  13973 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,45p,846b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (41 pages, 1244084 bytes).
+Output written on /Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (41 pages, 1245456 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 595 compressed objects within 6 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 608 compressed objects within 7 object streams
+ 129 named destinations out of 1000 (max. 500000)
  646 words of extra memory for PDF output out of 10000 (max. 10000000)
 

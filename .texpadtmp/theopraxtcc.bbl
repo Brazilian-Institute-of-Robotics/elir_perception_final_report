@@ -5,4 +5,18 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Fitzpatrick 2003]{Fitzpatrick}
+\abntrefinfo{Fitzpatrick}{FITZPATRICK}{2003}
+{FITZPATRICK, P. \emph{Perception and Perspective in Robotics}.
+Cambridge, MA, 2003.}
+
+\bibitem[Michaelis 2004]{perc_michaelis}
+\abntrefinfo{Michaelis}{MICHAELIS}{2004}
+{MICHAELIS. \emph{Percepção}. 2004. URL: http://michaelis.uol.com.br.}
+
+\bibitem[Thorpe et al. 2003]{chuck}
+\abntrefinfo{Thorpe et al.}{THORPE et al.}{2003}
+{THORPE, C. et al. \emph{Dependable Perception for Robots}.
+[S.l.], 2003.}
+
 \end{thebibliography}

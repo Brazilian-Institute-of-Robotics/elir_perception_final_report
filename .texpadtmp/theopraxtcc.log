@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 NOV 2018 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 NOV 2018 13:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -611,7 +611,7 @@ LaTeX Info: Redefining \selectfont on input line 169.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<Figures/LogoFIEBSENAI.png, id=292, 654.2844pt x 207.4149pt>
+<Figures/LogoFIEBSENAI.png, id=304, 654.2844pt x 207.4149pt>
 File: Figures/LogoFIEBSENAI.png Graphic file (type png)
 <use Figures/LogoFIEBSENAI.png>
 Package pdftex.def Info: Figures/LogoFIEBSENAI.png  used on input line 206.
@@ -967,17 +967,17 @@ l.15
 
 
 ]
-<Figures/./insphelic.jpg, id=440, 602.25pt x 517.935pt>
+<Figures/./insphelic.jpg, id=457, 602.25pt x 517.935pt>
 File: Figures/./insphelic.jpg Graphic file (type jpg)
 <use Figures/./insphelic.jpg>
 Package pdftex.def Info: Figures/./insphelic.jpg  used on input line 19.
 (pdftex.def)             Requested size: 273.14923pt x 234.9179pt.
-<Figures/./insphelichuma.jpg, id=441, 719.0865pt x 469.755pt>
+<Figures/./insphelichuma.jpg, id=458, 719.0865pt x 469.755pt>
 File: Figures/./insphelichuma.jpg Graphic file (type jpg)
 <use Figures/./insphelichuma.jpg>
 Package pdftex.def Info: Figures/./insphelichuma.jpg  used on input line 28.
 (pdftex.def)             Requested size: 273.14923pt x 178.44424pt.
-<Figures/./insphuma.jpg, id=442, 417.05812pt x 313.17pt>
+<Figures/./insphuma.jpg, id=459, 417.05812pt x 313.17pt>
 File: Figures/./insphuma.jpg Graphic file (type jpg)
 <use Figures/./insphuma.jpg>
 Package pdftex.def Info: Figures/./insphuma.jpg  used on input line 39.
@@ -1010,33 +1010,60 @@ l.236     \include{Chapters/ChapterOne}
 
  (./Chapters/ChapterTwo.tex
 Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `perc_michaelis' on page 5 undefined on input line 3.
+
+
+LaTeX Warning: Citation `chuck' on page 5 undefined on input line 5.
+
+
+LaTeX Warning: Citation `Fitzpatrick' on page 5 undefined on input line 25.
+
 [5
 
 
 
-]) [6]
+]
+<Figures/ArquiteturadeSoftware.png, id=483, 593.21625pt x 395.4775pt>
+File: Figures/ArquiteturadeSoftware.png Graphic file (type png)
+<use Figures/ArquiteturadeSoftware.png>
+Package pdftex.def Info: Figures/ArquiteturadeSoftware.png  used on input line 73.
+(pdftex.def)             Requested size: 426.79134pt x 284.5384pt.
+ [6]
+Overfull \hbox (10.54208pt too wide) in paragraph at lines 82--83
+\OT1/cmr/m/it/12 Ac-qui-si-tion \OT1/cmr/m/n/12 e \OT1/cmr/m/it/12 So-nar Data Ac-qui-si-tion \OT1/cmr/m/n/12 s~ao res-pons^^Saveis por ad-qui-rir as in-forma^^Xc~oes anal^^Sogicas
+ []
+
+[7 <./Figures/ArquiteturadeSoftware.png>]
+
+LaTeX Warning: Reference `UI' on page 8 undefined on input line 101.
+
+
+LaTeX Warning: Reference `UI2' on page 8 undefined on input line 101.
+
+[8]) [9]
 \openout2 = `Chapters/ChapterThree.aux'.
 
  (./Chapters/ChapterThree.tex
 Cap\'{\i }tulo 3.
-[7
+[10
 
 
 
-] [8]
-<Figures/motion_plan_func.png, id=480, 563.10374pt x 698.61pt>
+] [11]
+<Figures/motion_plan_func.png, id=515, 563.10374pt x 698.61pt>
 File: Figures/motion_plan_func.png Graphic file (type png)
 <use Figures/motion_plan_func.png>
 Package pdftex.def Info: Figures/motion_plan_func.png  used on input line 70.
 (pdftex.def)             Requested size: 364.19667pt x 451.84187pt.
- [9] [10 <./Figures/motion_plan_func.png>]
-<Figures/actuation_depen.png, id=490, 371.3875pt x 482.80376pt>
+ [12] [13 <./Figures/motion_plan_func.png>]
+<Figures/actuation_depen.png, id=526, 371.3875pt x 482.80376pt>
 File: Figures/actuation_depen.png Graphic file (type png)
 <use Figures/actuation_depen.png>
 Package pdftex.def Info: Figures/actuation_depen.png  used on input line 99.
 (pdftex.def)             Requested size: 273.14923pt x 355.1033pt.
- [11] [12 <./Figures/actuation_depen.png>]
-<Figures/power_management_hardware.png, id=500, 520.94624pt x 167.62625pt>
+ [14] [15 <./Figures/actuation_depen.png>]
+<Figures/power_management_hardware.png, id=536, 520.94624pt x 167.62625pt>
 File: Figures/power_management_hardware.png Graphic file (type png)
 <use Figures/power_management_hardware.png>
 Package pdftex.def Info: Figures/power_management_hardware.png  used on input line 126.
@@ -1045,18 +1072,18 @@ Package pdftex.def Info: Figures/power_management_hardware.png  used on input li
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] [14 <./Figures/power_management_hardware.png>] [15]
-<Figures/sys_check_flux.png, id=516, 530.98375pt x 713.66624pt>
+[16] [17 <./Figures/power_management_hardware.png>] [18]
+<Figures/sys_check_flux.png, id=551, 530.98375pt x 713.66624pt>
 File: Figures/sys_check_flux.png Graphic file (type png)
 <use Figures/sys_check_flux.png>
 Package pdftex.def Info: Figures/sys_check_flux.png  used on input line 192.
 (pdftex.def)             Requested size: 273.14923pt x 367.13385pt.
- [16 <./Figures/sys_check_flux.png>]) [17]
+ [19 <./Figures/sys_check_flux.png>]) [20]
 \openout2 = `Chapters/ChapterFour.aux'.
 
  (./Chapters/ChapterFour.tex
 Cap\'{\i }tulo 4.
-) [18
+) [21
 
 
 
@@ -1065,7 +1092,7 @@ Cap\'{\i }tulo 4.
 
  (./Chapters/ChapterConsideracoesfinais.tex
 Cap\'{\i }tulo 5.
-) [19
+) [22
 
 
 
@@ -1074,7 +1101,7 @@ Cap\'{\i }tulo 5.
 
  (./Appendices/qfd.tex
 Ap\^endice A.
-) [20
+) [23
 
 
 
@@ -1083,7 +1110,7 @@ Ap\^endice A.
 
  (./Appendices/diagmec.tex
 Ap\^endice B.
-) [21
+) [24
 
 
 
@@ -1092,7 +1119,7 @@ Ap\^endice B.
 
  (./Appendices/diagele.tex
 Ap\^endice C.
-) [22
+) [25
 
 
 
@@ -1101,7 +1128,7 @@ Ap\^endice C.
 
  (./Appendices/wireframes.tex
 Ap\^endice D.
-) [23
+) [26
 
 
 
@@ -1110,7 +1137,7 @@ Ap\^endice D.
 
  (./Appendices/logbook.tex
 Ap\^endice E.
-) [24
+) [27
 
 
 
@@ -1122,7 +1149,7 @@ Ap\^endice E.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
-) [25
+) [28
 
 
 ]
@@ -1273,7 +1300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--31
 
  []
 
-) [26
+) [29
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
@@ -1292,18 +1319,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 10335 strings out of 492649
- 161047 string characters out of 6129622
- 271116 words of memory out of 5000000
- 13731 multiletter control sequences out of 15000+600000
+ 10362 strings out of 492649
+ 161558 string characters out of 6129622
+ 271196 words of memory out of 5000000
+ 13750 multiletter control sequences out of 15000+600000
  13973 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,45p,846b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (38 pages, 1210162 bytes).
+Output written on /Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (41 pages, 1244084 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 617 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 671 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 646 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,13 @@
 \backcite {rangel2009sistema}{{1}{1}{chapter.1}}
 \backcite {ons2013dados}{{1}{1}{chapter.1}}
+<<<<<<< HEAD
 \backcite {groupgets}{{18}{4.1.1}{subsection.4.1.1}}
 \backcite {ethz}{{26}{4.2.4}{subsection.4.2.4}}
+=======
+<<<<<<< HEAD
+\backcite {perc_michaelis}{{5}{2}{chapter.2}}
+\backcite {chuck}{{5}{2}{chapter.2}}
+\backcite {Fitzpatrick}{{5}{2}{chapter.2}}
+=======
+>>>>>>> chapter/1
+>>>>>>> chapter/2

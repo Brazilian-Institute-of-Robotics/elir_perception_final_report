@@ -42,12 +42,15 @@ Os sensores que compõem o sistema de Percepção do robô ELIR foram escolhidos
 
 
 %--------- NEW SECTION ----------------------
-\section{Diagramas mecânicos}
+\section{Diagramas mecânicos do sistema de Percepção}
 \label{sec:diagm}
-asdfsdaf
 
-\subsection{Diagrama mecânico do ELIR}
-shaushaus
+O sistema de Percepção em robôs muitas vezes é entendida como uma implementação em código das funcionalidades do sistema, desconsiderando o aporte mecânico envolvido. Contudo, o suporte mecânico para os sensores é um grande desafio a ser solucionado. 
+
+Neste projeto, houve a necessidade de suportes mecânicos por conta da limitação de espaço além de haver uma restrição imposta pelo cliente na modificação estrutural no protótipo. A descrição dos suportes mecânicos desenvolvidos para confrontar esse problema esta mostrada na próxima sessão.
+%
+%\subsection{Diagrama mecânico do ELIR}
+%shaushaus
 
 \subsection{Suporte dos sensores}
 
@@ -90,15 +93,10 @@ A comunicação entre os sistemas da Percepção ocorrem na maior parte  atravé
 
  A câmera térmica e a os dynamixels possuem portas exclusivas de comunicação com a unidade central devido seu grau de criticidade.
 
-O esquemático de alimentação e comunicação entre todos os elementos do sistema de Percepção está disponibilizado no apêndice XX.
-
-\subsection{Diagramas elétricos}
+\subsection{Diagramas elétricos e eletrônicos}
 \label{sec:diage}
 O diagrama elétrico do sistema está disponível no apêndice \ref{Append:diagele}. Neste diagrama encontram-se todas as conexões elétricas e de comunicação bem como as especificações de conectores e cabos utilizados no projeto.
 
-
-\subsection{Esquemas eletrônicos}
-\label{ssec:esqe}
 O único esquemático eletrônico realizado pela equipe foi uma placa hub de 5V para alimentação dos sensores de proximidade, visto que a Phidgets possui apenas umas saída de tensão em 5V disponibilizada.
 
  Nesta placa foram colocados os \textit{pin headers} para cada sensor de proximidade, fornecendo alimentação e disponibilizando os pinos digitais dos sensores em um conector Molex.
@@ -109,7 +107,7 @@ O esquemático eletrônico e \textit{board} estão mostrados no anexo \ref{Appen
 %--------- NEW SECTION ----------------------
 \section{Especificação das funcionalidades}
 \label{sec:espf}
-Diante da arquitetura apresentada anteriormente e focando nos objetivos traçados no Capítulo \ref{chapter:introducao}, o sistema robótico foi dimensionado para onze funcionalidades distintas:
+Diante da arquitetura apresentada anteriormente e focando nos objetivos traçados no Capítulo \ref{chap:intro}, o sistema robótico foi dimensionado para onze funcionalidades distintas:
 
 \begin{enumerate}%[itemsep=1pt]
 	%\setlength\itemsep{1em}
@@ -140,7 +138,7 @@ A Figura \ref{img:elirfluxo} apresenta o fluxo de informações entre as funcion
 
 Nas seções seguintes são apresentados em maiores detalhes sobre cada uma das funcionalidades do sistema robótico. Para que fosse melhor compreendido, o desenvolvimento destas funcionalidades foram agrupadas em cinco áreas: movimentação, percepção, interface do usuário, autonomia e simulação. As duas áreas iniciais foram subdivididas em planejamento de movimento, sistema de verificação de integridade, atuação e gerenciamento de energia para a primeira área de nome \textbf{movimentação}, que tem como principal objetivo garantir a execução da missão e transposição de obstáculos. Para a segunda área, nominada por percepção, a subdivisão ficou da seguinte forma: aquisição, detecção, classificação e localização, que como o significado do próprio nome apresenta como objetivo principal a percepção do robô diante do ambiente inserido.
 
-\subsection{Fluxo das informações}
+\subsection{Fluxo das informações do sistema de Percepção}
 \label{ssec:fluxo}
 
 

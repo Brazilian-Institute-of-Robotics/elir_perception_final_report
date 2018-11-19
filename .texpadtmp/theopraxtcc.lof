@@ -19,7 +19,7 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o geral do rob\IeC {\^o} suspenso por fio com pernas iguais.\relax }}{15}{figure.caption.18}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Equipamento para inspe\IeC {\c c}\IeC {\~a}o de luvas de emendas de linhas de transmiss\IeC {\~a}o.\relax }}{15}{figure.caption.19}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Rob\IeC {\^o} Ti em teste.\relax }}{16}{figure.caption.20}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Rob\IeC {\^o} modular.\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Rob\IeC {\^o} modular.\relax }}{16}{figure.caption.21}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Esbo\IeC {\c c}o inicial do PIRO.\relax }}{17}{figure.caption.22}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Movimento da lagarta Caterpillar.\relax }}{18}{figure.caption.23}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o b\IeC {\'a}sica da segunda vers\IeC {\~a}o do rob\IeC {\^o} PIRO.\relax }}{18}{figure.caption.24}
@@ -27,34 +27,48 @@
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Vista frontal e laterial do rob\IeC {\^o} ELIR.\relax }}{21}{figure.caption.26}
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Esquema do ELIR com os sistemas de coordenadas das suas articula\IeC {\c c}\IeC {\~o}es, para a verifica\IeC {\c c}\IeC {\~a}o do deslocamento das roldanas das unidades de tra\IeC {\c c}\IeC {\~a}o.\relax }}{21}{figure.caption.27}
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o de juntas, \IeC {\^a}ngulos e links para valida\IeC {\c c}\IeC {\~a}o da matriz homog\IeC {\^e}nea obtida na \IeC {\'a}nalise cinem\IeC {\'a}tica.\relax }}{22}{figure.caption.29}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Modelo esquem\IeC {\'a}tico do rob\IeC {\^o} ELIR.\relax }}{24}{figure.caption.30}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Arquitetura do rob\IeC {\^o} ELIR.\relax }}{26}{figure.caption.31}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Arquitetura Geral da Perception\relax }}{27}{figure.caption.32}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Modelo esquem\IeC {\'a}tico do rob\IeC {\^o} ELIR.\relax }}{23}{figure.caption.30}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Arquitetura do rob\IeC {\^o} ELIR.\relax }}{25}{figure.caption.31}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Arquitetura Geral da Perception\relax }}{26}{figure.caption.32}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Arquitetura Geral da Perception\relax }}{27}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Lista de materiais utilizados no sistema de Percep\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o} ELIR\relax }}{30}{figure.caption.33}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Prateleira para suporte dos componentes eletr\IeC {\^o}nicos\relax }}{31}{figure.caption.34}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Prateleira para suporte com sensores\relax }}{31}{figure.caption.35}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Prateleira para suporte dos componentes de alimenta\IeC {\c c}\IeC {\~a}o\relax }}{32}{figure.caption.36}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Fluxo de informa\IeC {\c c}\IeC {\~o}es do sistema.\relax }}{34}{figure.caption.37}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxograma da Funcionalidade Aquisi\IeC {\c c}\IeC {\~a}o\relax }}{36}{figure.caption.38}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces N\IeC {\'\i }vel de criticidade dos sensores\relax }}{37}{figure.caption.39}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Fluxograma da Funcionalidade Localiza\IeC {\c c}\IeC {\~a}o\relax }}{38}{figure.caption.40}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Fluxograma da Funcionalidade Detec\IeC {\c c}\IeC {\~a}o\relax }}{40}{figure.caption.41}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Lista de materiais utilizados no sistema de Percep\IeC {\c c}\IeC {\~a}o do rob\IeC {\^o} ELIR\relax }}{31}{figure.caption.34}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Prateleira para suporte dos componentes eletr\IeC {\^o}nicos\relax }}{32}{figure.caption.35}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Prateleira para suporte com sensores\relax }}{32}{figure.caption.36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Prateleira para suporte dos componentes de alimenta\IeC {\c c}\IeC {\~a}o\relax }}{33}{figure.caption.37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Fluxo de informa\IeC {\c c}\IeC {\~o}es do sistema.\relax }}{35}{figure.caption.38}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxograma da Funcionalidade Aquisi\IeC {\c c}\IeC {\~a}o\relax }}{37}{figure.caption.39}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces N\IeC {\'\i }vel de criticidade dos sensores\relax }}{38}{figure.caption.40}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Fluxograma da Funcionalidade Localiza\IeC {\c c}\IeC {\~a}o\relax }}{39}{figure.caption.41}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Fluxograma da Funcionalidade Detec\IeC {\c c}\IeC {\~a}o\relax }}{41}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Lepton LWIR\relax }}{42}{figure.caption.42}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mensagem do frame da c\IeC {\^a}mera\relax }}{43}{figure.caption.43}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquem\IeC {\'a}tico do \textit {Frame} da C\IeC {\^a}mera T\IeC {\'e}rmica\relax }}{43}{figure.caption.44}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sonar EZ-1\relax }}{44}{figure.caption.45}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor de proximidade E18-D80NK\relax }}{45}{figure.caption.46}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Protocolo de comunica\IeC {\c c}\IeC {\~a}o do \textit {Smart Charger} e das baterias\relax }}{45}{figure.caption.47}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Sensor de Temperatura LM35\relax }}{46}{figure.caption.48}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces GPS Piksi v2.3.1\relax }}{47}{figure.caption.49}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces IMU Xsens Mti-1\relax }}{47}{figure.caption.50}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mensagem entre a Nucleo L432KC e o n\IeC {\'o} referente \IeC {\`a}s baterias\relax }}{49}{figure.caption.51}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquem\IeC {\'a}tico do processamento da imagem\relax }}{50}{figure.caption.52}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Lepton LWIR\relax }}{43}{figure.caption.43}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mensagem do frame da c\IeC {\^a}mera\relax }}{44}{figure.caption.44}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquem\IeC {\'a}tico do \textit {Frame} da C\IeC {\^a}mera T\IeC {\'e}rmica\relax }}{44}{figure.caption.45}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sonar EZ-1\relax }}{45}{figure.caption.46}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor de proximidade E18-D80NK\relax }}{46}{figure.caption.47}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Protocolo de comunica\IeC {\c c}\IeC {\~a}o do \textit {Smart Charger} e das baterias\relax }}{46}{figure.caption.48}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sensor de Temperatura LM35\relax }}{47}{figure.caption.49}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces GPS Piksi v2.3.1\relax }}{48}{figure.caption.50}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces IMU Xsens Mti-1\relax }}{48}{figure.caption.51}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mensagem entre a Nucleo L432KC e o n\IeC {\'o} referente \IeC {\`a}s baterias\relax }}{50}{figure.caption.52}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquem\IeC {\'a}tico do processamento da imagem\relax }}{51}{figure.caption.53}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Esquem\IeC {\'a}tico Geral\relax }}{71}{figure.caption.54}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Esquem\IeC {\'a}tico - Smart Charger\relax }}{72}{figure.caption.55}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Esquem\IeC {\'a}tico - Placa de Gerenciamento de Energia\relax }}{73}{figure.caption.56}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Esquem\IeC {\'a}tico - NUC\relax }}{74}{figure.caption.57}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Esquem\IeC {\'a}tico - Phidgets\relax }}{75}{figure.caption.58}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Esquem\IeC {\'a}tico - STM32F401RE e FLIR LWIR Camera\relax }}{76}{figure.caption.59}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Esquem\IeC {\'a}tico - ZED Camera\relax }}{77}{figure.caption.60}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 1\relax }}{78}{figure.caption.61}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 2\relax }}{79}{figure.caption.62}
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 3\relax }}{80}{figure.caption.63}
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Placa de Alimenta\IeC {\c c}\IeC {\~a}o dos Sensores de Proximidade\relax }}{81}{figure.caption.64}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Dashboard - Main page\relax }}{82}{figure.caption.65}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Dashboard - Actuators Info Page\relax }}{83}{figure.caption.66}
 \addvspace {10\p@ }

@@ -1,11 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.25)  12 NOV 2018 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  19 NOV 2018 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **theopraxtcc.tex
 (./theopraxtcc.tex
-LaTeX2e <2018-04-01> patch level 5
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./Classes/THEOPRAX.cls
 Document Class: Classes/THEOPRAX 2017/10/31 v0.0.0
 ---------------------------------------------------------
@@ -274,13 +275,13 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \rightmargin=\dimen118
 \botmargin=\dimen119
  (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/06/05 3.22 The Babel package
+Package: babel 2018/02/14 3.18 The Babel package
  (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/06/05 3.22 Babel switching mechanism
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
 ) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
  (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/06/05 3.22 Babel common definitions
+File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count111
 \U@D=\dimen120
  (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
@@ -342,7 +343,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
-Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
 \col@sep=\dimen122
 \ar@mcellbox=\box32
 \extrarowheight=\dimen123
@@ -396,7 +397,7 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
+Package: geometry 2018/03/24 v5.7 Page Geometry
 \Gm@cnth=\count125
 \Gm@cntv=\count126
 \c@Gm@tempcnt=\count127
@@ -479,10 +480,10 @@ LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 
 Writing index file theopraxtcc.idx
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen148
 \captionmargin@=\dimen149
 \captionwidth=\dimen150
@@ -501,8 +502,11 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: wrapfig package is loaded.
-) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux)
-(/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
+) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux
+
+LaTeX Warning: Label `FuncAquisition' multiply defined.
+
+) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
 \openout1 = `theopraxtcc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
@@ -567,7 +571,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 169.
 LaTeX Info: Redefining \pageref on input line 169.
 LaTeX Info: Redefining \nameref on input line 169.
- (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.out) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.out)
+ (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.out) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.out)
 \@outlinefile=\write4
 \openout4 = `theopraxtcc.out'.
 
@@ -610,7 +614,7 @@ LaTeX Info: Redefining \selectfont on input line 169.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<Figures/LogoFIEBSENAI.png, id=292, 654.2844pt x 207.4149pt>
+<Figures/LogoFIEBSENAI.png, id=264, 654.2844pt x 207.4149pt>
 File: Figures/LogoFIEBSENAI.png Graphic file (type png)
 <use Figures/LogoFIEBSENAI.png>
 Package pdftex.def Info: Figures/LogoFIEBSENAI.png  used on input line 206.
@@ -901,7 +905,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 ) [2
 
 
-] (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.toc
+] (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -923,13 +927,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.lot)
+[4] (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.lot)
 \tf@lot=\write6
 \openout6 = `theopraxtcc.lot'.
 
  [5
 
-] (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.lof)
+] (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.lof)
 \tf@lof=\write7
 \openout7 = `theopraxtcc.lof'.
 
@@ -951,85 +955,133 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
  (./Chapters/ChapterOne.tex
 Cap\'{\i }tulo 1.
+
+LaTeX Warning: Citation `rangel2009sistema' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ons2013dados' on page 1 undefined on input line 4.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \section
-             {Organização do \thetypework} [1
+l.15 
+      [1
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+<Figures/./insphelic.jpg, id=413, 602.25pt x 517.935pt>
+File: Figures/./insphelic.jpg Graphic file (type jpg)
+<use Figures/./insphelic.jpg>
+Package pdftex.def Info: Figures/./insphelic.jpg  used on input line 19.
+(pdftex.def)             Requested size: 273.14923pt x 234.9179pt.
+<Figures/./insphelichuma.jpg, id=414, 719.0865pt x 469.755pt>
+File: Figures/./insphelichuma.jpg Graphic file (type jpg)
+<use Figures/./insphelichuma.jpg>
+Package pdftex.def Info: Figures/./insphelichuma.jpg  used on input line 28.
+(pdftex.def)             Requested size: 273.14923pt x 178.44424pt.
+<Figures/./insphuma.jpg, id=415, 417.05812pt x 313.17pt>
+File: Figures/./insphuma.jpg Graphic file (type jpg)
+<use Figures/./insphuma.jpg>
+Package pdftex.def Info: Figures/./insphuma.jpg  used on input line 39.
+(pdftex.def)             Requested size: 273.14923pt x 205.12067pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 
+      [2 <./Figures/./insphelic.jpg> <./Figures/./insphelichuma.jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 
+      [3 <./Figures/./insphuma.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.236     \include{Chapters/ChapterOne}
-                                        [2]
+                                        [4]
 \openout2 = `Chapters/ChapterTwo.aux'.
 
  (./Chapters/ChapterTwo.tex
 Cap\'{\i }tulo 2.
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61 \subsection
-                {Requisitos técnicos} [3
-
-
-
-])pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.237     \include{Chapters/ChapterTwo}
-                                        [4]
-\openout2 = `Chapters/ChapterThree.aux'.
-
- (./Chapters/ChapterThree.tex
-Cap\'{\i }tulo 3.
 [5
 
 
 
-] [6]
-<Figures/motion_plan_func.png, id=468, 563.10374pt x 698.61pt>
-File: Figures/motion_plan_func.png Graphic file (type png)
-<use Figures/motion_plan_func.png>
-Package pdftex.def Info: Figures/motion_plan_func.png  used on input line 70.
-(pdftex.def)             Requested size: 364.19667pt x 451.84187pt.
- [7] [8 <./Figures/motion_plan_func.png>]
-<Figures/actuation_depen.png, id=479, 371.3875pt x 482.80376pt>
-File: Figures/actuation_depen.png Graphic file (type png)
-<use Figures/actuation_depen.png>
-Package pdftex.def Info: Figures/actuation_depen.png  used on input line 99.
-(pdftex.def)             Requested size: 273.14923pt x 355.1033pt.
- [9] [10 <./Figures/actuation_depen.png>]
-<Figures/power_management_hardware.png, id=489, 520.94624pt x 167.62625pt>
-File: Figures/power_management_hardware.png Graphic file (type png)
-<use Figures/power_management_hardware.png>
-Package pdftex.def Info: Figures/power_management_hardware.png  used on input line 126.
-(pdftex.def)             Requested size: 455.24411pt x 146.48587pt.
+]) [6]
+\openout2 = `Chapters/ChapterThree.aux'.
+
+ (./Chapters/ChapterThree.tex
+Cap\'{\i }tulo 3.
+[7
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11] [12 <./Figures/power_management_hardware.png>] [13]
-<Figures/sys_check_flux.png, id=505, 530.98375pt x 713.66624pt>
-File: Figures/sys_check_flux.png Graphic file (type png)
-<use Figures/sys_check_flux.png>
-Package pdftex.def Info: Figures/sys_check_flux.png  used on input line 192.
-(pdftex.def)             Requested size: 273.14923pt x 367.13385pt.
- [14 <./Figures/sys_check_flux.png>]) [15]
+]
+<Figures/lista_materiais.png, id=448, 839.135pt x 278.03876pt>
+File: Figures/lista_materiais.png Graphic file (type png)
+<use Figures/lista_materiais.png>
+Package pdftex.def Info: Figures/lista_materiais.png  used on input line 36.
+(pdftex.def)             Requested size: 455.24408pt x 150.8387pt.
+ [8 <./Figures/lista_materiais.png>]
+<Figures/prateleira.png, id=457, 961.5925pt x 512.91624pt>
+File: Figures/prateleira.png Graphic file (type png)
+<use Figures/prateleira.png>
+Package pdftex.def Info: Figures/prateleira.png  used on input line 61.
+(pdftex.def)             Requested size: 398.33858pt x 212.4806pt.
+<Figures/prateleiracsensores.png, id=458, 1134.2375pt x 570.13pt>
+File: Figures/prateleiracsensores.png Graphic file (type png)
+<use Figures/prateleiracsensores.png>
+Package pdftex.def Info: Figures/prateleiracsensores.png  used on input line 67.
+(pdftex.def)             Requested size: 455.24408pt x 228.83092pt.
+<Figures/pecadebaixo.png, id=460, 1048.91875pt x 655.44875pt>
+File: Figures/pecadebaixo.png Graphic file (type png)
+<use Figures/pecadebaixo.png>
+Package pdftex.def Info: Figures/pecadebaixo.png  used on input line 76.
+(pdftex.def)             Requested size: 398.33858pt x 248.91309pt.
+ [9 <./Figures/prateleira.png> <./Figures/prateleiracsensores.png>] [10 <./Figures/pecadebaixo.png>] [11] [12]
+<Figures/Fluxograma_Aquisition.jpg, id=483, 1941.2525pt x 1106.1325pt>
+File: Figures/Fluxograma_Aquisition.jpg Graphic file (type jpg)
+<use Figures/Fluxograma_Aquisition.jpg>
+Package pdftex.def Info: Figures/Fluxograma_Aquisition.jpg  used on input line 146.
+(pdftex.def)             Requested size: 398.34442pt x 199.16277pt.
+<Figures/criticidade.jpg, id=484, 482.80376pt x 201.75375pt>
+File: Figures/criticidade.jpg Graphic file (type jpg)
+<use Figures/criticidade.jpg>
+Package pdftex.def Info: Figures/criticidade.jpg  used on input line 161.
+(pdftex.def)             Requested size: 398.35486pt x 199.17038pt.
+ [13 <./Figures/Fluxograma_Aquisition.jpg>]
+Overfull \hbox (1.54178pt too wide) in paragraph at lines 172--173
+[]\OT1/cmr/m/n/12 Thermal Image Data Mes-sage: Men-sa-gem ex-clu-siva para os da-dos da c^amera t^^Sermica. 
+ []
+
+[14 <./Figures/criticidade.jpg>]
+<Figures/Fluxograma_Localization.png, id=495, 910.40125pt x 131.49126pt>
+File: Figures/Fluxograma_Localization.png Graphic file (type png)
+<use Figures/Fluxograma_Localization.png>
+Package pdftex.def Info: Figures/Fluxograma_Localization.png  used on input line 199.
+(pdftex.def)             Requested size: 455.24408pt x 65.75348pt.
+ [15 <./Figures/Fluxograma_Localization.png>] [16]
+<Figures/Fluxograma_Detection.png, id=505, 1081.03876pt x 442.65375pt>
+File: Figures/Fluxograma_Detection.png Graphic file (type png)
+<use Figures/Fluxograma_Detection.png>
+Package pdftex.def Info: Figures/Fluxograma_Detection.png  used on input line 236.
+(pdftex.def)             Requested size: 455.24408pt x 186.40636pt.
+ [17 <./Figures/Fluxograma_Detection.png>]) [18]
 \openout2 = `Chapters/ChapterFour.aux'.
 
  (./Chapters/ChapterFour.tex
 Cap\'{\i }tulo 4.
-) [16
+) [19
 
 
 
@@ -1038,7 +1090,7 @@ Cap\'{\i }tulo 4.
 
  (./Chapters/ChapterConsideracoesfinais.tex
 Cap\'{\i }tulo 5.
-) [17
+) [20
 
 
 
@@ -1047,7 +1099,7 @@ Cap\'{\i }tulo 5.
 
  (./Appendices/qfd.tex
 Ap\^endice A.
-) [18
+) [21
 
 
 
@@ -1056,7 +1108,7 @@ Ap\^endice A.
 
  (./Appendices/diagmec.tex
 Ap\^endice B.
-) [19
+) [22
 
 
 
@@ -1065,7 +1117,7 @@ Ap\^endice B.
 
  (./Appendices/diagele.tex
 Ap\^endice C.
-) [20
+) [23
 
 
 
@@ -1074,7 +1126,7 @@ Ap\^endice C.
 
  (./Appendices/wireframes.tex
 Ap\^endice D.
-) [21
+) [24
 
 
 
@@ -1083,15 +1135,19 @@ Ap\^endice D.
 
  (./Appendices/logbook.tex
 Ap\^endice E.
-) [22
+) [25
 
 
 
-] (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.bbl (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.brf)
+] (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.bbl (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.brf)
 \tf@brf=\write8
 \openout8 = `theopraxtcc.brf'.
 
-) [23
+
+
+LaTeX Warning: Empty `thebibliography' environment on input line 8.
+
+) [26
 
 
 ]
@@ -1242,13 +1298,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--31
 
  []
 
-) [24
+) [27
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
- (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux)
-(/Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
+ (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/FolhaRosto.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/dedicatoria.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/agradecimentos.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/resumo.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/abstract.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/abbreviation.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/simbolos.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterOne.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterTwo.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterThree.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterFour.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Chapters/ChapterConsideracoesfinais.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/qfd.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/diagmec.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/diagele.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/wireframes.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Appendices/logbook.aux) (/Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/Others/ultimafolha.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `theopraxtcc.out' has not changed.
@@ -1257,23 +1312,26 @@ Package rerunfilecheck Info: File `theopraxtcc.brf' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 10375 strings out of 492646
- 162353 string characters out of 6129563
- 272983 words of memory out of 5000000
- 13786 multiletter control sequences out of 15000+600000
- 13973 words of font info for 53 fonts, out of 8000000 for 9000
+ 10342 strings out of 492649
+ 161353 string characters out of 6129622
+ 271133 words of memory out of 5000000
+ 13737 multiletter control sequences out of 15000+600000
+ 13804 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,45p,924b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/mhar-vell/Documents/mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (36 pages, 944080 bytes).
+ 39i,12n,45p,846b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on /Users/felipeplech/Documents/Github/elir_perception_final_report/.texpadtmp/theopraxtcc.pdf (39 pages, 1681899 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 558 compressed objects within 6 object streams
+ 621 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
  117 named destinations out of 1000 (max. 500000)
- 602 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 581 words of extra memory for PDF output out of 10000 (max. 10000000)
 

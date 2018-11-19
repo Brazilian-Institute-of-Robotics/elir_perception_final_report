@@ -1,65 +1,58 @@
 \babel@toc {brazil}{}
 \babel@toc {brazil}{}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Objetivos Espec\IeC {\'\i }ficos}{1}{subsection.1.1.1}
-\contentsline {section}{\numberline {1.2}Justificativa}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Requisitos do cliente}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Projeto Theoprax de Conclus\IeC {\~a}o de Curso }{2}{section.1.4}
-\contentsline {chapter}{\numberline {2}Conceito do Sistema}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Estudo do estado da arte}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Descri\IeC {\c c}\IeC {\~a}o do sistema}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Especifica\IeC {\c c}\IeC {\~a}o t\IeC {\'e}cnica}{3}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Arquitetura geral do sistema}{3}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Arquitetura de software}{4}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Desdobramento da fun\IeC {\c c}\IeC {\~a}o qualidade}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Requisitos t\IeC {\'e}cnicos}{4}{subsection.2.3.1}
-\contentsline {chapter}{\numberline {3}Materiais e M\IeC {\'e}todos}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Especifica\IeC {\c c}\IeC {\~a}o dos componentes}{5}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Estrutura anal\IeC {\'\i }tica do prot\IeC {\'o}tipo}{5}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Lista de componentes}{5}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Diagramas mec\IeC {\^a}nicos}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}Modelo esquem\IeC {\'a}tico de alimenta\IeC {\c c}\IeC {\~a}o e comunica\IeC {\c c}\IeC {\~a}o}{5}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Diagramas el\IeC {\'e}tricos}{5}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Esquemas eletr\IeC {\^o}nicos}{6}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Especifica\IeC {\c c}\IeC {\~a}o das funcionalidades}{6}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Fluxo das informa\IeC {\c c}\IeC {\~o}es}{6}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Motion Planning}{6}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Defini\IeC {\c c}\IeC {\~a}o da funcionalidade}{6}{subsubsection.3.4.2.1}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Depend\IeC {\^e}ncias}{6}{subsubsection.3.4.2.2}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Premissas Necess\IeC {\'a}rias}{6}{subsubsection.3.4.2.3}
-\contentsline {subsubsection}{\numberline {3.4.2.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{7}{subsubsection.3.4.2.4}
-\contentsline {subsubsection}{\numberline {3.4.2.5}Sa\IeC {\'\i }das}{8}{subsubsection.3.4.2.5}
-\contentsline {subsection}{\numberline {3.4.3}Actuation }{9}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Defini\IeC {\c c}\IeC {\~a}o da funcionalidade}{9}{subsubsection.3.4.3.1}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Depend\IeC {\^e}ncias}{9}{subsubsection.3.4.3.2}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Premissas Necess\IeC {\'a}rias}{9}{subsubsection.3.4.3.3}
-\contentsline {subsubsection}{\numberline {3.4.3.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{9}{subsubsection.3.4.3.4}
-\contentsline {subsubsection}{\numberline {3.4.3.5}Sa\IeC {\'\i }das}{10}{subsubsection.3.4.3.5}
-\contentsline {subsection}{\numberline {3.4.4}Power Management}{11}{subsection.3.4.4}
-\contentsline {subsubsection}{\numberline {3.4.4.1}Defini\IeC {\c c}\IeC {\~a}o da funcionalidade}{11}{subsubsection.3.4.4.1}
-\contentsline {subsubsection}{\numberline {3.4.4.2}Depend\IeC {\^e}ncias}{11}{subsubsection.3.4.4.2}
-\contentsline {subsubsection}{\numberline {3.4.4.3}Premissas Necess\IeC {\'a}rias}{11}{subsubsection.3.4.4.3}
-\contentsline {subsubsection}{\numberline {3.4.4.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{11}{subsubsection.3.4.4.4}
-\contentsline {subsubsection}{\numberline {3.4.4.5}Sa\IeC {\'\i }das}{12}{subsubsection.3.4.4.5}
-\contentsline {subsection}{\numberline {3.4.5}System Integrity Check}{13}{subsection.3.4.5}
-\contentsline {subsubsection}{\numberline {3.4.5.1}Defini\IeC {\c c}\IeC {\~a}o da funcionalidade}{13}{subsubsection.3.4.5.1}
-\contentsline {subsubsection}{\numberline {3.4.5.2}Depend\IeC {\^e}ncias}{13}{subsubsection.3.4.5.2}
-\contentsline {subsubsection}{\numberline {3.4.5.3}Premissas Necess\IeC {\'a}rias}{13}{subsubsection.3.4.5.3}
-\contentsline {subsubsection}{\numberline {3.4.5.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{14}{subsubsection.3.4.5.4}
-\contentsline {subsubsection}{\numberline {3.4.5.5}Sa\IeC {\'\i }das}{15}{subsubsection.3.4.5.5}
-\contentsline {section}{\numberline {3.5}Interface do Usu\IeC {\'a}rio}{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}Simula\IeC {\c c}\IeC {\~a}o do sistema}{15}{section.3.6}
-\contentsline {chapter}{\numberline {4}Resultados}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Testes unit\IeC {\'a}rios}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Testes integrados}{16}{section.4.2}
-\contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o da prontid\IeC {\~a}o tecnol\IeC {\'o}gica}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Trabalhos futuros}{16}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Considera\IeC {\c c}\IeC {\~o}es finais}{17}{section.5.1}
-\contentsline {chapter}{\numberline {A}QFD}{18}{appendix.A}
-\contentsline {chapter}{\numberline {B}Diagramas mec\IeC {\^a}nicos}{19}{appendix.B}
-\contentsline {chapter}{\numberline {C}Diagramas eletro-eletr\IeC {\^o}nicos}{20}{appendix.C}
-\contentsline {chapter}{\numberline {D}Wireframes}{21}{appendix.D}
-\contentsline {chapter}{\numberline {E}Logbook}{22}{appendix.E}
-\contentsline {chapter}{Refer\IeC {\^e}ncias}{23}{appendix.E}
+\contentsline {section}{\numberline {1.1}Objetivos}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Objetivos Espec\IeC {\'\i }ficos}{3}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Justificativa}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Requisitos do cliente}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Projeto Theoprax de Conclus\IeC {\~a}o de Curso }{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}Conceito do Sistema}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Estudo do estado da arte}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Descri\IeC {\c c}\IeC {\~a}o do sistema}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Especifica\IeC {\c c}\IeC {\~a}o t\IeC {\'e}cnica}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Arquitetura geral do sistema}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Arquitetura de software}{6}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Desdobramento da fun\IeC {\c c}\IeC {\~a}o qualidade}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Requisitos t\IeC {\'e}cnicos}{6}{subsection.2.3.1}
+\contentsline {chapter}{\numberline {3}Materiais e M\IeC {\'e}todos}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Estrutura anal\IeC {\'\i }tica do prot\IeC {\'o}tipo}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lista de componentes}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Diagramas mec\IeC {\^a}nicos}{8}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Diagrama mec\IeC {\^a}nico do ELIR}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Suporte dos sensores}{8}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Modelo esquem\IeC {\'a}tico de alimenta\IeC {\c c}\IeC {\~a}o e comunica\IeC {\c c}\IeC {\~a}o}{10}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Diagramas el\IeC {\'e}tricos}{11}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Esquemas eletr\IeC {\^o}nicos}{11}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Especifica\IeC {\c c}\IeC {\~a}o das funcionalidades}{11}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Aquisi\IeC {\c c}\IeC {\~a}o}{11}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Objetivo}{11}{subsubsection.3.5.1.1}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Depend\IeC {\^e}ncias}{12}{subsubsection.3.5.1.2}
+\contentsline {subsubsection}{\numberline {3.5.1.3}Premissas}{12}{subsubsection.3.5.1.3}
+\contentsline {subsubsection}{\numberline {3.5.1.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{12}{subsubsection.3.5.1.4}
+\contentsline {subsubsection}{\numberline {3.5.1.5}Sa\IeC {\'\i }das}{13}{subsubsection.3.5.1.5}
+\contentsline {subsection}{\numberline {3.5.2}Localiza\IeC {\c c}\IeC {\~a}o}{14}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}Objetivo}{14}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}Depend\IeC {\^e}ncias}{14}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}Premissas}{15}{subsubsection.3.5.2.3}
+\contentsline {subsubsection}{\numberline {3.5.2.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{15}{subsubsection.3.5.2.4}
+\contentsline {subsubsection}{\numberline {3.5.2.5}Sa\IeC {\'\i }das}{16}{subsubsection.3.5.2.5}
+\contentsline {subsection}{\numberline {3.5.3}Detec\IeC {\c c}\IeC {\~a}o}{16}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Objetivo}{16}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Depend\IeC {\^e}ncias}{16}{subsubsection.3.5.3.2}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Premissas}{16}{subsubsection.3.5.3.3}
+\contentsline {subsubsection}{\numberline {3.5.3.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{16}{subsubsection.3.5.3.4}
+\contentsline {subsubsection}{\numberline {3.5.3.5}Sa\IeC {\'\i }das}{17}{subsubsection.3.5.3.5}
+\contentsline {section}{\numberline {3.6}Interface do Usu\IeC {\'a}rio}{18}{section.3.6}
+\contentsline {chapter}{\numberline {4}Resultados}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Testes unit\IeC {\'a}rios}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Testes integrados}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Avalia\IeC {\c c}\IeC {\~a}o da prontid\IeC {\~a}o tecnol\IeC {\'o}gica}{19}{section.4.3}
+\contentsline {section}{\numberline {4.4}Trabalhos futuros}{19}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Considera\IeC {\c c}\IeC {\~o}es finais}{20}{section.5.1}
+\contentsline {chapter}{\numberline {A}QFD}{21}{appendix.A}
+\contentsline {chapter}{\numberline {B}Diagramas mec\IeC {\^a}nicos}{22}{appendix.B}
+\contentsline {chapter}{\numberline {C}Diagramas eletro-eletr\IeC {\^o}nicos}{23}{appendix.C}
+\contentsline {chapter}{\numberline {D}Wireframes}{24}{appendix.D}
+\contentsline {chapter}{\numberline {E}Logbook}{25}{appendix.E}
+\contentsline {chapter}{Refer\IeC {\^e}ncias}{26}{appendix.E}

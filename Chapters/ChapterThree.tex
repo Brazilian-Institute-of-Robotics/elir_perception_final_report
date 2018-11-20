@@ -5,9 +5,9 @@
 A metodologia empregada para gerenciamento e execução do projeto ELIR é a mesma empregada na área de Robótica da Instituição. O projeto foi divido em três fases principais:
 
 \begin{itemize}
-	\item Conceitual e Design
-	\item Development
-	\item Tests
+	\item \textit{Conceitual e Design}
+	\item \textit{Development}
+	\item \textit{Tests}
 \end{itemize}
 
 Na etapa de \textit{Conceitual e Design} foram definidos os sensores a serem utilizados no projeto, o modelo esquemático de alimentação e comunicação bem como toda análise de funcionalidades e arquiteturas do robô. Esta é a etapa de criação de conceito tecnológico e o sucesso das demais etapas estão diretamente relacionadas ao sucesso desta.
@@ -34,9 +34,9 @@ De forma sistemática o projeto ELIR foi dividido em 6 subsistemas, caraterizand
 	\item \textit{software}
 \end{itemize}
 
-Os cinco iniciais subsistemas estão mais ligados as condições físicas de hardware do que o subsistema \textbf{software}, porém as implicações de software também devem ser consideradas em cada um destes susbsistemas.
+Os cinco iniciais subsistemas estão mais ligados as condições físicas de hardware do que o subsistema \textit{software}, porém as implicações de software também devem ser consideradas em cada um destes susbsistemas.
 
-O susbistema \textbf{software} foi idealizado a partir das funcionalidades desenvolvidas  para a solução final do projeto, e estão descriminadas na secção \ref{sec:espf}.
+O susbistema \textit{software} foi idealizado a partir das funcionalidades desenvolvidas  para a solução final do projeto, e estão descriminadas na secção \ref{sec:espf}.
 
 %----- figure --------------------------------------
 \begin{figure}[!htb]
@@ -113,7 +113,7 @@ A parte de gerenciamento enérgico do robô foi alocada em uma estrutura na part
 \section{Modelo esquemático de alimentação e comunicação}
 \label{sec:modesq}
 
-A alimentação do sistema é proveniente de duas baterias LiPo que fornecem tensão de alimentação em 14V. Todo o gerenciamento de energia do sistema é feita pela Power Management Board, esta placa é responsável por distribuir a alimentação de entrada para os demais subsistemas da Percepção. 
+A alimentação do sistema é proveniente de duas baterias LiPo que fornecem tensão de alimentação em 14V. Todo o gerenciamento de energia do sistema é feita pela \textit{Power Management Board}, esta placa é responsável por distribuir a alimentação de entrada para os demais subsistemas da Percepção. 
 
 A placa de interface Phidgets além de funcionar como \textit{hub} para uma grande parte dos sensores também é responsável por compatibilizar o nível de tensão para os componentes eletrônicos, fornecendo 5V para as placas microprocessadas, sensores e a alimentação de todas as portas USBs. 
 
@@ -125,7 +125,7 @@ A comunicação entre os sistemas da Percepção ocorrem na maior parte  atravé
 \label{sec:diage}
 O diagrama elétrico do sistema está disponível no apêndice \ref{Append:diagele}. Neste diagrama encontram-se todas as conexões elétricas e de comunicação bem como as especificações de conectores e cabos utilizados no projeto.
 
-O único esquemático eletrônico realizado pela equipe foi uma placa hub de 5V para alimentação dos sensores de proximidade, visto que a Phidgets possui apenas umas saída de tensão em 5V disponibilizada.
+O esquemático eletrônico realizado pela equipe foi uma placa hub de 5V para alimentação dos sensores de proximidade, visto que a Phidgets possui apenas umas saída de tensão em 5V disponibilizada.
 
  Nesta placa foram colocados os \textit{pin headers} para cada sensor de proximidade, fornecendo alimentação e disponibilizando os pinos digitais dos sensores em um conector Molex.
 
@@ -174,33 +174,17 @@ As funcionalidades de um robô descrevem os subsistemas e a lógica de operaçã
 
 \subsection{Aquisição}
 \label{ssec:func1}
-\subsubsection{Objetivo}
-Realizar a comunicação e a aquisição dos dados provenientes da câmera térmica, sensores de proximidade, sonar, GPS, IMU, sensor de temperatura, \textit{Smart Charger} e sensores de corrente.
 
-\subsubsection{Dependências}
-Esta funcionalidade não é dependente de nenhum outro processo.
+O processo de aquisição de dados envolve a comunicação dos sensores com seus respectivos drivers no ambiente ROS e a disponibilização dos dados para as outras funcionalidades do sistema.
 
-\subsubsection{Premissas}
-\begin{itemize}
-	\item A interface microcontrolada Nucleo STM32F401RE deve estar com firmware embarcado para conversão de dados SPI para UART.
-	\item A câmera térmica deverá estar conectada à interface Nucleo STM32F401RE
-	\item A câmera stereo deve está conectada à NUC através da porta USB
-	\item O sensores de temperatura, corrente e sonar devem estar conectados as entradas analógicas da interface Phidgets
-	\item Os sensores de proximidade devem está conectados as entradas digitais da placa de interface Phidgets
-	\item O GPS e a IMU devem estar conectados a portas USB da Phidgets
-	\item As placas de interface devem estar energizadas.
-\end{itemize}
+ Os sensores analógicos e digitais terão seus dados tratados pelo driver da interface Phidgets no ambiente ROS. Para os dispositivos relacionados a localização como o GPS e a IMU, serão utilizado drivers já disponibilizados pelos fabricantes.
 
-\subsubsection{Descrição da Funcionalidade}
-\indent O processo de aquisição de dados envolve a comunicação dos sensores com seus respectivos drivers no ambiente ROS e a disponibilização dos dados para as outras funcionalidades do sistema.\\
-\indent Os sensores analógicos e digitais terão seus dados tratados pelo driver da interface Phidgets no ambiente ROS.\\
-\indent Para os dispositivos relacionados a localização como o GPS e a IMU, serão utilizado drivers já disponibilizados pelos fabricantes.
-\indent No caso dos componentes que trabalham com os protocolos de comunicação SPI ou I2C, como é o caso da câmera térmica e da \textit{Smart Charger}, serão utilizadas duas interfaces baseadas em ARM com um \textit{firmware} embarcado para a conversão dos dados para o protocolo UART.
+No caso dos componentes que trabalham com os protocolos de comunicação SPI ou I2C, como é o caso da câmera térmica e da \textit{Smart Charger}, serão utilizadas duas interfaces baseadas em ARM com um \textit{firmware} embarcado para a conversão dos dados para o protocolo UART.
 
-\indent A interface microprocessada utilizada para obter dados da câmera térmica possui uma porta USB dedicada na unidade de processamento Intel NUC. Já a outra interface microprocessada para a \textit{Smart Charger} será conectada a uma porta USB da Phidgets.
+A interface microprocessada utilizada para obter dados da câmera térmica possui uma porta USB dedicada na unidade de processamento Intel NUC. Já a outra interface microprocessada para a \textit{Smart Charger} será conectada a uma porta USB da Phidgets.
 
-\indent No ambiente ROS do projeto há um \textit{package} exclusivo para receber os dados convertidos da câmera térmica, um \textit{package} para receber dados de todos os sensores conectados a Phidgets, um \textit{package} para recebimento de dados da Smart Charger e por último um \textit{package} exclusivo para interface gráfica. 
-Pode-se observar o fluxograma da aquisição na Fig. \ref{FuncAquisition}
+No ambiente ROS do projeto há um \textit{package} exclusivo para receber os dados convertidos da câmera térmica, um \textit{package} para receber dados de todos os sensores conectados a Phidgets, um \textit{package} para recebimento de dados da \textit{Smart Charger} e por último um \textit{package} exclusivo para interface gráfica. 
+Pode-se observar o fluxograma da aquisição na Figura \ref{FuncAquisition}
 
 \begin{figure}[!ht]
 	\centering
@@ -223,19 +207,50 @@ Na figura abaixo, pode-se observar os sensores e suas categorias.
 	\caption{Nível de criticidade dos sensores} \label{FuncAquisition}
 \end{figure}
 
+\subsubsection{Objetivo}
+Realizar a comunicação e a aquisição dos dados provenientes da câmera térmica, sensores de proximidade, sonar, GPS, IMU, sensor de temperatura, \textit{Smart Charger} e sensores de corrente.
+
+\subsubsection{Dependências}
+Esta funcionalidade não é dependente de nenhum outro processo.
+
+\subsubsection{Premissas}
+\begin{itemize}
+	\item A interface microcontrolada Nucleo STM32F401RE deve estar com firmware embarcado para conversão de dados SPI para UART.
+	\item A câmera térmica deverá estar conectada à interface Nucleo STM32F401RE
+	\item A câmera stereo deve está conectada à NUC através da porta USB
+	\item O sensores de temperatura, corrente e sonar devem estar conectados as entradas analógicas da interface Phidgets
+	\item Os sensores de proximidade devem está conectados as entradas digitais da placa de interface Phidgets
+	\item O GPS e a IMU devem estar conectados a portas USB da Phidgets
+	\item As placas de interface devem estar energizadas.
+\end{itemize}
+
 \subsubsection{Saídas}
 
 Esta funcionalidade possui quatro saídas:
 
 \begin{itemize}
-	\item Sonar Data Message: Mensagem de saída exclusiva para os dados do sonar EZ-1.
-	\item Secutiry Diagnose Message: Mensagem contendo todos os dados relacionados à segurança e integridade do robô.
-	\item Thermal Image Data Message: Mensagem exclusiva para os dados da câmera térmica.
-	\item Localization and Position Message: Mensagem contendo os dados relacionados á localização e posicionamento angular do robô.
+	\item \textit{Sonar Data Message}: Mensagem de saída exclusiva para os dados do sonar EZ-1.
+	\item \textit{Secutiry Diagnose Message}: Mensagem contendo todos os dados relacionados à segurança e integridade do robô.
+	\item \textit{Thermal Image Data Message}: Mensagem exclusiva para os dados da câmera térmica.
+	\item \textit{Localization and Position Message}: Mensagem contendo os dados relacionados á localização e posicionamento angular do robô.
 \end{itemize}
 
 \subsection{Localização}
 \label{ssec:func2}
+
+O sistema de localização envolve o monitoramento da posição latitudinal e longitudinal do robô, assim como a posição angular através do GPS e da IMU respectivamente.
+
+A localização é um package que ao receber uma requisição de informação, coleta os dados de posicionamento e orientação do robô provenientes do sistema de Aquisição e encaminha para o sistema que requisitou.
+
+O fluxograma deste funcionalidade pode ser visto na Figura \ref{fluxlocal}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=16cm]{Fluxograma_Localization.png}
+	\caption{Fluxograma da Funcionalidade Localização} \label{fluxlocal}
+\end{figure}
+
+
 \subsubsection{Objetivo}
 O objetivo desta funcionalidade é disponibilizar os dados de Localização do robô no ambiente ROS para a funcionalidade de Detecção.
 
@@ -248,27 +263,20 @@ O sistema de localização depende dos dados de posicionamento e orientação di
 	\item GPS e IMU estão posicionados em uma estrutura rígida e com o menor vibração possível.
 \end{itemize}
 
-\subsubsection{Descrição da Funcionalidade}
-O sistema de localização envolve o monitoramento da posição latitudinal e longitudinal do robô, assim como a posição angular através do GPS e da IMU respectivamente.
-
-A localização é um package que ao receber uma requisição de informação, coleta os dados de posicionamento e orientação do robô provenientes do sistema de Aquisição e encaminha para o sistema que requisitou.
-
-O fluxograma deste funcionalidade pode ser visto na Figura \ref{fluxlocal}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=16cm]{Fluxograma_Localization.png}
-	\caption{Fluxograma da Funcionalidade Localização} \label{fluxlocal}
-\end{figure}
-\pagebreak
 \subsubsection{Saídas}
 
 \begin{itemize}
-	\item Requested Localization Message: Mensagem que informa os dados de localização para o sistema que os requisitou.
+	\item \textit{Requested Localization Message}: Mensagem que informa os dados de localização para o sistema que os requisitou.
 \end{itemize}
 
 \subsection{Detecção}
 \label{ssec:func3}
+
+A detecção é a funcionalidade responsável por identificar a presença de pontos quentes na linha de transmissão bem como de objetos na faixa de servidão. Ao identificar um destes elementos, o sistema solicita da funcionalidade de Localização os dados posicionamento e orientação do robô e envia uma mensagem de alerta.
+
+A mensagem de detecção de um ponto quente informa a localização do robô e a localização do objeto no frame de imagem. Por isso recebe a mensagem de detecção de obstáculos. 
+
+A mensagem de detecção de objetos na faixa de servidão informa a distância da cota da linha até o objeto e a localização do mesmo. 
 
 \subsubsection{Objetivo}
 
@@ -284,14 +292,6 @@ O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câm
 	\item O sonar deve estar posicionado de forma a monitorar objetos abaixo da linha de transmissão.            
 \end{itemize}
 
-\subsubsection{Descrição da Funcionalidade}
-
-A detecção é a funcionalidade responsável por identificar a presença de pontos quentes na linha de transmissão bem como de objetos na faixa de servidão. Ao identificar um destes elementos, o sistema solicita da funcionalidade de Localização os dados posicionamento e orientação do robô e envia uma mensagem de alerta.
-
-A mensagem de detecção de um ponto quente informa a localização do robô e a localização do objeto no frame de imagem. Por isso recebe a mensagem de detecção de obstáculos. 
-
-A mensagem de detecção de objetos na faixa de servidão informa a distância da cota da linha até o objeto e a localização do mesmo. 
-
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=16cm]{Fluxograma_Detection.png}
@@ -301,11 +301,11 @@ A mensagem de detecção de objetos na faixa de servidão informa a distância d
 \subsubsection{Saídas}
 
 \begin{itemize}
-	\item Hotspot Detection Message: Mensagem que informa a detecção de um ponto quente e informa a sua localização na imagem e localização do robô na linha.
-	\item Sonar Detection Message: Mensagem que informa a detecção de objetos na faixa de servidão e sua localização na linha.
+	\item \textit{Hotspot Detection Message}: Mensagem que informa a detecção de um ponto quente e informa a sua localização na imagem e localização do robô na linha.
+	\item \textit{Sonar Detection Message}: Mensagem que informa a detecção de objetos na faixa de servidão e sua localização na linha.
 	%\item Localization Request Message: Mensagem de requisição dos dados posicionamento e orientação do robô para o sistema de Localização
 \end{itemize}
-\pagebreak
+
 
 %--------- NEW SECTION ----------------------
 \section{Interface do Usuário}
@@ -316,11 +316,11 @@ A interface do usuário é uma forma de expor graficamente as variáveis mais im
 No ELIR a interface do usuário tem o papel de informar cinco características principais:
 
 \begin{itemize}
-	\item System Integrity
-	\item Robot Status
-	\item Thermal view
-	\item Ocurrences
-	\item Actuators Information
+	\item \textit{System Integrity}
+	\item \textit{Robot Status}
+	\item \textit{Thermal view}
+	\item \textit{Ocurrences}
+	\item \textit{Actuators Information}
 \end{itemize}
 
 No campo de \textit{System Integrity} são exibidos em tempo real as variáveis de grande impacto na eficiência e integridade do sistema. Por isso são informados os dados de temperatura, percentual de carga da bateria, consumo, localização e orientação do robô.

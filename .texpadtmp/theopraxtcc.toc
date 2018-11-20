@@ -17,58 +17,59 @@
 \contentsline {subsubsection}{\numberline {2.2.3.3}User Interface Layer}{28}{subsubsection.2.2.3.3}
 \contentsline {section}{\numberline {2.3}Especifica\IeC {\c c}\IeC {\~a}o t\IeC {\'e}cnica do sistema de Percep\IeC {\c c}\IeC {\~a}o}{28}{section.2.3}
 \contentsline {section}{\numberline {2.4}Desdobramento da fun\IeC {\c c}\IeC {\~a}o qualidade}{29}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Requisitos t\IeC {\'e}cnicos}{29}{subsection.2.4.1}
-\contentsline {chapter}{\numberline {3}Materiais e M\IeC {\'e}todos}{30}{chapter.3}
-\contentsline {section}{\numberline {3.1}Estrutura anal\IeC {\'\i }tica do prot\IeC {\'o}tipo}{30}{section.3.1}
-\contentsline {section}{\numberline {3.2}Lista de componentes}{30}{section.3.2}
-\contentsline {section}{\numberline {3.3}Diagramas mec\IeC {\^a}nicos do sistema de Percep\IeC {\c c}\IeC {\~a}o}{31}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Suporte dos sensores}{31}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Modelo esquem\IeC {\'a}tico de alimenta\IeC {\c c}\IeC {\~a}o e comunica\IeC {\c c}\IeC {\~a}o}{33}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Diagramas el\IeC {\'e}tricos e eletr\IeC {\^o}nicos}{34}{subsection.3.4.1}
-\contentsline {section}{\numberline {3.5}Especifica\IeC {\c c}\IeC {\~a}o das funcionalidades}{34}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Fluxo das informa\IeC {\c c}\IeC {\~o}es do sistema de Percep\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Aquisi\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.2.1}Objetivo}{36}{subsubsection.3.5.2.1}
-\contentsline {subsubsection}{\numberline {3.5.2.2}Depend\IeC {\^e}ncias}{36}{subsubsection.3.5.2.2}
-\contentsline {subsubsection}{\numberline {3.5.2.3}Premissas}{36}{subsubsection.3.5.2.3}
-\contentsline {subsubsection}{\numberline {3.5.2.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{37}{subsubsection.3.5.2.4}
-\contentsline {subsubsection}{\numberline {3.5.2.5}Sa\IeC {\'\i }das}{38}{subsubsection.3.5.2.5}
-\contentsline {subsection}{\numberline {3.5.3}Localiza\IeC {\c c}\IeC {\~a}o}{39}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Objetivo}{39}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Depend\IeC {\^e}ncias}{39}{subsubsection.3.5.3.2}
-\contentsline {subsubsection}{\numberline {3.5.3.3}Premissas}{39}{subsubsection.3.5.3.3}
-\contentsline {subsubsection}{\numberline {3.5.3.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{39}{subsubsection.3.5.3.4}
-\contentsline {subsubsection}{\numberline {3.5.3.5}Sa\IeC {\'\i }das}{40}{subsubsection.3.5.3.5}
-\contentsline {subsection}{\numberline {3.5.4}Detec\IeC {\c c}\IeC {\~a}o}{40}{subsection.3.5.4}
-\contentsline {subsubsection}{\numberline {3.5.4.1}Objetivo}{40}{subsubsection.3.5.4.1}
-\contentsline {subsubsection}{\numberline {3.5.4.2}Depend\IeC {\^e}ncias}{40}{subsubsection.3.5.4.2}
-\contentsline {subsubsection}{\numberline {3.5.4.3}Premissas}{40}{subsubsection.3.5.4.3}
-\contentsline {subsubsection}{\numberline {3.5.4.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{40}{subsubsection.3.5.4.4}
-\contentsline {subsubsection}{\numberline {3.5.4.5}Sa\IeC {\'\i }das}{41}{subsubsection.3.5.4.5}
-\contentsline {section}{\numberline {3.6}Interface do Usu\IeC {\'a}rio}{42}{section.3.6}
-\contentsline {chapter}{\numberline {4}Resultados}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Testes unit\IeC {\'a}rios}{43}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}C\IeC {\^a}mera T\IeC {\'e}rmica}{43}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Sonar EZ-1}{44}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Sensor de Proximidade}{45}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}\textit {Smart Charger}}{46}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Sensor de Temperatura}{47}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}GPS}{47}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}IMU}{48}{subsection.4.1.7}
-\contentsline {section}{\numberline {4.2}Integra\IeC {\c c}\IeC {\~a}o no ROS}{49}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Phidgets}{49}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Smart Charger}{49}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}C\IeC {\^a}mera T\IeC {\'e}rmica}{50}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}GPS}{51}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}IMU}{51}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Testes integrados}{52}{section.4.3}
-\contentsline {section}{\numberline {4.4}Avalia\IeC {\c c}\IeC {\~a}o da prontid\IeC {\~a}o tecnol\IeC {\'o}gica}{52}{section.4.4}
-\contentsline {section}{\numberline {4.5}Trabalhos futuros}{52}{section.4.5}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{53}{chapter.5}
-\contentsline {section}{\numberline {5.1}Considera\IeC {\c c}\IeC {\~o}es finais}{53}{section.5.1}
-\contentsline {chapter}{\numberline {A}QFD}{54}{appendix.A}
-\contentsline {chapter}{\numberline {B}Diagramas mec\IeC {\^a}nicos}{55}{appendix.B}
-\contentsline {chapter}{\numberline {C}Diagramas eletro-eletr\IeC {\^o}nicos}{70}{appendix.C}
-\contentsline {chapter}{\numberline {D}Wireframes}{82}{appendix.D}
-\contentsline {chapter}{\numberline {E}Logbook}{84}{appendix.E}
-\contentsline {chapter}{Refer\IeC {\^e}ncias}{85}{appendix.E}
+\contentsline {chapter}{\numberline {3}Materiais e M\IeC {\'e}todos}{32}{chapter.3}
+\contentsline {section}{\numberline {3.1}Estrutura anal\IeC {\'\i }tica do prot\IeC {\'o}tipo}{32}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lista de componentes}{33}{section.3.2}
+\contentsline {section}{\numberline {3.3}Diagramas mec\IeC {\^a}nicos do sistema de Percep\IeC {\c c}\IeC {\~a}o}{34}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Suporte dos sensores}{34}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Modelo esquem\IeC {\'a}tico de alimenta\IeC {\c c}\IeC {\~a}o e comunica\IeC {\c c}\IeC {\~a}o}{36}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Diagramas el\IeC {\'e}tricos e eletr\IeC {\^o}nicos}{37}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Especifica\IeC {\c c}\IeC {\~a}o das funcionalidades}{37}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Fluxo das informa\IeC {\c c}\IeC {\~o}es do sistema de Percep\IeC {\c c}\IeC {\~a}o}{39}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Aquisi\IeC {\c c}\IeC {\~a}o}{39}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}Objetivo}{39}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}Depend\IeC {\^e}ncias}{39}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}Premissas}{39}{subsubsection.3.5.2.3}
+\contentsline {subsubsection}{\numberline {3.5.2.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{40}{subsubsection.3.5.2.4}
+\contentsline {subsubsection}{\numberline {3.5.2.5}Sa\IeC {\'\i }das}{41}{subsubsection.3.5.2.5}
+\contentsline {subsection}{\numberline {3.5.3}Localiza\IeC {\c c}\IeC {\~a}o}{42}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Objetivo}{42}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Depend\IeC {\^e}ncias}{42}{subsubsection.3.5.3.2}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Premissas}{42}{subsubsection.3.5.3.3}
+\contentsline {subsubsection}{\numberline {3.5.3.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{42}{subsubsection.3.5.3.4}
+\contentsline {subsubsection}{\numberline {3.5.3.5}Sa\IeC {\'\i }das}{43}{subsubsection.3.5.3.5}
+\contentsline {subsection}{\numberline {3.5.4}Detec\IeC {\c c}\IeC {\~a}o}{43}{subsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.4.1}Objetivo}{43}{subsubsection.3.5.4.1}
+\contentsline {subsubsection}{\numberline {3.5.4.2}Depend\IeC {\^e}ncias}{43}{subsubsection.3.5.4.2}
+\contentsline {subsubsection}{\numberline {3.5.4.3}Premissas}{43}{subsubsection.3.5.4.3}
+\contentsline {subsubsection}{\numberline {3.5.4.4}Descri\IeC {\c c}\IeC {\~a}o da Funcionalidade}{43}{subsubsection.3.5.4.4}
+\contentsline {subsubsection}{\numberline {3.5.4.5}Sa\IeC {\'\i }das}{44}{subsubsection.3.5.4.5}
+\contentsline {section}{\numberline {3.6}Interface do Usu\IeC {\'a}rio}{45}{section.3.6}
+\contentsline {chapter}{\numberline {4}Resultados}{46}{chapter.4}
+\contentsline {section}{\numberline {4.1}Testes unit\IeC {\'a}rios}{46}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}C\IeC {\^a}mera T\IeC {\'e}rmica}{46}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Sonar EZ-1}{47}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Sensor de Proximidade}{48}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}\textit {Smart Charger}}{49}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Sensor de Temperatura}{50}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}GPS}{50}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}IMU}{51}{subsection.4.1.7}
+\contentsline {section}{\numberline {4.2}Integra\IeC {\c c}\IeC {\~a}o no ROS}{52}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Phidgets}{52}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Smart Charger}{52}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}C\IeC {\^a}mera T\IeC {\'e}rmica}{53}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}GPS}{54}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}IMU}{54}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Testes integrados}{55}{section.4.3}
+\contentsline {section}{\numberline {4.4}Avalia\IeC {\c c}\IeC {\~a}o da prontid\IeC {\~a}o tecnol\IeC {\'o}gica}{55}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Avalia\IeC {\c c}\IeC {\~a}o do BTRL para o sistema rob\IeC {\'o}tico em desenvolvimento}{57}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Trabalhos futuros}{58}{section.4.5}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Considera\IeC {\c c}\IeC {\~o}es finais}{59}{section.5.1}
+\contentsline {chapter}{\numberline {A}QFD}{60}{appendix.A}
+\contentsline {chapter}{\numberline {B}Diagramas mec\IeC {\^a}nicos}{65}{appendix.B}
+\contentsline {chapter}{\numberline {C}Diagramas eletro-eletr\IeC {\^o}nicos}{80}{appendix.C}
+\contentsline {chapter}{\numberline {D}Wireframes}{92}{appendix.D}
+\contentsline {chapter}{\numberline {E}Logbook}{94}{appendix.E}
+\contentsline {chapter}{\numberline {F}Lista de componentes}{95}{appendix.F}
+\contentsline {chapter}{Refer\IeC {\^e}ncias}{98}{appendix.F}

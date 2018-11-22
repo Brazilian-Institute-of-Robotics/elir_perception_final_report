@@ -5,51 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[B{\"u}hringer et al. 2010]{buhringer2010cable}
-\abntrefinfo{B{\"u}hringer et al.}{B{\"U}HRINGER et al.}{2010}
-{B{\"U}HRINGER, M. et al. Cable-crawler--robot for the inspection of
-  high-voltage power lines that can passively roll over mast tops.
-\emph{Industrial Robot: An International Journal}, Emerald Group Publishing
-  Limited, v.~37, n.~3, p. 256--262, 2010.}
-
-\bibitem[Campos et al. 2002]{campos2002mobile}
-\abntrefinfo{Campos et al.}{CAMPOS et al.}{2002}
-{CAMPOS, M.~F. et al. A mobile manipulator for installation and removal of
-  aircraft warning spheres on aerial power transmission lines. In:  IEEE.
-  \emph{Robotics and Automation, 2002. Proceedings. ICRA'02. IEEE International
-  Conference on}. [S.l.], 2002. v.~4, p. 3559--3564.}
-
-\bibitem[Debenest et al. 2008]{debenest2008expliner}
-\abntrefinfo{Debenest et al.}{DEBENEST et al.}{2008}
-{DEBENEST, P. et al. Expliner-robot for inspection of transmission lines. In:
-  IEEE. \emph{Robotics and Automation, 2008. ICRA 2008. IEEE International
-  Conference on}. [S.l.], 2008. p. 3978--3984.}
-
 \bibitem[Fitzpatrick 2003]{Fitzpatrick}
 \abntrefinfo{Fitzpatrick}{FITZPATRICK}{2003}
 {FITZPATRICK, P. \emph{Perception and Perspective in Robotics}.
 Cambridge, MA, 2003.}
-
-\bibitem[Goncalves e Carvalho 2010]{goncalves2010graphical}
-\abntrefinfo{Goncalves e Carvalho}{GONCALVES; CARVALHO}{2010}
-{GONCALVES, R.~S.; CARVALHO, J. C.~M. Graphical simulations of a mobile robot
-  suspended on transmission lines using multibody systems software. In:  IEEE.
-  \emph{Robotics Symposium and Intelligent Robotic Meeting (LARS), 2010 Latin
-  American}. [S.l.], 2010. p.~1--6.}
-
-\bibitem[Gon{\c{c}}alves e Carvalho 2013]{gonccalves2013review}
-\abntrefinfo{Gon{\c{c}}alves e Carvalho}{GON{\c{C}}ALVES; CARVALHO}{2013}
-{GON{\c{C}}ALVES, R.~S.; CARVALHO, J. C.~M. Review and latest trends in mobile
-  robots used on power transmission lines.
-\emph{International Journal of Advanced Robotic Systems}, SAGE Publications
-  Sage UK: London, England, v.~10, n.~12, p.~408, 2013.}
-
-\bibitem[Gon{\c{c}}alves, Carvalho e Carvalho 2006]{gonccalves2006kinematics}
-\abntrefinfo{Gon{\c{c}}alves, Carvalho e Carvalho}{GON{\c{C}}ALVES; CARVALHO;
-  CARVALHO}{2006}
-{GON{\c{C}}ALVES, R.~S.; CARVALHO, J. C.~M.; CARVALHO, M. Kinematics analysis
-  of a four legged robot suspended on wire. In:  CITESEER. \emph{ABCM Symposium
-  Series in Mechatronics}. [S.l.], 2006. v.~2, p. 273--280.}
 
 \bibitem[Gyver et al. 2017]{groupgets}
 \abntrefinfo{Gyver et al.}{GYVER et al.}{2017}
@@ -57,80 +16,9 @@ Cambridge, MA, 2003.}
   [s.n.], 2017.
 Dispon{\'\i}vel em: \url{https://github.com/groupgets/LeptonModule}.}
 
-\bibitem[II et al.]{iirobo}
-\abntrefinfo{II et al.}{II et al.}{}
-{II, E. J.~L. et al. Rob{\^o} auton{\^o}mo para inspe{\c{c}}{\~a}o de linhas de
-  alta tens{\~a}o.}
-
-\bibitem[Katrasnik, Pernus e Likar 2010]{katrasnik2010climbing}
-\abntrefinfo{Katrasnik, Pernus e Likar}{KATRASNIK; PERNUS; LIKAR}{2010}
-{KATRASNIK, J.; PERNUS, F.; LIKAR, B. A climbing-flying robot for power line
-  inspection. In:  \emph{Climbing and Walking Robots}. [S.l.]: InTech, 2010.}
-
-\bibitem[Lee, Jung e Cho 2011]{lee2011development}
-\abntrefinfo{Lee, Jung e Cho}{LEE; JUNG; CHO}{2011}
-{LEE, J.-K.; JUNG, N.-J.; CHO, B.-H. Development of transmission line sleeve
-  inspection robot.
-\emph{World Academy of Science, Engineering and Technology}, v.~58, n.~58, p.
-  157--161, 2011.}
-
-\bibitem[Li e Ruan 2010]{li2010autonomous}
-\abntrefinfo{Li e Ruan}{LI; RUAN}{2010}
-{LI, Z.; RUAN, Y. Autonomous inspection robot for power transmission lines
-  maintenance while operating on the overhead ground wires.
-\emph{International Journal of Advanced Robotic Systems}, SAGE Publications
-  Sage UK: London, England, v.~7, n.~4, p.~25, 2010.}
-
 \bibitem[Michaelis 2004]{perc_michaelis}
 \abntrefinfo{Michaelis}{MICHAELIS}{2004}
 {MICHAELIS. \emph{Percepção}. 2004. URL: http://michaelis.uol.com.br.}
-
-\bibitem[Montambault e Pouliot 2007]{montambault2007design}
-\abntrefinfo{Montambault e Pouliot}{MONTAMBAULT; POULIOT}{2007}
-{MONTAMBAULT, S.; POULIOT, N. Design and validation of a mobile robot for power
-  line inspection and maintenance. In:  SPRINGER. \emph{6th International
-  Conference on Field and Service Robotics-FSR 2007}. [S.l.], 2007. v.~42.}
-
-\bibitem[Mourão Miguel A.~M. 2015]{mourao2015robolinhas}
-\abntrefinfo{Mourão Miguel A.~M.}{MOURãO MIGUEL A.~M.}{2015}
-{MOURãO MIGUEL A.~M., L. I. E. J. B. A. Q. G. R. A. B. M. H. S. R. M. A. N. S.
-  M. A. C. V. R. A. P. X. L. H.~A. Robô de inspeção de linhas - d311. In:
-  ANEEL. \emph{VII Congresso de Inovação Tecnológica em Energia Elétrica,
-  August 17 - 19, 2015}. [S.l.], 2015.}
-
-\bibitem[ONS 2018]{ons2013dados}
-\abntrefinfo{ONS}{ONS}{2018}
-{ONS. \emph{Dados relevantes do sistema de transmissão 2010 - 2013}. 2018.
-Dispon{\'\i}vel em:
-  \url{http://www.ons.org.br/sites/multimidia/Documentos\%20Compartilhados/dados/dados\_relevantes\_2010/0206\_sistema\_transmissao.html}.
-  Acesso em: 24/06/2018.}
-
-\bibitem[Pagnano, H{\"o}pf e Teti 2013]{pagnano2013roadmap}
-\abntrefinfo{Pagnano, H{\"o}pf e Teti}{PAGNANO; H{\"O}PF; TETI}{2013}
-{PAGNANO, A.; H{\"O}PF, M.; TETI, R. A roadmap for automated power line
-  inspection. maintenance and repair.
-\emph{Procedia CIRP}, Elsevier, v.~12, p. 234--239, 2013.}
-
-\bibitem[Phillips et al. 2012]{phillips2012autonomous}
-\abntrefinfo{Phillips et al.}{PHILLIPS et al.}{2012}
-{PHILLIPS, A. et al. Autonomous overhead transmission line inspection robot
-  (ti) development and demonstration. In:  IEEE. \emph{Applied Robotics for the
-  Power Industry (CARPI), 2012 2nd International Conference on}. [S.l.], 2012.
-  p. 94--95.}
-
-\bibitem[Rangel, Kienitz e Brand{\~a}o 2009]{rangel2009sistema}
-\abntrefinfo{Rangel, Kienitz e Brand{\~a}o}{RANGEL; KIENITZ; BRAND{\~A}O}{2009}
-{RANGEL, R.~K.; KIENITZ, K.~H.; BRAND{\~A}O, M.~P. Sistema de inspecao de
-  linhas de transmissao de energia electrica utilizando veiculos aereos
-  nao-tripulados. In:  \emph{3rd CTA-DLR Workshop on Data Analysis \& Flight
-  Control ocorrido entre}. [S.l.: s.n.], 2009. p. 14--16.}
-
-\bibitem[Sartori 2018]{sartori2018}
-\abntrefinfo{Sartori}{SARTORI}{2018}
-{SARTORI, J. R. T.~D.
-\emph{Análise cinemática e geométrica de um robô de inspeção de linhas de
-  transmissão de 138kV}.
-Tese (Doutorado) --- Faculdades Senai Cimatec, 2018.}
 
 \bibitem[Thorpe et al. 2003]{chuck}
 \abntrefinfo{Thorpe et al.}{THORPE et al.}{2003}
@@ -141,24 +29,5 @@ Tese (Doutorado) --- Faculdades Senai Cimatec, 2018.}
 \abntrefinfo{Tranzatto et al.}{TRANZATTO et al.}{2018}
 {TRANZATTO, M. et al. \emph{ethz piksi ros}. Zurique: [s.n.], 2018.
 Dispon{\'\i}vel em: \url{https://github.com/ethz-asl}.}
-
-\bibitem[Ventrella et al. 2003]{ventrella2003robo}
-\abntrefinfo{Ventrella et al.}{VENTRELLA et al.}{2003}
-{VENTRELLA, A. et al. Rob{\^o} m{\'o}vel aplicado {\`a} inspe{\c{c}}{\~a}o em
-  linhas de transmiss{\~a}o. In:  \emph{Anais do II Congresso de Inova{\c{c}}ao
-  Tecnol{\'o}gica em Engenharia El{\'e}trica}. [S.l.: s.n.], 2003. v.~1.}
-
-\bibitem[Wang et al. 2010]{wang2010design}
-\abntrefinfo{Wang et al.}{WANG et al.}{2010}
-{WANG, L. et al. Design, modeling and control of a biped line-walking robot.
-\emph{International Journal of Advanced Robotic Systems}, SAGE Publications
-  Sage UK: London, England, v.~7, n.~4, p.~33, 2010.}
-
-\bibitem[Zhou et al. 2005]{zhou2005control}
-\abntrefinfo{Zhou et al.}{ZHOU et al.}{2005}
-{ZHOU, F. et al. Control of an inspection robot for 110kv power transmission
-  lines based on expert system design methods. In:  IEEE. \emph{Control
-  Applications, 2005. CCA 2005. Proceedings of 2005 IEEE Conference on}.
-  [S.l.], 2005. p. 1563--1568.}
 
 \end{thebibliography}

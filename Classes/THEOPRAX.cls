@@ -278,6 +278,7 @@
     \renewcommand{\headrulewidth}{0.3pt}
     \renewcommand{\footrulewidth}{0.3pt}
     \renewcommand{\chaptermark}[1]{\markboth{\chaptername \thechapterwords\ }{}}
+    %\renewcommand{\chaptermark}[2]{\markboth{\chaptername \thechapterwords\ }{}}
     \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
 \else
     \pagestyle{plain}
@@ -304,19 +305,39 @@
 % CHAPTERS HEADINGS
 %------------------------------------------------------------------------
 \newcommand{\thechapterwords}{
-    \ifsu@appending
-        \thechapter
+    \ifsu@appending 
+    	\thechapter
     \else
-        \ifcase\thechapter\or Um\or Dois\or Tr\^es\or Quatro\or Cinco\or Seis\or
+%    	\ifsu@annexing
+%        	\thechapter
+%    	\else
+        	\ifcase\thechapter\or Um\or Dois\or Tr\^es\or Quatro\or Cinco\or Seis\or
                            Sete\or Oito\or Nove\or Dez\or Onze\or
                            Doze\or Treze\or Quatorze\or Quinze\or
                            Dezesseis\or Dezessete\or Dezoito\or Dezenove\or
                            Vinte\or Vinte e um\or Vinte e dois\or Vinte e tr\^es\or
                            Vinte e quatro\or Vinte e cinco\or Vinte e seis\or
                            Vinte e sete\or Vinte e oito\or Vinte e nove\or
-                           Trinta\fi
+                           Trinta\fi  
+%        \fi                                   	
     \fi
 }
+
+%\newcommand{\thechapterwords}{
+%    \ifsu@annexing
+%        \thechapter
+%    \else
+%        \ifcase\thechapter\or Um\or Dois\or Tr\^es\or Quatro\or Cinco\or Seis\or
+%                           Sete\or Oito\or Nove\or Dez\or Onze\or
+%                           Doze\or Treze\or Quatorze\or Quinze\or
+%                           Dezesseis\or Dezessete\or Dezoito\or Dezenove\or
+%                           Vinte\or Vinte e um\or Vinte e dois\or Vinte e tr\^es\or
+%                           Vinte e quatro\or Vinte e cinco\or Vinte e seis\or
+%                           Vinte e sete\or Vinte e oito\or Vinte e nove\or
+%                           Trinta\fi                                      	
+%    \fi
+%}
+
 
 \ifsu@fancychap
     \def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
@@ -730,6 +751,40 @@
     \appendix
     \renewcommand{\chaptermark}[1]{\markboth{\appendixname \thechapterwords\ }{}}
 }
+
+%\newboolean{su@annexing} \setboolean{su@annexing}{false}
+%\newenvironment{thesisannexes}{
+%    \setboolean{su@annexing}{true}
+%    \annex
+%    \renewcommand{\chaptermark}[1]{\markboth{\appendixname \thechapterwords\ }{}}
+%}
+
+
+%------------------------------------------------------------------------
+% THESIS ANNEX
+%------------------------------------------------------------------------
+%\newboolean{su@annexing} \setboolean{su@annexing}{false}
+%\newenvironment{thesisannex}{
+%    \setboolean{su@annexing}{true}
+%    \annex
+%    \renewcommand{\chaptermark}[1]{\markboth{\annexname \thechapterwords\ }{}}
+%}
+
+% Create Roman Numeral Labelled Annexes
+%\newcommand{\annexname}{Annex}
+%\makeatletter % treat @ as a letter instead of a control word.
+%\newcommand\annex{\par
+%	\setcounter{chapter}{0}
+%	\setcounter{section}{0}
+%	\renewcommand\appendixname{Annex}
+%	\renewcommand\appendixpagename{Annexes}
+%	\renewcommand{\appendixtocname}{Annexes}
+%	\gdef\@chapapp{\annexname}
+%	\gdef\thechapter{\@Roman\c@chapter}
+%	\renewcommand{\theHchapter}{\annexname.\thechapter}
+%	\addappheadtotoc
+%}
+%\makeatother
 
 %------------------------------------------------------------------------
 % ULTIMA FOLHA

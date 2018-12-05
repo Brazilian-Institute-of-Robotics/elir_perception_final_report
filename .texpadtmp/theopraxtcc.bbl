@@ -5,6 +5,23 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Adabo 2014]{geral}
+\abntrefinfo{Adabo}{ADABO}{2014}
+{ADABO, G.~J. Long range unmanned aircraft system for power line inspection of
+  brazilian electrical system.
+2014.}
+
+\bibitem[Cabello 2016]{canahuire}
+\abntrefinfo{Cabello}{CABELLO}{2016}
+{CABELLO, F. A.~C. Contribuições à detecção automática de pontos quentes
+  em postes de energia elétrica usando o algoritmo bag of visual words e
+  métodos de kernel.
+2016.}
+
+\bibitem[Filho 2005]{mamede2005}
+\abntrefinfo{Filho}{FILHO}{2005}
+{FILHO, J.~M. \emph{Manual De Equipamentos Elétricos}. São Paulo: LTC, 2005.}
+
 \bibitem[Fitzpatrick 2003]{Fitzpatrick}
 \abntrefinfo{Fitzpatrick}{FITZPATRICK}{2003}
 {FITZPATRICK, P. \emph{Perception and Perspective in Robotics}.
@@ -19,6 +36,20 @@ Dispon{\'\i}vel em: \url{https://github.com/groupgets/LeptonModule}.}
 \bibitem[Michaelis 2004]{perc_michaelis}
 \abntrefinfo{Michaelis}{MICHAELIS}{2004}
 {MICHAELIS. \emph{Percepção}. 2004. URL: http://michaelis.uol.com.br.}
+
+\bibitem[Oliveira 2007]{lagesoliveira}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2007}
+{OLIVEIRA, W. F.~L. Vinícius Menezas~de. Comparação entre duas classes de
+  robôs bracejadores subatuados utilizando controle preditivo baseado em
+  modelo.
+VIII Simpósio Brasileiro de Automação Inteligente, 2007.}
+
+\bibitem[Rangel, Kienitz e Brand{\~a}o 2009]{rangel2009sistema}
+\abntrefinfo{Rangel, Kienitz e Brand{\~a}o}{RANGEL; KIENITZ; BRAND{\~A}O}{2009}
+{RANGEL, R.~K.; KIENITZ, K.~H.; BRAND{\~A}O, M.~P. Sistema de inspecao de
+  linhas de transmissao de energia electrica utilizando veiculos aereos
+  nao-tripulados.
+Sep, 2009.}
 
 \bibitem[Thorpe et al. 2003]{chuck}
 \abntrefinfo{Thorpe et al.}{THORPE et al.}{2003}

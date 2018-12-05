@@ -1,9 +1,10 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: /Users/mhar-vell/Documents/@mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux
+The top-level auxiliary file: /Users/felipeplech/Documents/Github/Sourcetree/.texpadtmp/theopraxtcc.aux
 A level-1 auxiliary file: Others/FolhaRosto.aux
 A level-1 auxiliary file: Others/resumo.aux
 A level-1 auxiliary file: Others/abstract.aux
+A level-1 auxiliary file: Others/abbreviation.aux
 A level-1 auxiliary file: Chapters/ChapterOne.aux
 A level-1 auxiliary file: Chapters/ChapterTwo.aux
 A level-1 auxiliary file: Chapters/ChapterThree.aux
@@ -28,54 +29,67 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: ../References/referencias.bib
-You're missing a field name---line 16 of file ../References/referencias.bib
+I was expecting a `,' or a `}'---line 35 of file ../References/referencias.bib
+ :     
+ :     journal = {Journal of Energy and Power Engineering}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 68 of file ../References/referencias.bib
  : 
  : =======
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 38 of file ../References/referencias.bib
+I was expecting an "="---line 90 of file ../References/referencias.bib
  : >>>>>>> 
  :         chapter/2
 I'm skipping whatever remains of this entry
-You're missing a field name---line 949 of file ../References/referencias.bib
+Repeated entry---line 351 of file ../References/referencias.bib
+ : @inproceedings{rangel2009sistema
+ :                                 ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1001 of file ../References/referencias.bib
  : 
  : % title={ROB{\^O} AUTON{\^O}MO PARA INSPE{\c{C}}{\~A}O DE LINHAS DE ALTA TENS{\~A}O},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1487 of file ../References/referencias.bib
+You're missing a field name---line 1539 of file ../References/referencias.bib
  : 
  : % title={ROB{\^O} AUTON{\^O}MO PARA INSPE{\c{C}}{\~A}O DE LINHAS DE ALTA TENS{\~A}O},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1503 of file ../References/referencias.bib
+You're missing a field name---line 1555 of file ../References/referencias.bib
  : 
  : % title={Expliner-Robot for inspection of transmission lines},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1512 of file ../References/referencias.bib
+You're missing a field name---line 1564 of file ../References/referencias.bib
  : 
  : % title={Rob{\^o} m{\'o}vel aplicado {\`a} inspe{\c{c}}{\~a}o em linhas de transmiss{\~a}o},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1520 of file ../References/referencias.bib
+You're missing a field name---line 1572 of file ../References/referencias.bib
  : 
  : % title={Control of an inspection robot for 110KV power transmission lines based on expert system design methods},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1529 of file ../References/referencias.bib
+You're missing a field name---line 1581 of file ../References/referencias.bib
  : 
  : % title={Design and validation of a mobile robot for power line inspection and maintenance},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1578 of file ../References/referencias.bib
+You're missing a field name---line 1630 of file ../References/referencias.bib
  : 
  : % title={Autonomous overhead transmission line inspection robot (TI) development and demonstration},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1871 of file ../References/referencias.bib
+I was expecting a `,' or a `}'---line 1923 of file ../References/referencias.bib
  : 
  : booktitle={Anais do XX Congresso Brasileiro de Automática, Setembro 20 24 de 2014},
 (Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1997 of file ../References/referencias.bib
+ : @inproceedings{rangel2009sistema
+ :                                 ,
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -86,45 +100,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 6 entries,
+You've used 11 entries,
             6714 wiz_defined-function locations,
-            1240 strings with 10628 characters,
-and the built_in function-call counts, 5825 in all, are:
-= -- 658
-> -- 153
+            1267 strings with 11496 characters,
+and the built_in function-call counts, 8794 in all, are:
+= -- 830
+> -- 264
 < -- 70
-+ -- 174
-- -- 46
-* -- 373
-:= -- 838
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 55
-chr.to.int$ -- 6
-cite$ -- 5
-duplicate$ -- 351
-empty$ -- 324
-format.name$ -- 229
-if$ -- 1281
++ -- 213
+- -- 81
+* -- 570
+:= -- 1274
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 97
+chr.to.int$ -- 11
+cite$ -- 10
+duplicate$ -- 512
+empty$ -- 570
+format.name$ -- 391
+if$ -- 1954
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 92
-newline$ -- 32
-num.names$ -- 25
-pop$ -- 135
+missing$ -- 177
+newline$ -- 56
+num.names$ -- 50
+pop$ -- 253
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 41
 quote$ -- 0
-skip$ -- 478
+skip$ -- 643
 stack$ -- 1
-substring$ -- 208
-swap$ -- 126
+substring$ -- 293
+swap$ -- 174
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 34
+while$ -- 64
 width$ -- 0
-write$ -- 80
-(There were 10 error messages)
+write$ -- 148
+(There were 13 error messages)

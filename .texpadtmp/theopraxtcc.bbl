@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Alvaro 2018]{Alvaro}
+\abntrefinfo{Alvaro}{ALVARO}{2018}
+{ALVARO. \emph{Criando Estrutura Básica do ROS}. 2018.
+Dispon{\'\i}vel em:
+  \url{https://sites.google.com/site/alvaroccomp/part-3-issn-units/ros-e-pucks/criando-estrutura-basica-do-ros}.}
+
 \bibitem[Fitzpatrick 2003]{Fitzpatrick}
 \abntrefinfo{Fitzpatrick}{FITZPATRICK}{2003}
 {FITZPATRICK, P. \emph{Perception and Perspective in Robotics}.
@@ -19,6 +25,11 @@ Dispon{\'\i}vel em: \url{https://github.com/groupgets/LeptonModule}.}
 \bibitem[Michaelis 2004]{perc_michaelis}
 \abntrefinfo{Michaelis}{MICHAELIS}{2004}
 {MICHAELIS. \emph{Percepção}. 2004. URL: http://michaelis.uol.com.br.}
+
+\bibitem[ROSWiki 2018]{ROS}
+\abntrefinfo{ROSWiki}{ROSWIKI}{2018}
+{ROSWIKI. \emph{About ROS}. 2018.
+Dispon{\'\i}vel em: \url{http://www.ros.org/about-ros/}.}
 
 \bibitem[Thorpe et al. 2003]{chuck}
 \abntrefinfo{Thorpe et al.}{THORPE et al.}{2003}

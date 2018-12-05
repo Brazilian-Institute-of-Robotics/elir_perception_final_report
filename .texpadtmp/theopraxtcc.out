@@ -11,12 +11,12 @@
 \BOOKMARK [1][]{section.1.3}{1.3 Requisitos do cliente}{chapter.1}% 11
 \BOOKMARK [1][]{section.1.4}{1.4 Organiza\347\343o do Trabalho de Conclus\343o do Curso }{chapter.1}% 12
 \BOOKMARK [0][]{chapter.2}{2 Conceito do Sistema}{}% 13
-\BOOKMARK [1][]{subsection.2.0.1}{2.0.1 Arquitetura geral do sistema de Percep\347\343o}{chapter.2}% 14
-\BOOKMARK [2][]{subsection.2.0.2}{2.0.2 Arquitetura de software do sistema de Percep\347\343o}{subsection.2.0.1}% 15
-\BOOKMARK [3][]{subsubsection.2.0.2.1}{2.0.2.1 Driver Layer}{subsection.2.0.2}% 16
-\BOOKMARK [3][]{subsubsection.2.0.2.2}{2.0.2.2 Business Layer}{subsection.2.0.2}% 17
-\BOOKMARK [3][]{subsubsection.2.0.2.3}{2.0.2.3 User Interface Layer}{subsection.2.0.2}% 18
-\BOOKMARK [1][]{section.2.1}{2.1 Especifica\347\343o t\351cnica do sistema de Percep\347\343o}{chapter.2}% 19
+\BOOKMARK [1][]{section.2.1}{2.1 Especifica\347\343o t\351cnica do sistema de Percep\347\343o}{chapter.2}% 14
+\BOOKMARK [1][]{section.2.2}{2.2 Arquitetura geral do sistema de Percep\347\343o}{chapter.2}% 15
+\BOOKMARK [1][]{section.2.3}{2.3 Arquitetura de software do sistema de Percep\347\343o}{chapter.2}% 16
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Driver Layer}{section.2.3}% 17
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Business Layer}{section.2.3}% 18
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 User Interface Layer}{section.2.3}% 19
 \BOOKMARK [0][]{chapter.3}{3 Materiais e M\351todos}{}% 20
 \BOOKMARK [1][]{section.3.1}{3.1 Lista de componentes}{chapter.3}% 21
 \BOOKMARK [1][]{section.3.2}{3.2 Diagramas mec\342nicos do sistema de Percep\347\343o}{chapter.3}% 22

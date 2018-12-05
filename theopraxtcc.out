@@ -1,82 +1,74 @@
 \BOOKMARK [0][]{Title.0}{Title Page}{}% 1
-\BOOKMARK [1][]{Agradecimentos.1}{Agradecimentos}{Title.0}% 2
-\BOOKMARK [1][]{Resumo.1}{Resumo}{Title.0}% 3
-\BOOKMARK [1][]{Abstract.1}{Abstract}{Title.0}% 4
-\BOOKMARK [1][]{toc.1}{Sum\341rio}{Title.0}% 5
-\BOOKMARK [1][]{lot.1}{Lista de Tabelas}{Title.0}% 6
-\BOOKMARK [1][]{lof.1}{Lista de Figuras}{Title.0}% 7
-\BOOKMARK [1][]{Lista de Siglas.1}{Lista de Siglas}{Title.0}% 8
-\BOOKMARK [1][]{Lista de Simbolos.1}{Lista de Simbolos}{Title.0}% 9
-\BOOKMARK [0][]{chapter.1}{1 Introdu\347\343o}{}% 10
-\BOOKMARK [1][]{section.1.1}{1.1 Objetivos}{chapter.1}% 11
-\BOOKMARK [2][]{subsection.1.1.1}{1.1.1 Objetivos Espec\355ficos}{section.1.1}% 12
-\BOOKMARK [1][]{section.1.2}{1.2 Justificativa}{chapter.1}% 13
-\BOOKMARK [1][]{section.1.3}{1.3 Requisitos do cliente}{chapter.1}% 14
-\BOOKMARK [1][]{section.1.4}{1.4 Organiza\347\343o do Projeto Theoprax de Conclus\343o de Curso }{chapter.1}% 15
-\BOOKMARK [0][]{chapter.2}{2 Conceito do Sistema}{}% 16
-\BOOKMARK [1][]{section.2.1}{2.1 Estudo do estado da arte}{chapter.2}% 17
-\BOOKMARK [1][]{section.2.2}{2.2 Descri\347\343o do sistema}{chapter.2}% 18
-\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Especifica\347\343o t\351cnica}{section.2.2}% 19
-\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Arquitetura geral do sistema}{section.2.2}% 20
-\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Arquitetura de software}{section.2.2}% 21
-\BOOKMARK [3][]{subsubsection.2.2.3.1}{2.2.3.1 Driver Layer}{subsection.2.2.3}% 22
-\BOOKMARK [3][]{subsubsection.2.2.3.2}{2.2.3.2 Business Layer}{subsection.2.2.3}% 23
-\BOOKMARK [3][]{subsubsection.2.2.3.3}{2.2.3.3 User Interface Layer}{subsection.2.2.3}% 24
-\BOOKMARK [1][]{section.2.3}{2.3 Desdobramento da fun\347\343o qualidade}{chapter.2}% 25
-\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Requisitos t\351cnicos}{section.2.3}% 26
-\BOOKMARK [0][]{chapter.3}{3 Materiais e M\351todos}{}% 27
-\BOOKMARK [1][]{section.3.1}{3.1 Estrutura anal\355tica do prot\363tipo}{chapter.3}% 28
-\BOOKMARK [1][]{section.3.2}{3.2 Lista de componentes}{chapter.3}% 29
-\BOOKMARK [1][]{section.3.3}{3.3 Diagramas mec\342nicos}{chapter.3}% 30
-\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Diagrama mec\342nico do ELIR}{section.3.3}% 31
-\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Suporte dos sensores}{section.3.3}% 32
-\BOOKMARK [1][]{section.3.4}{3.4 Modelo esquem\341tico de alimenta\347\343o e comunica\347\343o}{chapter.3}% 33
-\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Diagramas el\351tricos}{section.3.4}% 34
-\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Esquemas eletr\364nicos}{section.3.4}% 35
-\BOOKMARK [1][]{section.3.5}{3.5 Especifica\347\343o das funcionalidades}{chapter.3}% 36
-\BOOKMARK [2][]{subsection.3.5.1}{3.5.1 Fluxo das informa\347\365es}{section.3.5}% 37
-\BOOKMARK [2][]{subsection.3.5.2}{3.5.2 Aquisi\347\343o}{section.3.5}% 38
-\BOOKMARK [3][]{subsubsection.3.5.2.1}{3.5.2.1 Objetivo}{subsection.3.5.2}% 39
-\BOOKMARK [3][]{subsubsection.3.5.2.2}{3.5.2.2 Depend\352ncias}{subsection.3.5.2}% 40
-\BOOKMARK [3][]{subsubsection.3.5.2.3}{3.5.2.3 Premissas}{subsection.3.5.2}% 41
-\BOOKMARK [3][]{subsubsection.3.5.2.4}{3.5.2.4 Descri\347\343o da Funcionalidade}{subsection.3.5.2}% 42
-\BOOKMARK [3][]{subsubsection.3.5.2.5}{3.5.2.5 Sa\355das}{subsection.3.5.2}% 43
-\BOOKMARK [2][]{subsection.3.5.3}{3.5.3 Localiza\347\343o}{section.3.5}% 44
-\BOOKMARK [3][]{subsubsection.3.5.3.1}{3.5.3.1 Objetivo}{subsection.3.5.3}% 45
-\BOOKMARK [3][]{subsubsection.3.5.3.2}{3.5.3.2 Depend\352ncias}{subsection.3.5.3}% 46
-\BOOKMARK [3][]{subsubsection.3.5.3.3}{3.5.3.3 Premissas}{subsection.3.5.3}% 47
-\BOOKMARK [3][]{subsubsection.3.5.3.4}{3.5.3.4 Descri\347\343o da Funcionalidade}{subsection.3.5.3}% 48
-\BOOKMARK [3][]{subsubsection.3.5.3.5}{3.5.3.5 Sa\355das}{subsection.3.5.3}% 49
-\BOOKMARK [2][]{subsection.3.5.4}{3.5.4 Detec\347\343o}{section.3.5}% 50
-\BOOKMARK [3][]{subsubsection.3.5.4.1}{3.5.4.1 Objetivo}{subsection.3.5.4}% 51
-\BOOKMARK [3][]{subsubsection.3.5.4.2}{3.5.4.2 Depend\352ncias}{subsection.3.5.4}% 52
-\BOOKMARK [3][]{subsubsection.3.5.4.3}{3.5.4.3 Premissas}{subsection.3.5.4}% 53
-\BOOKMARK [3][]{subsubsection.3.5.4.4}{3.5.4.4 Descri\347\343o da Funcionalidade}{subsection.3.5.4}% 54
-\BOOKMARK [3][]{subsubsection.3.5.4.5}{3.5.4.5 Sa\355das}{subsection.3.5.4}% 55
-\BOOKMARK [1][]{section.3.6}{3.6 Interface do Usu\341rio}{chapter.3}% 56
-\BOOKMARK [0][]{chapter.4}{4 Resultados}{}% 57
-\BOOKMARK [1][]{section.4.1}{4.1 Testes unit\341rios}{chapter.4}% 58
-\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 C\342mera T\351rmica}{section.4.1}% 59
-\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Sonar EZ-1}{section.4.1}% 60
-\BOOKMARK [2][]{subsection.4.1.3}{4.1.3 Sensor de Proximidade}{section.4.1}% 61
-\BOOKMARK [2][]{subsection.4.1.4}{4.1.4 Smart Charger}{section.4.1}% 62
-\BOOKMARK [2][]{subsection.4.1.5}{4.1.5 Sensor de Temperatura}{section.4.1}% 63
-\BOOKMARK [2][]{subsection.4.1.6}{4.1.6 GPS}{section.4.1}% 64
-\BOOKMARK [2][]{subsection.4.1.7}{4.1.7 IMU}{section.4.1}% 65
-\BOOKMARK [1][]{section.4.2}{4.2 Integra\347\343o no ROS}{chapter.4}% 66
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Phidgets}{section.4.2}% 67
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Smart Charger}{section.4.2}% 68
-\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 C\342mera T\351rmica}{section.4.2}% 69
-\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 GPS}{section.4.2}% 70
-\BOOKMARK [2][]{subsection.4.2.5}{4.2.5 IMU}{section.4.2}% 71
-\BOOKMARK [1][]{section.4.3}{4.3 Testes integrados}{chapter.4}% 72
-\BOOKMARK [1][]{section.4.4}{4.4 Avalia\347\343o da prontid\343o tecnol\363gica}{chapter.4}% 73
-\BOOKMARK [1][]{section.4.5}{4.5 Trabalhos futuros}{chapter.4}% 74
-\BOOKMARK [0][]{chapter.5}{5 Conclus\343o}{}% 75
-\BOOKMARK [1][]{section.5.1}{5.1 Considera\347\365es finais}{chapter.5}% 76
-\BOOKMARK [0][]{appendix.A}{A QFD}{}% 77
-\BOOKMARK [0][]{appendix.B}{B Diagramas mec\342nicos}{}% 78
-\BOOKMARK [0][]{appendix.C}{C Diagramas eletro-eletr\364nicos}{}% 79
-\BOOKMARK [0][]{appendix.D}{D Wireframes}{}% 80
-\BOOKMARK [0][]{appendix.E}{E Logbook}{}% 81
-\BOOKMARK [0][]{appendix.E}{Refer\352ncias}{}% 82
+\BOOKMARK [1][]{Resumo.1}{Resumo}{Title.0}% 2
+\BOOKMARK [1][]{Abstract.1}{Abstract}{Title.0}% 3
+\BOOKMARK [1][]{toc.1}{Sumário}{Title.0}% 4
+\BOOKMARK [1][]{lot.1}{Lista de Tabelas}{Title.0}% 5
+\BOOKMARK [1][]{lof.1}{Lista de Figuras}{Title.0}% 6
+\BOOKMARK [0][]{chapter.1}{1 Introdu\347\343o}{}% 7
+\BOOKMARK [1][]{section.1.1}{1.1 Objetivos}{chapter.1}% 8
+\BOOKMARK [2][]{subsection.1.1.1}{1.1.1 Objetivos Espec\355ficos}{section.1.1}% 9
+\BOOKMARK [1][]{section.1.2}{1.2 Justificativa}{chapter.1}% 10
+\BOOKMARK [1][]{section.1.3}{1.3 Requisitos do cliente}{chapter.1}% 11
+\BOOKMARK [1][]{section.1.4}{1.4 Organiza\347\343o do Trabalho de Conclus\343o do Curso }{chapter.1}% 12
+\BOOKMARK [0][]{chapter.2}{2 Conceito do Sistema}{}% 13
+\BOOKMARK [1][]{subsection.2.0.1}{2.0.1 Arquitetura de software do sistema de Percep\347\343o}{chapter.2}% 14
+\BOOKMARK [2][]{subsubsection.2.0.1.1}{2.0.1.1 Driver Layer}{subsection.2.0.1}% 15
+\BOOKMARK [3][]{subsubsection.2.0.1.2}{2.0.1.2 Business Layer}{subsubsection.2.0.1.1}% 16
+\BOOKMARK [3][]{subsubsection.2.0.1.3}{2.0.1.3 User Interface Layer}{subsubsection.2.0.1.1}% 17
+\BOOKMARK [1][]{section.2.1}{2.1 Especifica\347\343o t\351cnica do sistema de Percep\347\343o}{chapter.2}% 18
+\BOOKMARK [1][]{section.2.2}{2.2 Desdobramento da fun\347\343o qualidade para as funcionalidades}{chapter.2}% 19
+\BOOKMARK [0][]{chapter.3}{3 Materiais e M\351todos}{}% 20
+\BOOKMARK [1][]{section.3.1}{3.1 Conceitual e Design}{chapter.3}% 21
+\BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Requisitos t\351cnicos}{section.3.1}% 22
+\BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Lista de materiais}{section.3.1}% 23
+\BOOKMARK [3][]{subsubsection.3.1.2.1}{3.1.2.1 Descri\347\343o dos componentes}{subsection.3.1.2}% 24
+\BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Funcionalidades do Sistema}{section.3.1}% 25
+\BOOKMARK [3][]{subsubsection.3.1.3.1}{3.1.3.1 Aquisi\347\343o}{subsection.3.1.3}% 26
+\BOOKMARK [3][]{subsubsection.3.1.3.2}{3.1.3.2 Objetivo}{subsection.3.1.3}% 27
+\BOOKMARK [3][]{subsubsection.3.1.3.3}{3.1.3.3 Depend\352ncias}{subsection.3.1.3}% 28
+\BOOKMARK [3][]{subsubsection.3.1.3.4}{3.1.3.4 Premissas}{subsection.3.1.3}% 29
+\BOOKMARK [3][]{subsubsection.3.1.3.5}{3.1.3.5 Sa\355das}{subsection.3.1.3}% 30
+\BOOKMARK [3][]{subsubsection.3.1.3.6}{3.1.3.6 Localiza\347\343o}{subsection.3.1.3}% 31
+\BOOKMARK [3][]{subsubsection.3.1.3.7}{3.1.3.7 Objetivo}{subsection.3.1.3}% 32
+\BOOKMARK [3][]{subsubsection.3.1.3.8}{3.1.3.8 Depend\352ncias}{subsection.3.1.3}% 33
+\BOOKMARK [3][]{subsubsection.3.1.3.9}{3.1.3.9 Premissas}{subsection.3.1.3}% 34
+\BOOKMARK [3][]{subsubsection.3.1.3.10}{3.1.3.10 Sa\355das}{subsection.3.1.3}% 35
+\BOOKMARK [3][]{subsubsection.3.1.3.11}{3.1.3.11 Detec\347\343o}{subsection.3.1.3}% 36
+\BOOKMARK [3][]{subsubsection.3.1.3.12}{3.1.3.12 Objetivo}{subsection.3.1.3}% 37
+\BOOKMARK [3][]{subsubsection.3.1.3.13}{3.1.3.13 Depend\352ncias}{subsection.3.1.3}% 38
+\BOOKMARK [3][]{subsubsection.3.1.3.14}{3.1.3.14 Premissas}{subsection.3.1.3}% 39
+\BOOKMARK [3][]{subsubsection.3.1.3.15}{3.1.3.15 Sa\355das}{subsection.3.1.3}% 40
+\BOOKMARK [1][]{section.3.2}{3.2 Desenvolvimento}{chapter.3}% 41
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Testes Unit\341rios}{section.3.2}% 42
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Integra\347\343o dos sensores com ROS}{section.3.2}% 43
+\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Interface do Usu\341rio}{section.3.2}% 44
+\BOOKMARK [1][]{section.3.3}{3.3 Testes}{chapter.3}% 45
+\BOOKMARK [1][]{section.3.4}{3.4 Diagramas mec\342nicos}{chapter.3}% 46
+\BOOKMARK [1][]{section.3.5}{3.5 Suporte dos sensores}{chapter.3}% 47
+\BOOKMARK [1][]{section.3.6}{3.6 Modelo esquem\341tico de alimenta\347\343o e comunica\347\343o}{chapter.3}% 48
+\BOOKMARK [1][]{section.3.7}{3.7 Diagramas el\351tricos e eletr\364nicos}{chapter.3}% 49
+\BOOKMARK [0][]{chapter.4}{4 Resultados}{}% 50
+\BOOKMARK [1][]{section.4.1}{4.1 Testes unit\341rios}{chapter.4}% 51
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 C\342mera T\351rmica}{section.4.1}% 52
+\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 Sonar EZ-1}{section.4.1}% 53
+\BOOKMARK [2][]{subsection.4.1.3}{4.1.3 Sensor de Proximidade}{section.4.1}% 54
+\BOOKMARK [2][]{subsection.4.1.4}{4.1.4 Smart Charger}{section.4.1}% 55
+\BOOKMARK [2][]{subsection.4.1.5}{4.1.5 Sensor de Temperatura}{section.4.1}% 56
+\BOOKMARK [2][]{subsection.4.1.6}{4.1.6 GPS}{section.4.1}% 57
+\BOOKMARK [2][]{subsection.4.1.7}{4.1.7 IMU}{section.4.1}% 58
+\BOOKMARK [1][]{section.4.2}{4.2 Integra\347\343o no ROS}{chapter.4}% 59
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Phidgets}{section.4.2}% 60
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 Smart Charger}{section.4.2}% 61
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 C\342mera T\351rmica}{section.4.2}% 62
+\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 GPS}{section.4.2}% 63
+\BOOKMARK [2][]{subsection.4.2.5}{4.2.5 IMU}{section.4.2}% 64
+\BOOKMARK [1][]{section.4.3}{4.3 Testes integrados}{chapter.4}% 65
+\BOOKMARK [1][]{section.4.4}{4.4 Trabalhos futuros}{chapter.4}% 66
+\BOOKMARK [0][]{chapter.5}{5 Conclus\343o}{}% 67
+\BOOKMARK [1][]{section.5.1}{5.1 Considera\347\365es finais}{chapter.5}% 68
+\BOOKMARK [0][]{appendix.A}{A QFD}{}% 69
+\BOOKMARK [0][]{appendix.B}{B Diagramas mec\342nicos}{}% 70
+\BOOKMARK [0][]{appendix.C}{C Diagramas eletro-eletr\364nicos}{}% 71
+\BOOKMARK [0][]{appendix.D}{D Wireframes}{}% 72
+\BOOKMARK [0][]{appendix.E}{E Logbook}{}% 73
+\BOOKMARK [0][]{appendix.F}{F Lista de componentes}{}% 74

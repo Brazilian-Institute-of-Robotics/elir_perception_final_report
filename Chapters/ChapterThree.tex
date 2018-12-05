@@ -1,4 +1,3 @@
-
 \chapter{Materiais e Métodos}
 \label{chap:mat}
 A metodologia de execução e gerenciamento aplicada no projeto ELIR é baseada na metodologia empregada na área de robótica do SENAI CIMATEC. O projeto foi dividido em três fases principais para facilitar a organização e gerenciamento das atividades. O diagrama com as fases do projeto está mostrado na Figura \ref{Fig:flux_proj}.
@@ -18,7 +17,7 @@ A fase de Conceitual e Design é marcada por uma série de reuniões de alinhame
 
 Os requisitos técnicos do projeto foram definidos nas primeiras reuniões com o orientador do projeto. Estes requisitos foram elaborados com base nos requisitos do cliente e estão mostrados abaixo:
 
-    
+
 \begin{itemize}
 	\item{\textbf{Inspeção de Temperatura dos cabos, estrutura e obstáculos}}: Devem ser disponibilizadas as informações de medição de temperatura dos cabos, estrutura da linha e de seus obstáculos. Esses dados devem ser obtidos através da câmera térmica para inspeção
 	\item{\textbf{Georreferenciamento dos eventos}}: Todos os eventos de detecção de pontos quentes, sobretemperatura e sobrecorrente devem ser sinalizados em um \textit{logfile} informando a data, horário e coordenadas geográficas obtidos pelo GPS.
@@ -204,293 +203,295 @@ O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câm
 	\item \textit{Sonar Detection Message}: Mensagem que informa a detecção de objetos na faixa de servidão e sua localização na linha.
 	%\item Localization Request Message: Mensagem de requisição dos dados posicionamento e orientação do robô para o sistema de Localização
 \end{itemize}
+	
+	\section{Desenvolvimento}
+	Na fase de Desenvolvimento são realizados os testes unitários dos sensores do sistema de Percepção, a implementação de protocolos de comunicação, integração dos sensores no framework de robótica ROS e desenvolvimento da interface gráfica. O resultado principal desta fase é a conexão dos sensores em rede no framework de robótica e a interface gráfica exibindo em tempo real as informações mais relevantes do sistema de Percepção.
+	
+	
+	\subsection{Testes Unitários}
+	
+	\begin{itemize}
+		\item Câmera Térmica
+		
+		A câmera térmica Lepton, do fabricante FLIR, se comunica por VOSPI. Logo, foi necessário utilizar um driver para converter os dados da câmera e disponibiliza-los para a USB. Uma placa de desenvolvimento Nucleo STM32F401RE com o driver disponibilizado por \citeonline{groupgets} foi utilizada para essa situação.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=6cm]{Figures/lepton_flir.jpg}
+			\caption{Lepton LWIR}
+			\label{fig:lepton}
+		\end{figure}
+		
+		O driver coleta os frames e verifica se o mesmo foi adquirido corretamente, após isso, envia para a USB seguindo o seguinte padrão de mensagem:
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=14cm]{Figures/frame_msg.png}
+			\caption{Mensagem do frame da câmera}
+			\label{fig:framemsg}
+		\end{figure}
+		
+		No início de cada mensagem, há uma sequência de quatro \textit{bytes} para confirmar a transferência dos dados. Após a confirmação por um \textit{script} em python, inicia-se o processo de aquisição do \textit{frame}. Cada \textit{frame} é composto por 4800 \textit{pixeis}, sendo 80 na horizontal e 60 na vertical. Além disso, cada \textit{pixel} possui 2 \textit{bytes} de profundidade de cor, correspondendo a 9600 \textit{bytes} de informação para cada \textit{frame}. Na Figura \ref{fig:frame_esque}, pode-se observar uma representação do \textit{frame} da câmera.
+		
+		%\pagebreak
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=10cm]{Figures/frame_esque.png}
+			\caption{Esquemático do \textit{Frame} da Câmera Térmica}
+			\label{fig:frame_esque}
+		\end{figure}
+		
+		No \textit{script} de aquisição de \textit{frames}, cada \textit{pixel}, foi convertido para uma escala de cinza de 8-bits (1 \textit{byte}). Conversão necessária para trabalhar com a biblioteca de processamento de imagens OpenCV.
+		
+		Após isso a imagem foi reconstruída para verificar a integridade dos \textit{frames}.
+		
+		\item Sonar EZ-1
+		
+		O sonar EZ-1 da MaxBotix possui saída analógica referente a distância medida. Para testa-lo, foi utilizada uma das entradas analógicas da Phidgets.
+		
+		\pagebreak
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=8cm]{Figures/ez1.jpg}
+			\caption{Sonar EZ-1}
+			\label{fig:ez1}
+		\end{figure}
+		
+		A comunicação da Phidgets com com a NUC é feita via USB, contudo, é necessário a instalação dos drivers obrigatórios da placa no linux. Além disso, é necessário a instalação do módulo python respectivo da placa, dessa forma, permitindo a utilização de classes e métodos para controle da comunicação com os sensores.
+		
+		Com os respectivos drivers e módulos da phidgets instalados no computador, foi necessário apenas conectar os terminais alimentação e saída analógica do sensor nos conectores correspondentes da Phidgets e executar um \textit{script} de leitura da tensão nas entradas analógicas fornecido pela própria fabricante. 
+		
+		Ao executar o código, recebe-se, no intervalo de dez segundos, todas as leituras de tensão efetuadas no sensor. Notamos que ao afastar o obstáculo do sonar o valor de tensão aumentava e quando aproximavamos o obstáculo o valor de tensão diminuía. Após feita a conversão de tensão para unidades métricas através das informações disponibilizadas no \textit{datasheet}, foi possível validar o sensor.
+		
+		\item Sensor de Proximidade
+		
+		O sensor de proximidade E18-D80NK funciona de maneira bastante simples. O módulo possui um emissor e um receptor de feixes infra-vermelhos, o qual identifica se há ou não um objeto próximo devido a reflexão, liberando assim, um sinal de nível alto caso positivo e nível baixo caso negativo.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=8cm]{Figures/proximity_sensor.jpg}
+			\caption{Sensor de proximidade E18-D80NK}
+			\label{fig:E18-D80NK}
+		\end{figure}
+		
+		Por questão de sinalização, o fabricante adicionou um LED, que ao identificar algum objeto próximo, acende-se. Com isso, logo após alimentar o sensor já era possível ver o seu funcionamento. Entretanto, ainda era necessário verificar se a saída digital referente a detecção estava em devido funcionamento.
+		
+		Para isso, foi utilizada a placa de interfaceamento Phidgets assim como no tópico anterior. O que diferiu nesse teste para o anterior é que o sensor foi acoplado em uma entrada digital, em vez de uma analógica, assim como o \textit{script} executado foi para comunicação com as entradas digitais. O código, também disponibilizado pela fabricante, notifica a mudança de estado da saída dos sensor, dessa maneira podendo ser validada.
+		
+		\item \textit{Smart Charger}
+		
+		A placa de gerenciamento e carregamento das baterias DS325A, da empresa Inspired Energy, funciona a partir do protocolo de comunicação SMBus. Informações das baterias como temperatura, corrente, carga, entre outras podem ser solicitadas através do seguinte protocolo de leitura.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=16cm]{Figures/batt_protocol.png}
+			\caption{Protocolo de comunicação do \textit{Smart Charger} e das baterias}
+			\label{fig:batt_protocol}
+		\end{figure}   
+		
+		No qual é necessário enviar primeiro o endereço de 7 bits da bateria de interesse, seguido do comando referente a que informação está se requisitando. Após isso, inicia-se o processo de leitura das informações da bateria.
+		
+		O driver de comunicação foi desenvolvido em uma placa de desenvolvimento Nucleo STM3L432KC para disponibiliza-los na USB do computador. Além disso, um \textit{script} em python foi escrito para requisitar essas informações do microcontrolador.
+		
+		Os dados foram convertidos para suas respectivas grandezas, dessa maneira, foi possível validar as informações obtidas.
+		
+		\item Sensor de Temperatura
+		
+		O sensor de temperatura LM35 possui uma saída analógica e com comportamento linear entre a tensão de saída e a temperatura medida.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=6cm]{Figures/lm35.jpg}
+			\caption{Sensor de Temperatura LM35}
+			\label{fig:LM35}
+		\end{figure}
+		
+		O componente foi testado em uma das entradas analógicas da Phidgets, e utilizando o mesmo algoritmo de leitura de tensão já mencionado para realizar a obtenção de dados. Para verificar a resposta do sensor, foi medido o valor de tensão de saída para uma sala com ar-condicionado e para um ambiente externo com auxílio de um termômetro de referência.
+		
+		Os valores de tensão foram convertidos para graus Celsius, através da correlação disponível no \textit{datasheet}, validando assim o sensor.
+		
+		\item GPS
+		
+		O GPS Piksi v2.3.1, da Swift Navigation, possui um console disponibilizado pelo próprio fabricante, porém como se tinha em mãos uma versão antiga do aparelho, foi necessário descobrir qual a versão compatível do \textit{software}.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=6cm]{Figures/gps.jpg}
+			\caption{GPS Piksi v2.3.1}
+			\label{fig:GPS}
+		\end{figure}
+		
+		O console foi instalado, o GPS foi conectado na USB do computador e a antena devidamente acoplada. Essa versão em específico precisa de quatro satélites para realizar os cálculos de coordenadas, e em ambientes fechados, a recepção de sinal é bastante degradada. Para contornar essa situação, o dispositivo foi iniciado em modo de simulação em seu console, mostrando assim, os dados de longitude e latitude.
+		
+		Posteriormente, a antena foi levada a um ambiente externo e verificou o funcionamento do GPS fora do modo de simulação.    
+		
+		\item IMU
+		
+		A IMU Mti-1, fabricado pela Xsens, possui um console que é disponibilizado no próprio pendrive de instalação que vem junto ao sensor.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=8cm]{Figures/imu.jpg}
+			\caption{IMU Xsens Mti-1}
+			\label{fig:IMU}
+		\end{figure}
+		
+		Com o console instalado, foi apenas necessário conectar a IMU a uma das portas USB do computador. Na própria interface gráfica já aparece as informações de orientação do dispositivo, informando a orientação nos três eixos de referência e velocidade angular.
+		
+		%--------- NEW SECTION ----------------------
+		\subsection{Integração dos sensores com ROS}
+		\label{sec:rosinte}
+		
+		Após os testes unitários de cada sensor, deu-se inicio à integração dos sensores no ambiente ROS para construção do sistema de Percepção. A descrição da metodologia empregada para embarcar cada um dos sensores no framework de robótica está mostrada nos tópicos abaixo.
+		
+		\item{Phidgets}
+		
+		Após a fase de testes unitários, foi necessário desenvolver o \textit{package} de comunicação da phidgets no ROS. Esse \textit{package} é responsável pela aquisição dos dados de todos os sensores analógicos e digitais conectados a Phidgets.
+		
+		Os nós foram desenvolvidos utilizando como base o módulo \textit{python} da Phidgets. Ele consiste em uma classe e cada objeto desta, representa um componente conectado a placa de interface. Ao declarar o objeto, se faz necessário informar o canal, o nome do dispositivo, o tipo de porta (digital ou analógico) e o nome do tópico a ser disponibilizado os dados. 
+		
+		No construtor da classe os dados referentes aos dispositivos são coletados e um \textit{publisher} do ROS é inicializado. Este  \textit{publisher} faz com que periodicamente os dados de tensão(canais analógicos) ou status da porta(canais digitais) sejam coletados e disponibilizados no tópico escolhido pelo usuário. 
+		
+		No script original foram criados seis objetos da classe no \textit{main loop}, correspondentes aos cinco sensores de proximidade conectados a portas digitais e ao sonar conectado na porta analógica.
+		
+		\item Smart Charger
+		
+		O script utilizado no teste unitário para receber os dados provenientes do \textit{smart charger} no computador foi utilizado como base para a construção do nó no ambiente ROS.
+		
+		O nó funciona enviando um \textit{byte} pré-definido para dar início ao processo de transmissão de dados da bateria. A recepção do \textit{byte} pela Nucleo L432KC inicia a leitura dos dados da bateria, como mostrado no tópico anterior. Logo após isso, ocorre o envio das informações em sequência para o computador, como pode ser visto abaixo:
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=16cm]{Figures/batt_protocol_2.png}
+			\caption{Mensagem entre a Nucleo L432KC e o nó referente às baterias}
+			\label{fig:battprotocol2}
+		\end{figure}
+		
+		No nó do ROS essas informações são recebidas via serial e convertidas para sua devidas unidades segundo o \textit{datasheet} do fabricante. Esses dados são colocados em um formato de mensagem chamado de Battery e publicadas em um tópico do ROS. O nó criado para a \textit{smart charger} está mostrado no anexo XX.
+		
+		\item Câmera Térmica
+		
+		A integração da câmera no ROS foi feita em duas etapas, que na prática foram representadas como dois nós:
+		
+		\begin{itemize}
+			\item O primeiro com objetivo da aquisição dos dados da câmera e sua disponibilização em um tópico.
+			\item O segundo nó é responsável por todo o tratamento da imagem e detecção dos pontos quentes.
+		\end{itemize}
+		
+		Para a aquisição dos dados, no primeiro nó, foi utilizado basicamente o mesmo algoritmo que no teste unitário, porém com a integração das bibliotecas do ROS para publicar os \textit{frames} em forma de \textit{Numpy arrays} em seus devido tópico.
+		
+		No segundo nó foi utilizado a biblioteca OpenCV para realizar o processamento da imagem. Primeiramente, o frame disponibilizado pelo nó de aquisição é adquirido subscrevendo do seu respectivo tópico. Para retirar o aspecto "pixelado" da imagem da câmera, devido a sua baixa resolução (80x60 pixeis), foi necessário realizar uma interpolação cúbica para redimensionar a imagem para uma resolução de (400x300 pixeis), obtendo assim uma imagem mais detalhada. 
+		
+		Com a imagem já redimensionada, é aplicado um filtro \textit{blur} para eliminar altas frequências que podem interferir na binarização (\textit{thresholding}) que será feita na imagem.
+		
+		Após o filtro, o frame é binarizado com o objetivo de facilitar a identificação dos pontos quentes através de um algoritmo de busca de contornos.
+		
+		O esquemático abaixo mostra simplificadamente o processo de tratamento da imagem.
+		
+		\begin{figure}[!ht]
+			\centering
+			\includegraphics[width=14cm]{Figures/image_proc.png}
+			\caption{Esquemático do processamento da imagem} \label{imgproc}
+		\end{figure}
+		
+		\item GPS
+		
+		Para o GPS, foi utilizado um driver disponibilizado no GitHub por \citeonline{ethz} com licensa livre para embarcar o dispositivo no ROS.
+		
+		O \textit{package} possui nós que publicam em tópicos as informações de coordenadas obtidas do GPS.
+		
+		\item IMU
+		
+		Foi utilizado o driver da IMU disponibilizada pela própria fabricante Xsens para embarcar a IMU no ROS. O driver de licença livre é disponibilizado no GitHub da própria empresa.
+		%--------- NEW SECTION ----------------------
+	
+	\subsection{Interface do Usuário}
+	\label{sec:ui}
+	
+	A interface do usuário é uma forma de expor graficamente as variáveis mais importantes do sistema robótico e quais atividades estão sendo executadas. Ela permite dar previsibilidade ao usuário do comportamento do sistema. 
+	
+	No ELIR a interface do usuário tem o papel de informar cinco características principais:
+	
+	\begin{itemize}
+		\item \textit{System Integrity}
+		\item \textit{Robot Status}
+		\item \textit{Thermal view}
+		\item \textit{Ocurrences}
+		\item \textit{Actuators Information}
+	\end{itemize}
+	
+	No campo de \textit{System Integrity} são exibidos em tempo real as variáveis de grande impacto na eficiência e integridade do sistema. Por isso são informados os dados de temperatura, percentual de carga da bateria, consumo, localização e orientação do robô.
+	
+	O \textit{Robot Status Display} exibe o posicionamento das garras do robô na linha de transmissão. A coloração vermelha indica as garras foras da linha enquanto que a coloração verde indica as garras apoiadas na linha. Essa informação proveniente dos sensores de proximidade é de extrema importância para integridade física do robô.
+	
+	O \textit{Thermal View} exibe em  tempo real os frames da câmera IR, permitindo o usuário acompanhar a detecção de pontos quentes e visualizar o perfil de temperatura da área exibida. 
+	
+	O campo de \textit{Ocurrences} mostra as principais ocorrências daquele momento, mostrando eventos de sobretemperatura, sobrecorrente, detecção de pontos quentes e detecção de objetos na área de servidão. Todos os eventos são mostra
+	dos com data, horário e localização gps. 
+	
+	
+	\section{Testes}
+	Na fase de Testes as funcionalidades do sistema são colocadas a prova, para isso são efetuados testes de funcionamento com embasamento estatístico para comprovar que a funcionalidade está trabalhando da forma esperada. O resultado principal desta fase é um Logbook contendo o resultado de cada teste efetuado. A descrição dos testes efetuados e os resultados obtidos estão mostrados em detalhes no capítulo 4.
+	
+	%--------- NEW SECTION ----------------------
+	\section{Diagramas mecânicos}
+	\label{sec:diagm}
+	O sistema de Percepção em robôs muitas vezes é entendida como uma implementação em código das funcionalidades do sistema, desconsiderando o aporte mecânico envolvido. Contudo, o suporte mecânico para os sensores é um grande desafio a ser solucionado. 
+	
+	Neste projeto, houve a necessidade de suportes mecânicos por conta da limitação de espaço além de haver uma restrição imposta pelo cliente na modificação estrutural no protótipo. A descrição dos suportes mecânicos desenvolvidos para confrontar esse problema esta mostrada na próxima sessão.
+	%
+	%\subsection{Diagrama mecânico do ELIR}
+	%shaushaus
+	
+	\section{Suporte dos sensores}
+	
+	Para  fixar  todos  os  sensores  e  componentes  eletrônicos  de  maneira  organizada foi desenhada uma estrutura em forma de prateleira  na qual é possível anexar a grande parte dos sensores do sistema de Percepção.
+	
+	A primeira prateleira comporta os sensores do sistema de georreferenciamento que são o GPS e a IMU. A prateleira central foi projetada para a placa de interface Nucleo F401RE que recebe os dados da câmera IR. Por último, na terceira prateleira fica a placa de interface Phidgets para reunir os dados dos diferentes componentes e enviar para a NUC que é a  unidade de processamento central do robô.
+	
+	As peças foram fabricadas utilizando impressão 3D e o seu desenho pode ser visto nas Figura \ref{Prateleira} e \ref{Prateleiracsensor} .
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=14cm]{Figures/prateleira.png}
+		\caption{Prateleira para suporte dos componentes eletrônicos} \label{Prateleira}
+	\end{figure}
+	
+	%\begin{figure}[h]
+	%	\centering
+	%	\includegraphics[width=16cm]{Figures/prateleiracsensores.png}
+	%	\caption{Prateleira para suporte com sensores} \label{Prateleiracsensor}
+	%\end{figure}
+	
+	
+	A parte de gerenciamento enérgico do robô foi alocada em uma estrutura na parte inferior do mesmo. Esta estrutura foi projetada para comportar as baterias, a \textit{Smart Charger}, a \textit{Power Management} e a placa de interface Nucleo L432. O desenho dessa estrutura está mostrado na figura \ref{pecaaliment}.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=14cm]{Figures/pecadebaixo.png}
+		\caption{Prateleira para suporte dos componentes de alimentação} \label{pecaaliment}
+	\end{figure}
+	
+	%--------- NEW SECTION ----------------------
+	\section{Modelo esquemático de alimentação e comunicação}
+	\label{sec:modesq}
+	A alimentação do sistema é proveniente de duas baterias LiPo que fornecem tensão de alimentação em 14V. Todo o gerenciamento de energia do sistema é feita pela \textit{Power Management Board}, esta placa é responsável por distribuir a alimentação de entrada para os demais subsistemas da Percepção. 
+	
+	A placa de interface Phidgets além de funcionar como \textit{hub} para uma grande parte dos sensores também é responsável por compatibilizar o nível de tensão para os componentes eletrônicos, fornecendo 5V para as placas microprocessadas, sensores e a alimentação de todas as portas USBs. 
+	
+	A comunicação entre os sistemas da Percepção ocorrem na maior parte  através da Phidgets, já que esta placa de interface concentra as informações oriundas de suas portas USB, entrada digitais e entradas analógicas em uma única porta USB para a unidade central de processamento.
+	
+	A câmera térmica e a os dynamixels possuem portas exclusivas de comunicação com a unidade central devido seu grau de criticidade.
+	
+	\section{Diagramas elétricos e eletrônicos}
+	\label{sec:diage}
+	O diagrama elétrico do sistema está disponível no apêndice \ref{Append:diagele}. Neste diagrama encontram-se todas as conexões elétricas e de comunicação bem como as especificações de conectores e cabos utilizados no projeto.
+	
+	O esquemático eletrônico realizado pela equipe foi uma placa hub de 5V para alimentação dos sensores de proximidade, visto que a Phidgets possui apenas umas saída de tensão em 5V disponibilizada.
+	
+	Nesta placa foram colocados os \textit{pin headers} para cada sensor de proximidade, fornecendo alimentação e disponibilizando os pinos digitais dos sensores em um conector Molex.
+	
+	O esquemático eletrônico e \textit{board} estão mostrados no anexo \ref{Append:diagele}.
 
-\subsection{Testes Unitários}
-
-\begin{itemize}
-\item Câmera Térmica
-
-A câmera térmica Lepton, do fabricante FLIR, se comunica por VOSPI. Logo, foi necessário utilizar um driver para converter os dados da câmera e disponibiliza-los para a USB. Uma placa de desenvolvimento Nucleo STM32F401RE com o driver disponibilizado por \citeonline{groupgets} foi utilizada para essa situação.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=6cm]{Figures/lepton_flir.jpg}
-	\caption{Lepton LWIR}
-	\label{fig:lepton}
-\end{figure}
-
-O driver coleta os frames e verifica se o mesmo foi adquirido corretamente, após isso, envia para a USB seguindo o seguinte padrão de mensagem:
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=14cm]{Figures/frame_msg.png}
-	\caption{Mensagem do frame da câmera}
-	\label{fig:framemsg}
-\end{figure}
-
-No início de cada mensagem, há uma sequência de quatro \textit{bytes} para confirmar a transferência dos dados. Após a confirmação por um \textit{script} em python, inicia-se o processo de aquisição do \textit{frame}. Cada \textit{frame} é composto por 4800 \textit{pixeis}, sendo 80 na horizontal e 60 na vertical. Além disso, cada \textit{pixel} possui 2 \textit{bytes} de profundidade de cor, correspondendo a 9600 \textit{bytes} de informação para cada \textit{frame}. Na Figura \ref{fig:frame_esque}, pode-se observar uma representação do \textit{frame} da câmera.
-
-%\pagebreak
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=10cm]{Figures/frame_esque.png}
-	\caption{Esquemático do \textit{Frame} da Câmera Térmica}
-	\label{fig:frame_esque}
-\end{figure}
-
-No \textit{script} de aquisição de \textit{frames}, cada \textit{pixel}, foi convertido para uma escala de cinza de 8-bits (1 \textit{byte}). Conversão necessária para trabalhar com a biblioteca de processamento de imagens OpenCV.
-
-Após isso a imagem foi reconstruída para verificar a integridade dos \textit{frames}.
-
-\item Sonar EZ-1
-
-O sonar EZ-1 da MaxBotix possui saída analógica referente a distância medida. Para testa-lo, foi utilizada uma das entradas analógicas da Phidgets.
-
-\pagebreak
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=8cm]{Figures/ez1.jpg}
-	\caption{Sonar EZ-1}
-	\label{fig:ez1}
-\end{figure}
-
-A comunicação da Phidgets com com a NUC é feita via USB, contudo, é necessário a instalação dos drivers obrigatórios da placa no linux. Além disso, é necessário a instalação do módulo python respectivo da placa, dessa forma, permitindo a utilização de classes e métodos para controle da comunicação com os sensores.
-
-Com os respectivos drivers e módulos da phidgets instalados no computador, foi necessário apenas conectar os terminais alimentação e saída analógica do sensor nos conectores correspondentes da Phidgets e executar um \textit{script} de leitura da tensão nas entradas analógicas fornecido pela própria fabricante. 
-
-Ao executar o código, recebe-se, no intervalo de dez segundos, todas as leituras de tensão efetuadas no sensor. Notamos que ao afastar o obstáculo do sonar o valor de tensão aumentava e quando aproximavamos o obstáculo o valor de tensão diminuía. Após feita a conversão de tensão para unidades métricas através das informações disponibilizadas no \textit{datasheet}, foi possível validar o sensor.
-
-\item Sensor de Proximidade
-
-O sensor de proximidade E18-D80NK funciona de maneira bastante simples. O módulo possui um emissor e um receptor de feixes infra-vermelhos, o qual identifica se há ou não um objeto próximo devido a reflexão, liberando assim, um sinal de nível alto caso positivo e nível baixo caso negativo.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=8cm]{Figures/proximity_sensor.jpg}
-	\caption{Sensor de proximidade E18-D80NK}
-	\label{fig:E18-D80NK}
-\end{figure}
-
-Por questão de sinalização, o fabricante adicionou um LED, que ao identificar algum objeto próximo, acende-se. Com isso, logo após alimentar o sensor já era possível ver o seu funcionamento. Entretanto, ainda era necessário verificar se a saída digital referente a detecção estava em devido funcionamento.
-
-Para isso, foi utilizada a placa de interfaceamento Phidgets assim como no tópico anterior. O que diferiu nesse teste para o anterior é que o sensor foi acoplado em uma entrada digital, em vez de uma analógica, assim como o \textit{script} executado foi para comunicação com as entradas digitais. O código, também disponibilizado pela fabricante, notifica a mudança de estado da saída dos sensor, dessa maneira podendo ser validada.
-
-\item \textit{Smart Charger}
-
-A placa de gerenciamento e carregamento das baterias DS325A, da empresa Inspired Energy, funciona a partir do protocolo de comunicação SMBus. Informações das baterias como temperatura, corrente, carga, entre outras podem ser solicitadas através do seguinte protocolo de leitura.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=16cm]{Figures/batt_protocol.png}
-	\caption{Protocolo de comunicação do \textit{Smart Charger} e das baterias}
-	\label{fig:batt_protocol}
-\end{figure}   
-
-No qual é necessário enviar primeiro o endereço de 7 bits da bateria de interesse, seguido do comando referente a que informação está se requisitando. Após isso, inicia-se o processo de leitura das informações da bateria.
-
-O driver de comunicação foi desenvolvido em uma placa de desenvolvimento Nucleo STM3L432KC para disponibiliza-los na USB do computador. Além disso, um \textit{script} em python foi escrito para requisitar essas informações do microcontrolador.
-
-Os dados foram convertidos para suas respectivas grandezas, dessa maneira, foi possível validar as informações obtidas.
-
-\item Sensor de Temperatura
-
-O sensor de temperatura LM35 possui uma saída analógica e com comportamento linear entre a tensão de saída e a temperatura medida.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=6cm]{Figures/lm35.jpg}
-	\caption{Sensor de Temperatura LM35}
-	\label{fig:LM35}
-\end{figure}
-
-O componente foi testado em uma das entradas analógicas da Phidgets, e utilizando o mesmo algoritmo de leitura de tensão já mencionado para realizar a obtenção de dados. Para verificar a resposta do sensor, foi medido o valor de tensão de saída para uma sala com ar-condicionado e para um ambiente externo com auxílio de um termômetro de referência.
-
-Os valores de tensão foram convertidos para graus Celsius, através da correlação disponível no \textit{datasheet}, validando assim o sensor.
-
-\item GPS
-
-O GPS Piksi v2.3.1, da Swift Navigation, possui um console disponibilizado pelo próprio fabricante, porém como se tinha em mãos uma versão antiga do aparelho, foi necessário descobrir qual a versão compatível do \textit{software}.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=6cm]{Figures/gps.jpg}
-	\caption{GPS Piksi v2.3.1}
-	\label{fig:GPS}
-\end{figure}
-
-O console foi instalado, o GPS foi conectado na USB do computador e a antena devidamente acoplada. Essa versão em específico precisa de quatro satélites para realizar os cálculos de coordenadas, e em ambientes fechados, a recepção de sinal é bastante degradada. Para contornar essa situação, o dispositivo foi iniciado em modo de simulação em seu console, mostrando assim, os dados de longitude e latitude.
-
-Posteriormente, a antena foi levada a um ambiente externo e verificou o funcionamento do GPS fora do modo de simulação.    
-
-\item IMU
-
-A IMU Mti-1, fabricado pela Xsens, possui um console que é disponibilizado no próprio pendrive de instalação que vem junto ao sensor.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=8cm]{Figures/imu.jpg}
-	\caption{IMU Xsens Mti-1}
-	\label{fig:IMU}
-\end{figure}
-
-Com o console instalado, foi apenas necessário conectar a IMU a uma das portas USB do computador. Na própria interface gráfica já aparece as informações de orientação do dispositivo, informando a orientação nos três eixos de referência e velocidade angular.
-
-%--------- NEW SECTION ----------------------
-\subsection{Integração dos sensores com ROS}
-\label{sec:rosinte}
-
-Após os testes unitários de cada sensor, deu-se inicio à integração dos sensores no ambiente ROS para construção do sistema de Percepção. A descrição da metodologia empregada para embarcar cada um dos sensores no framework de robótica está mostrada nos tópicos abaixo.
-
-\item{Phidgets}
-
-Após a fase de testes unitários, foi necessário desenvolver o \textit{package} de comunicação da phidgets no ROS. Esse \textit{package} é responsável pela aquisição dos dados de todos os sensores analógicos e digitais conectados a Phidgets.
-
-Os nós foram desenvolvidos utilizando como base o módulo \textit{python} da Phidgets. Ele consiste em uma classe e cada objeto desta, representa um componente conectado a placa de interface. Ao declarar o objeto, se faz necessário informar o canal, o nome do dispositivo, o tipo de porta (digital ou analógico) e o nome do tópico a ser disponibilizado os dados. 
-
-No construtor da classe os dados referentes aos dispositivos são coletados e um \textit{publisher} do ROS é inicializado. Este  \textit{publisher} faz com que periodicamente os dados de tensão(canais analógicos) ou status da porta(canais digitais) sejam coletados e disponibilizados no tópico escolhido pelo usuário. 
-
-No script original foram criados seis objetos da classe no \textit{main loop}, correspondentes aos cinco sensores de proximidade conectados a portas digitais e ao sonar conectado na porta analógica.
-
-\item Smart Charger
-
-O script utilizado no teste unitário para receber os dados provenientes do \textit{smart charger} no computador foi utilizado como base para a construção do nó no ambiente ROS.
-
-O nó funciona enviando um \textit{byte} pré-definido para dar início ao processo de transmissão de dados da bateria. A recepção do \textit{byte} pela Nucleo L432KC inicia a leitura dos dados da bateria, como mostrado no tópico anterior. Logo após isso, ocorre o envio das informações em sequência para o computador, como pode ser visto abaixo:
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=16cm]{Figures/batt_protocol_2.png}
-	\caption{Mensagem entre a Nucleo L432KC e o nó referente às baterias}
-	\label{fig:battprotocol2}
-\end{figure}
-
-No nó do ROS essas informações são recebidas via serial e convertidas para sua devidas unidades segundo o \textit{datasheet} do fabricante. Esses dados são colocados em um formato de mensagem chamado de Battery e publicadas em um tópico do ROS. O nó criado para a \textit{smart charger} está mostrado no anexo XX.
-
-\item Câmera Térmica
-
-A integração da câmera no ROS foi feita em duas etapas, que na prática foram representadas como dois nós:
-
-\begin{itemize}
-\item O primeiro com objetivo da aquisição dos dados da câmera e sua disponibilização em um tópico.
-	\item O segundo nó é responsável por todo o tratamento da imagem e detecção dos pontos quentes.
-\end{itemize}
-
-Para a aquisição dos dados, no primeiro nó, foi utilizado basicamente o mesmo algoritmo que no teste unitário, porém com a integração das bibliotecas do ROS para publicar os \textit{frames} em forma de \textit{Numpy arrays} em seus devido tópico.
-
-No segundo nó foi utilizado a biblioteca OpenCV para realizar o processamento da imagem. Primeiramente, o frame disponibilizado pelo nó de aquisição é adquirido subscrevendo do seu respectivo tópico. Para retirar o aspecto "pixelado" da imagem da câmera, devido a sua baixa resolução (80x60 pixeis), foi necessário realizar uma interpolação cúbica para redimensionar a imagem para uma resolução de (400x300 pixeis), obtendo assim uma imagem mais detalhada. 
-
-Com a imagem já redimensionada, é aplicado um filtro \textit{blur} para eliminar altas frequências que podem interferir na binarização (\textit{thresholding}) que será feita na imagem.
-
-Após o filtro, o frame é binarizado com o objetivo de facilitar a identificação dos pontos quentes através de um algoritmo de busca de contornos.
-
-O esquemático abaixo mostra simplificadamente o processo de tratamento da imagem.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=14cm]{Figures/image_proc.png}
-	\caption{Esquemático do processamento da imagem} \label{imgproc}
-\end{figure}
-
-\item GPS
-
-Para o GPS, foi utilizado um driver disponibilizado no GitHub por \citeonline{ethz} com licensa livre para embarcar o dispositivo no ROS.
-
-O \textit{package} possui nós que publicam em tópicos as informações de coordenadas obtidas do GPS.
-
-\item IMU
-
-Foi utilizado o driver da IMU disponibilizada pela própria fabricante Xsens para embarcar a IMU no ROS. O driver de licença livre é disponibilizado no GitHub da própria empresa.
-%--------- NEW SECTION ----------------------
-
-\subsection{Desenvolvimento}
-Na fase de Desenvolvimento são realizados os testes unitários dos sensores do sistema de Percepção, a implementação de protocolos de comunicação, integração dos sensores no framework de robótica ROS e desenvolvimento da interface gráfica. O resultado principal desta fase é a conexão dos sensores em rede no framework de robótica e a interface gráfica exibindo em tempo real as informações mais relevantes do sistema de Percepção.
-
-\section{Interface do Usuário}
-\label{sec:ui}
-
-A interface do usuário é uma forma de expor graficamente as variáveis mais importantes do sistema robótico e quais atividades estão sendo executadas. Ela permite dar previsibilidade ao usuário do comportamento do sistema. 
-
-No ELIR a interface do usuário tem o papel de informar cinco características principais:
-
-\begin{itemize}
-	\item \textit{System Integrity}
-	\item \textit{Robot Status}
-	\item \textit{Thermal view}
-	\item \textit{Ocurrences}
-	\item \textit{Actuators Information}
-\end{itemize}
-
-No campo de \textit{System Integrity} são exibidos em tempo real as variáveis de grande impacto na eficiência e integridade do sistema. Por isso são informados os dados de temperatura, percentual de carga da bateria, consumo, localização e orientação do robô.
-
-O \textit{Robot Status Display} exibe o posicionamento das garras do robô na linha de transmissão. A coloração vermelha indica as garras foras da linha enquanto que a coloração verde indica as garras apoiadas na linha. Essa informação proveniente dos sensores de proximidade é de extrema importância para integridade física do robô.
-
-O \textit{Thermal View} exibe em  tempo real os frames da câmera IR, permitindo o usuário acompanhar a detecção de pontos quentes e visualizar o perfil de temperatura da área exibida. 
-
-O campo de \textit{Ocurrences} mostra as principais ocorrências daquele momento, mostrando eventos de sobretemperatura, sobrecorrente, detecção de pontos quentes e detecção de objetos na área de servidão. Todos os eventos são mostra
-dos com data, horário e localização gps. 
-
-
-\section{Testes}
-Na fase de Testes as funcionalidades do sistema são colocadas a prova, para isso são efetuados testes de funcionamento com embasamento estatístico para comprovar que a funcionalidade está trabalhando da forma esperada. O resultado principal desta fase é um Logbook contendo o resultado de cada teste efetuado. A descrição dos testes efetuados e os resultados obtidos estão mostrados em detalhes no capítulo 4.
-
-%--------- NEW SECTION ----------------------
-\section{Diagramas mecânicos}
-\label{sec:diagm}
-O sistema de Percepção em robôs muitas vezes é entendida como uma implementação em código das funcionalidades do sistema, desconsiderando o aporte mecânico envolvido. Contudo, o suporte mecânico para os sensores é um grande desafio a ser solucionado. 
-
-Neste projeto, houve a necessidade de suportes mecânicos por conta da limitação de espaço além de haver uma restrição imposta pelo cliente na modificação estrutural no protótipo. A descrição dos suportes mecânicos desenvolvidos para confrontar esse problema esta mostrada na próxima sessão.
-%
-%\subsection{Diagrama mecânico do ELIR}
-%shaushaus
-
-\section{Suporte dos sensores}
-
-Para  fixar  todos  os  sensores  e  componentes  eletrônicos  de  maneira  organizada foi desenhada uma estrutura em forma de prateleira  na qual é possível anexar a grande parte dos sensores do sistema de Percepção.
-
-A primeira prateleira comporta os sensores do sistema de georreferenciamento que são o GPS e a IMU. A prateleira central foi projetada para a placa de interface Nucleo F401RE que recebe os dados da câmera IR. Por último, na terceira prateleira fica a placa de interface Phidgets para reunir os dados dos diferentes componentes e enviar para a NUC que é a  unidade de processamento central do robô.
-
-As peças foram fabricadas utilizando impressão 3D e o seu desenho pode ser visto nas Figura \ref{Prateleira} e \ref{Prateleiracsensor} .
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=14cm]{Figures/prateleira.png}
-	\caption{Prateleira para suporte dos componentes eletrônicos} \label{Prateleira}
-\end{figure}
-
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=16cm]{Figures/prateleiracsensores.png}
-%	\caption{Prateleira para suporte com sensores} \label{Prateleiracsensor}
-%\end{figure}
-
-
-A parte de gerenciamento enérgico do robô foi alocada em uma estrutura na parte inferior do mesmo. Esta estrutura foi projetada para comportar as baterias, a \textit{Smart Charger}, a \textit{Power Management} e a placa de interface Nucleo L432. O desenho dessa estrutura está mostrado na figura \ref{pecaaliment}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=14cm]{Figures/pecadebaixo.png}
-	\caption{Prateleira para suporte dos componentes de alimentação} \label{pecaaliment}
-\end{figure}
-
-%--------- NEW SECTION ----------------------
-\section{Modelo esquemático de alimentação e comunicação}
-\label{sec:modesq}
-A alimentação do sistema é proveniente de duas baterias LiPo que fornecem tensão de alimentação em 14V. Todo o gerenciamento de energia do sistema é feita pela \textit{Power Management Board}, esta placa é responsável por distribuir a alimentação de entrada para os demais subsistemas da Percepção. 
-
-A placa de interface Phidgets além de funcionar como \textit{hub} para uma grande parte dos sensores também é responsável por compatibilizar o nível de tensão para os componentes eletrônicos, fornecendo 5V para as placas microprocessadas, sensores e a alimentação de todas as portas USBs. 
-
-A comunicação entre os sistemas da Percepção ocorrem na maior parte  através da Phidgets, já que esta placa de interface concentra as informações oriundas de suas portas USB, entrada digitais e entradas analógicas em uma única porta USB para a unidade central de processamento.
-
-A câmera térmica e a os dynamixels possuem portas exclusivas de comunicação com a unidade central devido seu grau de criticidade.
-
-\section{Diagramas elétricos e eletrônicos}
-\label{sec:diage}
-O diagrama elétrico do sistema está disponível no apêndice \ref{Append:diagele}. Neste diagrama encontram-se todas as conexões elétricas e de comunicação bem como as especificações de conectores e cabos utilizados no projeto.
-
-O esquemático eletrônico realizado pela equipe foi uma placa hub de 5V para alimentação dos sensores de proximidade, visto que a Phidgets possui apenas umas saída de tensão em 5V disponibilizada.
-
-Nesta placa foram colocados os \textit{pin headers} para cada sensor de proximidade, fornecendo alimentação e disponibilizando os pinos digitais dos sensores em um conector Molex.
-
-O esquemático eletrônico e \textit{board} estão mostrados no anexo \ref{Append:diagele}.

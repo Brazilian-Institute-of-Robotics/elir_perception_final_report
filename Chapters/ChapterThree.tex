@@ -9,12 +9,16 @@ A metodologia de execução e gerenciamento aplicada no projeto ELIR é baseada 
 	\label{Fig:flux_proj}
 \end{figure}
 
+% sugiro diminuir as letras do título de cada fase na figura, a palavra SOLUÇÃO não está adequada, conforme já havia falado pra ti
+
 \section{Conceitual e Design}
 
 A fase de Conceitual e Design é marcada por uma série de reuniões de alinhamento com o orientador do projeto e cliente, a fim de definir os requisitos técnicos do projeto, os materiais a serem utilizados, as funcionalidades do sistema, a arquitetura geral da Percepção e a arquitetura de software empregada. Esta é a etapa de criação do conceito tecnológico além de organização e planejamento das atividades. 
+%precisa explicar o que é esta fase e não descrevê-la
 
 \subsection{Requisitos técnicos}
 
+%o trabalho agora é um TCC e não um relatório, na metodologia vc deve descrevê-la
 Os requisitos técnicos do projeto foram definidos nas primeiras reuniões com o orientador do projeto. Estes requisitos foram elaborados com base nos requisitos do cliente e estão mostrados abaixo:
 
 
@@ -28,7 +32,7 @@ Os requisitos técnicos do projeto foram definidos nas primeiras reuniões com o
 \end{itemize}
 
 \subsection{Lista de materiais}
-
+% precisa explicar a metodologia este assunto é do desenvolvimento
 No sistema de Percepção os sensores atuam como os sentidos do robô, recebendo dados externos e informando a unidade central de processamento os seus significados. Quanto maior o número de grandezas físicas analisadas, mais complexo o sistema de Percepção e maior a sua capacidade de compreensão. 
 
 Os sensores que compõem o sistema de Percepção do robô ELIR foram escolhidos com base nas necessidades de cada funcionalidade do sistema e disponibilidade do componente na própria instituição. A lista de componentes utilizada está mostrada na Figura \ref{fig:list_mat}. Os preços mostrados não refletem o custo do projeto uma vez que os materiais utilizados são pertencentes ao SENAI CIMATEC. Os valores mostrados são preços médios do produto encontrados na página dos fornecedores. 
@@ -206,7 +210,7 @@ O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câm
 	
 	\section{Desenvolvimento}
 	Na fase de Desenvolvimento são realizados os testes unitários dos sensores do sistema de Percepção, a implementação de protocolos de comunicação, integração dos sensores no framework de robótica ROS e desenvolvimento da interface gráfica. O resultado principal desta fase é a conexão dos sensores em rede no framework de robótica e a interface gráfica exibindo em tempo real as informações mais relevantes do sistema de Percepção.
-	
+	%tem que explicar o que esta fase
 	
 	\subsection{Testes Unitários}
 	
@@ -339,14 +343,17 @@ O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câm
 		\end{figure}
 		
 		Com o console instalado, foi apenas necessário conectar a IMU a uma das portas USB do computador. Na própria interface gráfica já aparece as informações de orientação do dispositivo, informando a orientação nos três eixos de referência e velocidade angular.
-		
+	\end{itemize}
+	
 		%--------- NEW SECTION ----------------------
 		\subsection{Integração dos sensores com ROS}
 		\label{sec:rosinte}
 		
 		Após os testes unitários de cada sensor, deu-se inicio à integração dos sensores no ambiente ROS para construção do sistema de Percepção. A descrição da metodologia empregada para embarcar cada um dos sensores no framework de robótica está mostrada nos tópicos abaixo.
 		
-		\item{Phidgets}
+		\begin{itemize}
+
+		\item Phidgets
 		
 		Após a fase de testes unitários, foi necessário desenvolver o \textit{package} de comunicação da phidgets no ROS. Esse \textit{package} é responsável pela aquisição dos dados de todos os sensores analógicos e digitais conectados a Phidgets.
 		
@@ -405,6 +412,8 @@ O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câm
 		\item IMU
 		
 		Foi utilizado o driver da IMU disponibilizada pela própria fabricante Xsens para embarcar a IMU no ROS. O driver de licença livre é disponibilizado no GitHub da própria empresa.
+		\end{itemize}
+		
 		%--------- NEW SECTION ----------------------
 	
 	\subsection{Interface do Usuário}
@@ -433,7 +442,9 @@ O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câm
 	
 	
 	\section{Testes}
-	Na fase de Testes as funcionalidades do sistema são colocadas a prova, para isso são efetuados testes de funcionamento com embasamento estatístico para comprovar que a funcionalidade está trabalhando da forma esperada. O resultado principal desta fase é um Logbook contendo o resultado de cada teste efetuado. A descrição dos testes efetuados e os resultados obtidos estão mostrados em detalhes no capítulo 4.
+	Na fase de Testes as funcionalidades do sistema são colocadas a prova, para isso são efetuados testes de funcionamento com embasamento estatístico para comprovar que a funcionalidade está trabalhando da forma esperada. O resultado principal desta fase é um \textit{Logbook} contendo o resultado de cada teste efetuado. A descrição dos testes efetuados e os resultados obtidos estão mostrados em detalhes no capítulo 4.
+	
+	%importante: para palavras em outro idioma vc deve usar o itálico
 	
 	%--------- NEW SECTION ----------------------
 	\section{Diagramas mecânicos}

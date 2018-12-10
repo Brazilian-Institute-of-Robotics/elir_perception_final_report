@@ -17,31 +17,34 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Lepton LWIR\relax }}{19}{figure.caption.14}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Mensagem do frame da c\IeC {\^a}mera\relax }}{20}{figure.caption.15}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Esquem\IeC {\'a}tico do \textit {Frame} da C\IeC {\^a}mera T\IeC {\'e}rmica\relax }}{20}{figure.caption.16}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sonar EZ-1\relax }}{21}{figure.caption.17}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sensor de proximidade E18-D80NK\relax }}{22}{figure.caption.18}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Protocolo de comunica\IeC {\c c}\IeC {\~a}o do \textit {Smart Charger} e das baterias\relax }}{22}{figure.caption.19}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Sensor de Temperatura LM35\relax }}{23}{figure.caption.20}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces GPS Piksi v2.3.1\relax }}{24}{figure.caption.21}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces IMU Xsens Mti-1\relax }}{24}{figure.caption.22}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mensagem entre a Nucleo L432KC e o n\IeC {\'o} referente \IeC {\`a}s baterias\relax }}{26}{figure.caption.23}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquem\IeC {\'a}tico do processamento da imagem\relax }}{27}{figure.caption.24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Exemplo de um ru\IeC {\'\i }dos em imagens. Aleat\IeC {\'o}rio, sistem\IeC {\'a}tico e banding, da esquerda para a direita.\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Imagem Original\relax }}{22}{figure.caption.18}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Imagem Original e ap\IeC {\'o}s o filtro \textit {blur}\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sonar EZ-1\relax }}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Sensor de proximidade E18-D80NK\relax }}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Protocolo de comunica\IeC {\c c}\IeC {\~a}o do \textit {Smart Charger} e das baterias\relax }}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sensor de Temperatura LM35\relax }}{25}{figure.caption.23}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces GPS Piksi v2.3.1\relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces IMU Xsens Mti-1\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Mensagem entre a Nucleo L432KC e o n\IeC {\'o} referente \IeC {\`a}s baterias\relax }}{28}{figure.caption.26}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Esquem\IeC {\'a}tico do processamento da imagem\relax }}{29}{figure.caption.27}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Esquem\IeC {\'a}tico Geral\relax }}{51}{figure.caption.25}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Esquem\IeC {\'a}tico - Smart Charger\relax }}{52}{figure.caption.26}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Esquem\IeC {\'a}tico - Placa de Gerenciamento de Energia\relax }}{53}{figure.caption.27}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Esquem\IeC {\'a}tico - NUC\relax }}{54}{figure.caption.28}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Esquem\IeC {\'a}tico - Phidgets\relax }}{55}{figure.caption.29}
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Esquem\IeC {\'a}tico - STM32F401RE e FLIR LWIR Camera\relax }}{56}{figure.caption.30}
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Esquem\IeC {\'a}tico - ZED Camera\relax }}{57}{figure.caption.31}
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 1\relax }}{58}{figure.caption.32}
-\contentsline {figure}{\numberline {C.9}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 2\relax }}{59}{figure.caption.33}
-\contentsline {figure}{\numberline {C.10}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 3\relax }}{60}{figure.caption.34}
-\contentsline {figure}{\numberline {C.11}{\ignorespaces Placa de Alimenta\IeC {\c c}\IeC {\~a}o dos Sensores de Proximidade\relax }}{61}{figure.caption.35}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Esquem\IeC {\'a}tico Geral\relax }}{53}{figure.caption.28}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Esquem\IeC {\'a}tico - Smart Charger\relax }}{54}{figure.caption.29}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Esquem\IeC {\'a}tico - Placa de Gerenciamento de Energia\relax }}{55}{figure.caption.30}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Esquem\IeC {\'a}tico - NUC\relax }}{56}{figure.caption.31}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Esquem\IeC {\'a}tico - Phidgets\relax }}{57}{figure.caption.32}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Esquem\IeC {\'a}tico - STM32F401RE e FLIR LWIR Camera\relax }}{58}{figure.caption.33}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Esquem\IeC {\'a}tico - ZED Camera\relax }}{59}{figure.caption.34}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 1\relax }}{60}{figure.caption.35}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 2\relax }}{61}{figure.caption.36}
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Esquem\IeC {\'a}tico - HUB dos Atuadores 3\relax }}{62}{figure.caption.37}
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Placa de Alimenta\IeC {\c c}\IeC {\~a}o dos Sensores de Proximidade\relax }}{63}{figure.caption.38}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Dashboard - Main page\relax }}{62}{figure.caption.36}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Dashboard - Actuators Info Page\relax }}{63}{figure.caption.37}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Dashboard - Main page\relax }}{64}{figure.caption.39}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Dashboard - Actuators Info Page\relax }}{65}{figure.caption.40}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

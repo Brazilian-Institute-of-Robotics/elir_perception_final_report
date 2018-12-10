@@ -39,26 +39,27 @@
 \contentsline {chapter}{\numberline {4}Resultados}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Testes unit\IeC {\'a}rios}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}C\IeC {\^a}mera T\IeC {\'e}rmica}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Sonar EZ-1}{20}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Sensor de Proximidade}{21}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}\textit {Smart Charger}}{22}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Sensor de Temperatura}{23}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}GPS}{23}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}IMU}{24}{subsection.4.1.7}
-\contentsline {section}{\numberline {4.2}Integra\IeC {\c c}\IeC {\~a}o no ROS}{25}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Phidgets}{25}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Smart Charger}{25}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}C\IeC {\^a}mera T\IeC {\'e}rmica}{26}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}GPS}{27}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}IMU}{27}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Testes integrados}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Trabalhos futuros}{28}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Considera\IeC {\c c}\IeC {\~o}es finais}{29}{section.5.1}
-\contentsline {chapter}{\numberline {A}QFD}{30}{appendix.A}
-\contentsline {chapter}{\numberline {B}Diagramas mec\IeC {\^a}nicos}{35}{appendix.B}
-\contentsline {chapter}{\numberline {C}Diagramas eletro-eletr\IeC {\^o}nicos}{50}{appendix.C}
-\contentsline {chapter}{\numberline {D}Wireframes}{62}{appendix.D}
-\contentsline {chapter}{\numberline {E}Logbook}{64}{appendix.E}
-\contentsline {chapter}{\numberline {F}Lista de componentes}{65}{appendix.F}
-\contentsline {chapter}{Refer\IeC {\^e}ncias}{68}{appendix.F}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Pr\IeC {\'e}-processamento}{21}{subsubsection.4.1.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Sonar EZ-1}{22}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Sensor de Proximidade}{24}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}\textit {Smart Charger}}{24}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Sensor de Temperatura}{25}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}GPS}{26}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}IMU}{26}{subsection.4.1.7}
+\contentsline {section}{\numberline {4.2}Integra\IeC {\c c}\IeC {\~a}o no ROS}{27}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Phidgets}{27}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Smart Charger}{28}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}C\IeC {\^a}mera T\IeC {\'e}rmica}{28}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}GPS}{30}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}IMU}{30}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Testes integrados}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Trabalhos futuros}{30}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclus\IeC {\~a}o}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Considera\IeC {\c c}\IeC {\~o}es finais}{31}{section.5.1}
+\contentsline {chapter}{\numberline {A}QFD}{32}{appendix.A}
+\contentsline {chapter}{\numberline {B}Diagramas mec\IeC {\^a}nicos}{37}{appendix.B}
+\contentsline {chapter}{\numberline {C}Diagramas eletro-eletr\IeC {\^o}nicos}{52}{appendix.C}
+\contentsline {chapter}{\numberline {D}Wireframes}{64}{appendix.D}
+\contentsline {chapter}{\numberline {E}Logbook}{66}{appendix.E}
+\contentsline {chapter}{\numberline {F}Lista de componentes}{67}{appendix.F}
+\contentsline {chapter}{Refer\IeC {\^e}ncias}{70}{appendix.F}

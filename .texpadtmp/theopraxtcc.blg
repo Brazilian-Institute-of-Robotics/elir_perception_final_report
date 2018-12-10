@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: /Users/mhar-vell/Documents/@mhar-vell/github/elir_perception_final_report/.texpadtmp/theopraxtcc.aux
+The top-level auxiliary file: /Users/felipeplech/Documents/Github/Sourcetree/.texpadtmp/theopraxtcc.aux
 A level-1 auxiliary file: Others/FolhaRosto.aux
 A level-1 auxiliary file: Others/resumo.aux
 A level-1 auxiliary file: Others/abstract.aux
@@ -77,6 +77,7 @@ I was expecting a `,' or a `}'---line 1871 of file ../References/referencias.bib
  : booktitle={Anais do XX Congresso Brasileiro de Automática, Setembro 20 24 de 2014},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "fabris"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -88,7 +89,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 6 entries,
             6714 wiz_defined-function locations,
-            1240 strings with 10628 characters,
+            1241 strings with 10580 characters,
 and the built_in function-call counts, 5825 in all, are:
 = -- 658
 > -- 153

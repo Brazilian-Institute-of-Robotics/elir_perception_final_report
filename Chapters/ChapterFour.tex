@@ -20,7 +20,7 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		   \label{fig:lepton}
 		\end{figure}
 		
-		O driver coleta os frames e verifica se o mesmo foi adquirido corretamente, após isso, envia para a USB seguindo o seguinte padrão de mensagem:
+		O driver coleta os frames e verifica se o mesmo foi adquirido corretamente, após isso, envia para a USB seguindo o padrão de mensagem mostrado na Figura \ref{fig:framemsg}.
 		    
 		\begin{figure}[!ht]
 		   \centering
@@ -42,7 +42,62 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		
 		No \textit{script} de aquisição de \textit{frames}, cada \textit{pixel}, foi convertido para uma escala de cinza de 8-bits (1 \textit{byte}). Conversão necessária para trabalhar com a biblioteca de processamento de imagens OpenCV.
 		    
-		Após isso a imagem foi reconstruída para verificar a integridade dos \textit{frames}.
+		A OpenCV (Open Source Computer Vision Library) é uma biblioteca gratuita para operações de imagens tanto para uso acadêmico e para uso comercial, contendo interface para C++, Java e Python. A mesma foi desenvolvida com foco em eficiência computacional para sistemas de tempo real.
+
+		O processamento da imagem térmica pode ser dividido em três etapas:  pré-processamento, realce e busca de contornos.
+		
+		\begin{itemize}
+			\item Pré-processamento: refere-se ao processamento inicial de dados brutos para remoção de ruído e redimensionamento.			\item Realce: visa melhorar a qualidade da imagem, permitindo uma melhor discriminação dos objetos presentes na mesma.
+			\item Na busca de contorno é utilizado algoritmos para buscar objetos brancos.
+		\end{itemize}
+		
+		\subsubsection{Pré-processamento}
+		
+		Primeiramente, a imagem da câmera de 80x60 pixeis é escalonada para uma imagem de 400x300 pixeis, com objetivo de inseri-la, no final do processamento de imagem, na interface gráfica. Para isso, é utilizado uma interpolação bicúbica, utilizando quatro pixeis vizinhos para a operação.
+		
+		As imagens capturadas por câmeras digitais nem sempre representam fielmente a realidade. Os sinais analógicos possuem ruídos, que são sinais interferentes de natureza aleatória que provoca a degradação do sinal de interesse durante seu processamento \cite{fabris}.
+		
+		Em sistemas de captura de imagem, existem três categorias principais de ruído, que são os aleatórios, os sistemáticos e os chamados de \textit{banding noise}. Os aleatórios são usualmente causados quando se utiliza o sensor com baixa exposição, ou seja, uma velocidade de captura muito alta, causando uma flutuação das cores sobre a atual intensidade da imagem. Os ruídos sistemáticos são causados geralmente por uma longa exposição do sensor a luz e por altas temperaturas. O \textit{banding noise} é introduzido no momento em que o sensor está convertendo os dados analógicos para digital, e está diretamente relacionado ao tipo de tecnologia aplicada no mesmo (CCD ou CMOS). Na imagem abaixo, pode-se observar os três tipos de ruídos.
+	
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=14cm]{Figures/noise.png}
+		   \caption{Exemplo de um ruídos em imagens. Aleatório, sistemático e banding, da esquerda para a direita.}
+		   \label{fig:noise}
+		\end{figure}
+		
+		Antes de entrar na etapa de realce, é necessário atenuar esses ruídos da imagem, caso contrário, os mesmos também serão amplificados no procedimentos posteriores. Como se sabe que o fundo da imagem das digitais são uniformes, qualquer componente de alta frequência deve ser removida. Para isso, foi utilizado um filtro passa-baixa comumente chamado de \textit{blur}. Na figura \ref{fig:img_80graus}, pode-se observar a imagem original.
+			
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=8cm]{Figures/flirphoto.png}
+		   \caption{Imagem Original}
+		   \label{fig:img_80graus}
+		\end{figure}
+		
+		Basicamente, o filtro realiza uma convolução entre um operador e a imagem de interesse tirando uma média dos pixeis vizinhos. O operador é mostrado na Equação \ref{equ:kernel}.
+		
+		\begin{equation}
+			K = \frac{1}{25}\cdot \begin{bmatrix}
+			 1  1  1  1  1\\ 
+			 1  1  1  1  1\\ 
+			 1  1  1  1  1\\ 
+			 1  1  1  1  1\\ 
+			 1  1  1  1  1 
+			\end{bmatrix}
+			\label{equ:kernel}
+		\end{equation}
+		
+		Essa matriz é fixada em cima de um pixel, e é somado o valor de todos os pixeis dentro do operador. Após isso, é tirado uma média dos valores, substituindo o valor do pixel central por ela. No caso da Equação \ref{equ:kernel}, é uma matriz unitária 5x5 multiplicada por uma constante igual ao inverso do quadrado da dimensão da mesma. A frequência de rejeição pode ser alterada ao aumentar ou diminuir a dimensão da matriz. Na Figura \ref{}, pode-se observar o efeito do filtro.
+		
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=16cm]{Figures/blur.png}
+		   \caption{Imagem Original e após o filtro \textit{blur}}
+		   \label{fig:blur}
+		\end{figure}
+		
+		Após o pré-processamento, pode-se dar inicio ao procedimento de realce dos dados relevantes da imagem.
 	
 	\subsection{Sonar EZ-1}
 		O sonar EZ-1 da MaxBotix possui saída analógica referente a distância medida. Para testa-lo, foi utilizada uma das entradas analógicas da Phidgets.

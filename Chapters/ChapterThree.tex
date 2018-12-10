@@ -45,3 +45,12 @@ A principal função de um sistema de Percepção é a coleta e tratamento dos d
 
 
 \section{Testes}
+Como descrito anteriormente a fase de testes reflete um processo de coleta de dados e utilização de métodos estatísticos para chegar na probabilidade de ocorrência dos fenômenos. Cada sensor possui sua particularidade e por isso a metodologia de teste para cada sensor é distinta. 
+
+Os testes unitários buscam avaliar o funcionamento dos sensores do sistema de Percepção. Estes teste foram aplicados ao sensor de proximidade, câmera térmica e sonar. 
+
+No caso do sensor de proximidade, foi aferido o valor de tensão do pino de dados do sensor ao aproximar um objeto metálico a uma distância de 5cm. Após a coleta de trinta amostras foi aplicada uma distribuição normal.
+
+No teste unitário da câmera térmica um copo plástico com água quente foi colocado a 1m e 10cm de distância da câmera térmica, com o auxílio de um pirômetro foi aferido o valor de temperatura do copo e paralelamente obtido um frame da câmera. O valor do pixel correspondente a área do copo foi obtido de forma a no final do experimento ter uma tabela de correlação entre temperatura e valor de pixel.
+
+O teste unitário do sonar foi realizado a partir da medição do valor de tensão no pino analógico do sensor para diferentes distâncias de obstáculo. Ao final foi aplicado uma distribuição normal. 

@@ -1,17 +1,58 @@
-\chapter{Resultados}
+\chapter{Desenvolvimento e Testes}
 \label{chap:result}
 
-As funcionalidades do sistema de percepção foram validadas a partir de duas etapas de testes. Os testes unitários buscam a validação do funcionamento individual dos sensores, enquanto os testes integrados validam o funcionamento dos sistemas e funcionalidades, ou seja, todos os componentes em conjunto. A descrição dos testes realizados e dos resultados obtidos por eles está descrita abaixo.
 
-Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndice \ref{Append:diagele}.
 
 %--------- NEW SECTION ----------------------
+
+\subsection{Lista de materiais}
+No sistema de Percepção os sensores atuam como os sentidos do robô, recebendo dados externos e informando a unidade central de processamento os seus significados. Quanto maior o número de grandezas físicas analisadas, mais complexo o sistema de Percepção e maior a sua capacidade de compreensão.
+
+Os sensores que compõem o sistema de Percepção do robô ELIR foram escolhidos com base nas necessidades de cada funcionalidade do sistema e disponibilidade do componente na própria instituição. A lista de componentes utilizada está mostrada na Figura \ref{fig:list_mat}. Os preços mostrados não refletem o custo do projeto uma vez que os materiais utilizados são pertencentes ao SENAI CIMATEC. Os valores mostrados são preços médios do produto encontrados na página dos fornecedores.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=16cm]{Figures/lista_materiais.png}
+    \caption{Lista de materiais utilizados no sistema de Percepção do robô ELIR}
+    \label{fig:list_mat}
+\end{figure}
+
+\subsubsection{Descrição dos componentes}
+
+A Phidgets é uma placa de interface que concentra os dados provenientes de suas portas digitais, analógicas e USBs em uma única porta USB. Ela atua como um hub concentrando todas as informações em um único local. No ELIR a placa é utilizada para concentrar as informações do sonar, sensores de proximidade,  baterias, GPS e IMU em uma única porta USB a ser conectada na unidade central de processamento. A sua utilização é importante por conta da limitação de portas USBs na unidade de processamento central.
+
+As placas Nucleo STM32F401RE  e   Nucleo STM32L432 são placas de desenvolvimento para aplicações utilizando o microprocessador ARM. No ELIR a placa Nucleo STM32F401RE é utilizada para converter os dados provenientes da câmera térmica em protocolo SPI para o protocolo USB. A família  F4 foi utilizada pois pode atingir clocks de 20GHz, é necessario um microprocessador que consiga atingir esta faixa de clock para ter sincronia com o módulo da câmera. A placa possui um canal de comunicação exclusivo com a unidade central de processamento.
+
+Já a placa  Nucleo STM32L432 é utilizada para conversão das informações provenientes das baterias em protocolo SMBus para o protocolo USB. Esta placa é conectada a uma porta USB da Phidgets. Para a execução desta atividade não é necessário um microprocessador de alto desempenho e por isso a família L4 foi escolhida por ter  baixo consumo de energia.
+
+
+
+O sensor E18D80-NK é um sensor de proximidade infravermelho, ele é utilizado no ELIR para identificar se as garras do robô estão apoiadas na linha de transmissão. A saída do sensor é digital e o estado do pino  de dados indica a presença ou ausência de um objeto. Foi realizada uma pesquisa dos sensores de proximidade no mercado e este sensor foi escolhido por ser de baixo custo, compacto e pode ser utilizado em superfícies metálicas.
+
+O sensor EZ1 da MaxBotix é um sonar. Ele é utilizado no projeto para monitorar objetos dentro da faixa de servidão. Foi utilizado o EZ1 por ele cumprir com os requisitos do cliente do alcance da área de servidão, ter compatibilidade com a Phidgets e estava disponível na área.
+
+O sensor de temperatura LM35 é utilizado no projeto para medição da temperatura na estrutura interna do robô. Ele foi escolhido por ter reposta linear e ser de baixo custo.
+
+
+
+O GPS SwiftNav Piksi é utilizado no projeto para obter informações de latitude e longitude quando detectado alguma anormalidade. Enquanto a IMU Xsens Mti-1 é utilizada no projeto para obter informaçoes dos ângulos de orientação do robô. Estes módulo são superdimensionado para a aplicação inicial do projeto, ainda assim os mesmos foram utilizados por terem disponibilidade na instituição e possuirem drivers para o ambiente ROS disponibilizados pelo fabricante.
+
+
+
+As bateriais NH2054 da Inspired Energy são células de 14V para alimentação do sistema de Percepção. Elas são baterias inteligente que fornecem informações de temperatura, tensão, corrente e capacidade das células. Foram escolhidas pela quantidade de informações que podem fornecer.
+
+
+
+A Power Management Board é uma placa de gerenciamento de energia do sistema robótico, ela distribui a tensão proveniente das baterias para todos os sensores.
+
+
+
+A intel NUC 515RYK é a unidade de processamento central do sistema de Percepção, ela recebe as informações de todos os sensores dos sitema de Percepção e os interpreta.
 \section{Testes unitários}
 \label{sec:testu}
-
 	\subsection{Câmera Térmica}
 	
-		A câmera térmica Lepton, do fabricante FLIR, se comunica por VOSPI. Logo, foi necessário utilizar um driver para converter os dados da câmera e disponibiliza-los para a USB. Uma placa de desenvolvimento Nucleo STM32F401RE com o driver disponibilizado por \citeonline{groupgets} foi utilizada para essa situação.
+		A câmera térmica foi utilizada no sistema de percepção para detecção de pontos quentes. O modelo utilizado no projeto foi a Lepton, da fabricante FLIR, que é um módulo completo baseado no infra-vermelho de ondas longas feito para ser embutido em dispositivos eletrônicos. O módulo captura radiação térmica na faixa de comprimento de onda de 8-14 micrômetros, tendo como saída uma imagem térmica, a qual a coloração representa a intensidade de radiação infra-vermelha emitida pelo objeto inspecionado.
 		
 		\begin{figure}[!ht]
 		   \centering
@@ -20,7 +61,10 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		   \label{fig:lepton}
 		\end{figure}
 		
-		O driver coleta os frames e verifica se o mesmo foi adquirido corretamente, após isso, envia para a USB seguindo o padrão de mensagem mostrado na Figura \ref{fig:framemsg}.
+		 A comunicação com a câmera é feita via protocolo VoSPI, sendo necessário a utilização de um driver para adquirir os dados e transmiti-los em protocolo USB para a NUC. Um driver para conversão desses dados foi disponibilizado por \citeonline{groupgets} no GitHub, e foi utilizado no projeto em uma placa de desenvolvimento NUCLEO F401RE.
+		
+		
+		O driver de comunicação coleta os \textit{frames} e verifica a integridade de cada \textit{pixel}, após isso, envia-os para a USB seguindo o padrão de mensagem mostrado na Figura \ref{fig:framemsg}.
 		    
 		\begin{figure}[!ht]
 		   \centering
@@ -29,7 +73,7 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		   \label{fig:framemsg}
 		\end{figure}
 	
-	    No início de cada mensagem, há uma sequência de quatro \textit{bytes} para confirmar a transferência dos dados. Após a confirmação por um \textit{script} em python, inicia-se o processo de aquisição do \textit{frame}. Cada \textit{frame} é composto por 4800 \textit{pixeis}, sendo 80 na horizontal e 60 na vertical. Além disso, cada \textit{pixel} possui 2 \textit{bytes} de profundidade de cor, correspondendo a 9600 \textit{bytes} de informação para cada \textit{frame}. Na Figura \ref{fig:frame_esque}, pode-se observar uma representação do \textit{frame} da câmera.
+	    No início de cada mensagem, há uma sequência de quatro \textit{bytes} para confirmar a transferência dos dados. Após a confirmação por um \textit{script} em Python, inicia-se o processo de aquisição do \textit{frame}. Cada \textit{frame} é composto por 4800 \textit{pixels}, sendo 80 na horizontal e 60 na vertical. Além disso, cada \textit{pixel} possui 2 \textit{bytes} de profundidade de cor, correspondendo a 9600 \textit{bytes} de informação para cada \textit{frame}. Na Figura \ref{fig:frame_esque}, pode-se observar uma representação do \textit{frame} da câmera.
 	    
 	%\pagebreak
 	
@@ -40,7 +84,7 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		   \label{fig:frame_esque}
 		\end{figure}
 		
-		No \textit{script} de aquisição de \textit{frames}, cada \textit{pixel}, foi convertido para uma escala de cinza de 8-bits (1 \textit{byte}). Conversão necessária para trabalhar com a biblioteca de processamento de imagens OpenCV.
+		No \textit{script} de aquisição de \textit{frames}, cada \textit{pixel} é convertido para uma escala de cinza de 8-bits (1 \textit{byte}). Conversão necessária para trabalhar com a biblioteca de processamento de imagens OpenCV.
 		    
 		A OpenCV (Open Source Computer Vision Library) é uma biblioteca gratuita para operações de imagens tanto para uso acadêmico e para uso comercial, contendo interface para C++, Java e Python. A mesma foi desenvolvida com foco em eficiência computacional para sistemas de tempo real.
 
@@ -53,7 +97,45 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		
 		\subsubsection{Pré-processamento}
 		
-		Primeiramente, a imagem da câmera de 80x60 pixeis é escalonada para uma imagem de 400x300 pixeis, com objetivo de inseri-la, no final do processamento de imagem, na interface gráfica. Para isso, é utilizado uma interpolação bicúbica, utilizando quatro pixeis vizinhos para a operação.
+		Primeiramente, a imagem da câmera de 80x60 pixeis é escalonada para uma imagem de 400x300 pixels, com objetivo de inseri-la, no final do processamento de imagem, na interface gráfica. Para isso, é utilizado uma interpolação bicúbica, utilizando quatro pixeis vizinhos para a operação. Em geral, esse método é melhor na preservação de detalhes finos em comparação com as outras interpolações. A diferença entre os três principais métodos podem ser vistas na figura \ref{fig:scale}.
+
+ \begin{figure*}
+        \centering
+        \begin{subfigure}[b]{0.475\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Figures/lena_tiny.png}
+            \caption[Network2]%
+            {{\small Original Image}}    
+            \label{fig:int1}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}[b]{0.475\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{Figures/resArea.png}
+            \caption[]%
+            {{\small Área}}    
+            \label{fig:intb}
+        \end{subfigure}
+        \vskip\baselineskip
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{Figures/resLinear.png}
+            \caption[]%
+            {{\small Linear}}    
+            \label{fig:intc}
+        \end{subfigure}
+        \quad
+        \begin{subfigure}[b]{0.475\textwidth}   
+            \centering 
+            \includegraphics[width=\textwidth]{Figures/resCubic.png}
+            \caption[]%
+            {{\small Cúbica}}    
+            \label{fig:intd}
+        \end{subfigure}
+        \caption[ The average and standard deviation of critical parameters ]
+        {\small Comparação entre os métodos de interpolação} 
+        \label{fig:scale}
+    \end{figure*}
 		
 		As imagens capturadas por câmeras digitais nem sempre representam fielmente a realidade. Os sinais analógicos possuem ruídos, que são sinais interferentes de natureza aleatória que provoca a degradação do sinal de interesse durante seu processamento \cite{fabris}.
 		
@@ -65,6 +147,8 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		   \caption{Exemplo de um ruídos em imagens. Aleatório, sistemático e banding, da esquerda para a direita.}
 		   \label{fig:noise}
 		\end{figure}
+
+
 		
 		Antes de entrar na etapa de realce, é necessário atenuar esses ruídos da imagem, caso contrário, os mesmos também serão amplificados no procedimentos posteriores. Como se sabe que o fundo da imagem das digitais são uniformes, qualquer componente de alta frequência deve ser removida. Para isso, foi utilizado um filtro passa-baixa comumente chamado de \textit{blur}. Na figura \ref{fig:img_80graus}, pode-se observar a imagem original.
 			
@@ -88,7 +172,9 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 			\label{equ:kernel}
 		\end{equation}
 		
-		Essa matriz é fixada em cima de um pixel, e é somado o valor de todos os pixeis dentro do operador. Após isso, é tirado uma média dos valores, substituindo o valor do pixel central por ela. No caso da Equação \ref{equ:kernel}, é uma matriz unitária 5x5 multiplicada por uma constante igual ao inverso do quadrado da dimensão da mesma. A frequência de rejeição pode ser alterada ao aumentar ou diminuir a dimensão da matriz. Na Figura \ref{}, pode-se observar o efeito do filtro.
+		Essa matriz é fixada em cima de um \textit{pixel}, e é somado o valor de todos os \textit{pixels} dentro do operador. Após isso, é tirado uma média dos valores, substituindo o valor do \textit{pixel} central por ela. A matriz age como uma janela que passa por toda a imagem.
+		
+		 No caso da Equação \ref{equ:kernel}, é uma matriz unitária 5x5 multiplicada por uma constante igual ao inverso do quadrado da dimensão da mesma. A frequência de rejeição pode ser alterada ao aumentar ou diminuir a dimensão da matriz. Na Figura \ref{fig:blur}, pode-se observar o efeito do filtro.
 		
 		\begin{figure}[!ht]
 		   \centering
@@ -98,11 +184,61 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		\end{figure}
 		
 		Após o pré-processamento, pode-se dar inicio ao procedimento de realce dos dados relevantes da imagem.
-	
+		
+		\subsubsection{Realce}
+		
+		Os algoritmos de detecção de contornos em imagens necessitam que as mesmas segmentadas, ou seja, que haja uma separação brusca entre a região de interesse e o plano de fundo. Para realçar os pontos quentes do plano de fundo, foi utilizado um método de segmentação chamado de \textit{thresholding}, com objetivo de gerar imagens binárias.
+		
+		Os métodos mais simples de \textit{thresholding} substituem cada \textit{pixel} de uma determinada imagem por preto, caso sua intensidade for menor que uma constante fixa, ou branco caso seja maior que essa mesma constante. O resultado é uma imagem segmentada com apenas valores de 0 e 255, caso a imagem seja de 8-bits.
+		
+		O método citado anteriormente, chama-se binário. Existem outros métodos de \textit{thresholding}, mas o uso de cada um depende da aplicação. Um exemplo de alguns métodos pode ser visto na Figura \ref{fig:thresh}.
+		
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=16cm]{Figures/thresh.png}
+		   \caption{Comparação entre os métodos de \textit{thresholding}}
+		   \label{fig:thresh}
+		\end{figure}
+		
+		Como se pode observar, os métodos adaptativos deixam um contorno do ponto quente na imagem, diferente do binário que destaca-o. Com isso, o método binário foi utilizado para a segmentação das imagens térmicas.
+		
+		
+		\subsubsection{Busca de Contornos}
+		
+		A partir das imagens segmentadas, pode-se dar inicio ao algoritmo de busca de contornos. Os contornos podem ser explicados simplesmente como uma curva unindo todos os pontos de uma borda em uma região de mesma cor ou intensidade. A busca por contornos é uma ferramenta bastante útil para análise de geometria, direção, detecção e reconhecimento de padrões.
+		
+		Como já foi abordado, para realizar a busca, é necessário o uso de imagens binárias, ou seja, segmentadas. Basicamente, a busca de contornos irá procurar regiões brancas em um fundo preto, e retornar os pontos de todas as curvas encontradas.
+		
+		Para isso, foi utilizado uma aproximação simples, a qual comprime horizontalmente, verticalmente e diagonalmente todos os segmentos, deixando apenas os pontos da borda. Na Figura \ref{fig:contour}, pode-se observar o contorno ao redor do ponto quente.
+		
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=12cm]{Figures/contorno.png}
+		   \caption{Desenho do contorno em torno do objeto}
+		   \label{fig:contour}
+		\end{figure}
+		
+		\subsubsection{Procedimento de Teste}
+		
+		O teste unitário da câmera térmica teve com objetivo a obtenção da relação de temperatura aferida de um objeto com o valor do \textit{pixel} obtido pela câmera. Para isso, foi utilizado um copo plástico contendo água quente como fonte de calor e um pirômetro para medição da temperatura de referência.
+		
+		 A câmera foi posicionada de forma a obter imagens do copo, como pode ser visto na figura \ref{fig:cameratest}. A medida que a temperatura do copo aferida pelo pirômetro sofria variação significativa, os \textit{frames} da câmera foram obtidos para realizar uma correlação. 
+		 
+		 Após a obtenção dos \textit{frames}, o valor do \textit{pixel} correspondente a região de imagem do copo foi adquirido de forma a obter uma tabela de correlação entre temperatura do copo e valor de \textit{pixel} da câmera. A distribuição normal foi aplicada aos dados para obter a probabilidade de correlação do fenômeno.
+		 \pagebreak
+
+		
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=12cm]{Figures/testecamera.jpg}
+		   \caption{Foto do experimento de calibração da câmera}
+		   \label{fig:cameratest}
+		\end{figure}
+		
 	\subsection{Sonar EZ-1}
 		O sonar EZ-1 da MaxBotix possui saída analógica referente a distância medida. Para testa-lo, foi utilizada uma das entradas analógicas da Phidgets.
 		
-		\pagebreak
+		%\pagebreak
 		
 		\begin{figure}[!ht]
 		   \centering
@@ -111,11 +247,15 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 		   \label{fig:ez1}
 		\end{figure}
 		
-		A comunicação da Phidgets com com a NUC é feita via USB, contudo, é necessário a instalação dos drivers obrigatórios da placa no linux. Além disso, é necessário a instalação do módulo python respectivo da placa, dessa forma, permitindo a utilização de classes e métodos para controle da comunicação com os sensores.
+		A comunicação da Phidgets com com a NUC é feita via USB, contudo, é necessário a instalação dos drivers obrigatórios da placa no linux. Além disso, é necessário a instalação do módulo Python respectivo da placa, dessa forma, permitindo a utilização de classes e métodos para controle da comunicação com os sensores.
 		
 		Com os respectivos drivers e módulos da phidgets instalados no computador, foi necessário apenas conectar os terminais alimentação e saída analógica do sensor nos conectores correspondentes da Phidgets e executar um \textit{script} de leitura da tensão nas entradas analógicas fornecido pela própria fabricante. 
 		
-		Ao executar o código, recebe-se, no intervalo de dez segundos, todas as leituras de tensão efetuadas no sensor. Notamos que ao afastar o obstáculo do sonar o valor de tensão aumentava e quando aproximavamos o obstáculo o valor de tensão diminuía. Após feita a conversão de tensão para unidades métricas através das informações disponibilizadas no \textit{datasheet}, foi possível validar o sensor.
+		O teste unitário do sonar teve como objetivo obter a relação da tensão de saída do pino analógico do sonar com a distância do obstáculo colocado a frente do mesmo.
+		
+		O valor de tensão foram obtidos através do nó de aquisição de dados da Phidgets, obtendo assim, os valores de tensão obstáculos à 30cm, 60cm e 2,3m. Essas distâncias de referência foram aferidas com uma trena.
+		
+		Após a coleta dos dados foi feito um gráfico de distribuição normal para obter a probabilidade de correlação entre as duas grandezas físicas. Os resultados podem ser vistos na Figura \ref{}.
 	
 	\subsection{Sensor de Proximidade}
 		O sensor de proximidade E18-D80NK funciona de maneira bastante simples. O módulo possui um emissor e um receptor de feixes infra-vermelhos, o qual identifica se há ou não um objeto próximo devido a reflexão, liberando assim, um sinal de nível alto caso positivo e nível baixo caso negativo.
@@ -257,160 +397,54 @@ Para mais detalhes sobre as conexões eletro-eletrônicas, pode-se ver o apêndi
 %--------- NEW SECTION ----------------------
 \section{Testes integrados}
 \label{sec:testi}
-asdfadsfsdfs
 
-%--------- NEW SECTION ----------------------
-%\section{Avaliação da prontidão tecnológica}
-%\label{sec:trl}
-%
-%Uma das ferramentas conhecidas para a avaliação de tecnologias é a matriz TRL desenvolvida pela NASA\footnote{National Aeronautics and Space Administration} e que permitir definir o nível de maturidade de uma tecnologia. Entende-se que a tecnologia é definida como a aplicação prática do conhecimento para criar a capacidade de fazer algo inteiramente novo de forma inteiramente nova, o que difere da pesquisa científica que engloba a descoberta de um novo conhecimento da qual a tecnologia é derivada.
-%
-%A importância do uso dessa avaliação, encontra seu respaldo no quesito de nortear o desenvolvimento do projeto na minimização dos gastos oriundos de uma orçamentação e também no conhecimento das tecnologias plausíveis para o desenvolvimento da solução requerida.
-%
-%%\section{A matriz BTRL}
-%Todo projeto foi acompanhado por uma cadência de avaliações ao longo das fases do projeto. Estas avaliações seguem as diretrizes da ISO 16290, a qual estabelece níveis do quanto uma tecnologia está desenvolvida, tomando como base este procedimento e levando em consideração as avaliações de risco para um projeto de R\&D\footnote{Research and Development}, criou-se o BTRL\footnote{BIR Technology Readiness Level}. 
-%
-%% Please add the following required packages to your document preamble:
-%% \usepackage[table,xcdraw]{xcolor}
-%% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-%%\begin{sidewaystable*}
-%\begin{table}[h]
-%\centering
-%\caption{Matriz do Nível de Prontidão Tecnológia do Senai Cimatec.}
-%\begin{adjustbox}{width=1\textwidth}
-%\label{tabela:BTRL}
-%\begin{tabular}{lc|p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm}}
-%\cline{1-2}
-%\multicolumn{2}{|l|}{\cellcolor[HTML]{000000}{\color[HTML]{FFFFFF} \textbf{NÍVEL DA PRONTIDÃO TECNOLÓGICA}}} &  &  &  &  \\ \cline{1-2}
-%\multicolumn{1}{|l|}{\textbf{perspectiva}} & \textbf{nível} &  &  &  &  \\ \hline
-%\multicolumn{1}{|l|}{\textit{sistema aprovado}} & \textit{9} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}{\color[HTML]{FFFFFF} L3}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} \\ \hline
-%\multicolumn{1}{|l|}{\textit{sistema qualificado}} & \textit{8} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}{\color[HTML]{FFFFFF} L3}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} \\ \hline
-%\multicolumn{1}{|l|}{\textit{protótipo testado em campo operacional}} & \textit{7} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}{\color[HTML]{FFFFFF} L3}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} \\ \hline
-%\multicolumn{1}{|l|}{\textit{protótipo testado em campo relevante}} & \textit{6} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}{\color[HTML]{FFFFFF} L3}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} \\ \hline
-%\multicolumn{1}{|l|}{\textit{funcionalidades testadas em campo relevante}} & \textit{5} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}{\color[HTML]{FFFFFF} L3}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} L4}} \\ \hline
-%\multicolumn{1}{|l|}{\textit{funcionalidades testadas em laboratório}} & \textit{4} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}{\color[HTML]{FFFFFF} L3}} \\ \hline
-%\multicolumn{1}{|l|}{\textit{conceito aprovado}} & \textit{3} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} \\ \hline
-%\multicolumn{1}{|l|}{\textit{conceito formulado}} & \textit{2} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}L2} \\ \hline
-%\multicolumn{1}{|l|}{\textit{princípios básicos aprovados}} & \textit{1} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} L1}} \\ \hline
-% &  & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}muito \\ alto\end{tabular}}} & \multicolumn{1}{c|}{\textbf{alto}} & \multicolumn{1}{c|}{\textbf{médio}} & \multicolumn{1}{c|}{\textbf{baixo}} \\ \cline{3-6} 
-% &  & \multicolumn{4}{c|}{\cellcolor[HTML]{000000}{\color[HTML]{FFFFFF} \textbf{CATEGORIZAÇÃO DO RISCO TÉCNICO}}} \\ \cline{3-6} 
-%\end{tabular}
-%\end{adjustbox}
-%\end{table}	
-%%\end{sidewaystable*}
-%
-%O BTRL é o índice destas duas variáveis: TRL e Riscos. A matriz apresenta através da Tabela \ref{tabela:BTRL} de forma clara a relação entre estes dois critérios, estabelecendo desta forma 4 níveis:
-%\begin{itemize}
-%	\item L1 - desenvolvimento significativo requerido.
-%	\item L2 - requer mais desenvolvimento da tecnologia antes de prosseguir para a próxima fase do projeto.
-%	\item L3 - requer alguns desenvolvimento adicional na tecnologia.
-%	\item L4 - pronto para uso tanto do protótipo para as fases seguintes, como para o uso do produto em campo.
-%\end{itemize}
-%No entanto, deve-se estabelecer critérios para os níveis de riscos atingidos. Onde foi utilizado para a avaliação destes riscos outras duas variáveis importantes: o nível de confiabilidade do sistema e o nível do protótipo/sistema que se está sendo desenvolvido (conforme Tabela \ref{tabela:TRC}).
-%
-%% Please add the following required packages to your document preamble:
-%% \usepackage[table,xcdraw]{xcolor}
-%% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-%\begin{table}[h]
-%\centering
-%\caption{Categorização dos Riscos Técnicos - TRC.}
-%\begin{adjustbox}{width=1\textwidth}
-%\label{tabela:TRC}
-%\begin{tabular}{lc|p{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}}
-%\cline{1-2}
-%\multicolumn{2}{|l|}{\cellcolor[HTML]{000000}{\color[HTML]{FFFFFF} \textbf{PROTÓTIPO}}} &  &  &  &  \\ \hline
-%\multicolumn{1}{|l|}{tecnologia aprovada} & 4 & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}{\color[HTML]{FFFFFF} B}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}C} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} D}} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} D}} \\ \hline
-%\multicolumn{1}{|l|}{pequenas modificações} & 3 & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}{\color[HTML]{FFFFFF} B}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}C} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}C} & \multicolumn{1}{c|}{\cellcolor[HTML]{009901}{\color[HTML]{FFFFFF} D}} \\ \hline
-%\multicolumn{1}{|l|}{grandes modificações} & 2 & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} A}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}{\color[HTML]{FFFFFF} B}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}C} & \multicolumn{1}{c|}{\cellcolor[HTML]{F8FF00}C} \\ \hline
-%\multicolumn{1}{|l|}{novo design conceitual} & 1 & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} A}} & \multicolumn{1}{c|}{\cellcolor[HTML]{9A0000}{\color[HTML]{FFFFFF} A}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}{\color[HTML]{FFFFFF} B}} & \multicolumn{1}{c|}{\cellcolor[HTML]{F56B00}{\color[HTML]{FFFFFF} B}} \\ \hline
-% &  & \multicolumn{1}{p{2.5cm}|}{\footnotesize{melhorias na tecnologia são requeridas}} & \multicolumn{1}{p{2.5cm}|}{\footnotesize{melhorias no design são requeridas}} & \multicolumn{1}{p{2.5cm}|}{\footnotesize{pequenas melhorias são requeridas}} & \multicolumn{1}{p{2.5cm}|}{\footnotesize{não há necessidade de melhorias}} \\ \cline{3-6} 
-% &  & \multicolumn{4}{c|}{\cellcolor[HTML]{000000}{\color[HTML]{FFFFFF} \textbf{CONFIABILIDADE}}} \\ \cline{3-6} 
-%\end{tabular}
-%\end{adjustbox}
-%\end{table}
-%
-%A avaliação dos riscos técnicos (TRC) é categorizada em 4 níveis:
-%\begin{itemize}
-%	\item A - risco muito alto
-%	\item B - risco alto
-%	\item C - risco médio
-%	\item D - risco baixo
-%\end{itemize}
-%
-%Para os projetos em robótica, será sempre avaliado o protótipo/sistema no final de cada fase do desenvolvimento. Neste caso específico do projeto de Direção Assistida, está sendo avaliado o sistema na fase Conceitual.
-%
-%\subsection{Avaliação do BTRL para o sistema robótico em desenvolvimento}
-%De forma a sistematizar a avaliação dos subsistemas, em desenvolvimento para a avaliação do nível de prontidão tecnológica nesta fase do projeto foi tomado a estrutura da arquitetura geral apresentada no início do capítulo \ref{ch:arqgen}.
-%Desta forma obteve-se a seguinte avaliação, conforme apresentada na Tabela \ref{tabela:TRL_FC}.
-%
-%% Please add the following required packages to your document preamble:
-%% \usepackage[table,xcdraw]{xcolor}
-%% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-%\begin{table}[h]
-%%\scalefont{0.8}
-%\centering
-%\caption{Avaliação da Prontidão Tecnológica - Fase Design.}
-%\label{tabela:TRL_FC}
-%\begin{tabular}{llccccl}
-%\rowcolor[HTML]{000000} 
-%\multicolumn{7}{l}{\cellcolor[HTML]{000000}{\color[HTML]{FFFFFF} FASE DESIGN}} \\
-%\rowcolor[HTML]{EFEFEF} 
-%\textbf{subsistemas} 		& \textbf{componentes} 				& RL & PL & TRC & TRL & BRTL\\ \hline
-%sensoriamento				& gps								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sensoriamento				& imu								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sensoriamento				& rgb cam							& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sensoriamento				& vnir cam							& 3	 & 3  & 3	& 8	  & \cellcolor[HTML]{009901}\\ \hline
-%sensoriamento				& swir cam							& 3	 & 3  & 3	& 8	  & \cellcolor[HTML]{009901}\\ \hline
-%sensoriamento				& lidar								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistema de processamento	    & dau								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistema de processamento 	& controlador XY						& 3	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistema de processamento 	& unidade de rotação					& 3	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistema de processamento 	& switch								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistema de processamento 	& NUC								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistem de potência			& baterias							& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistem de potência			& fonte de alimentação				& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%sistem de potência			& no break							& 4	 & 4  & 4	& 9   & \cellcolor[HTML]{009901}\\ \hline
-%estrutura mecânica			& carenagem							& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%estrutura mecânica			& suporte dos sensores				& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%estrutura mecânica			& perfis de alumínio					& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%estrutura mecânica			& rodas								& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%interface					& base de controle					& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%interface					& display							& 4	 & 4  & 4	& 9	  & \cellcolor[HTML]{009901}\\ \hline
-%funcinalidades				& aquisição							& 3	 & 3  & 3	& 5	  & \cellcolor[HTML]{F8FF00}\\ \hline
-%funcinalidades				& calibração							& 2	 & 2  & 2	& 4	  & \cellcolor[HTML]{F56B00}\\ \hline
-%funcinalidades				& checking							& 2	 & 2  & 2	& 4	  & \cellcolor[HTML]{F56B00}\\ \hline
-%funcinalidades				& localização						& 2	 & 3  & 3	& 5	  & \cellcolor[HTML]{F8FF00}\\ \hline
-%funcinalidades				& navegação							& 2	 & 3  & 3	& 5	  & \cellcolor[HTML]{F8FF00}\\ \hline
-%funcinalidades				& escaneamento						& 2	 & 2  & 2	& 4	  & \cellcolor[HTML]{F56B00}\\ \hline
-%funcinalidades				& gestão de dados					& 3	 & 3  & 3	& 4	  & \cellcolor[HTML]{F56B00}\\ \hline
-%funcinalidades				& gestão de log						& 3	 & 3  & 3   & 4	  & \cellcolor[HTML]{F56B00}\\ \hline
-%funcinalidades				& interface de operação				& 2	 & 2  & 2	& 4	  & \cellcolor[HTML]{F56B00}\\ \hline
-%funcinalidades				& interface de pós-processamento		& 2	 & 2  & 2	& 2	  & \cellcolor[HTML]{9A0000}\\ \hline
-%funcinalidades				& pós-processamento					& 2	 & 2  & 2	& 3	  & \cellcolor[HTML]{9A0000}\\ \hline
-%\end{tabular}
-%\end{table}
-%
-%%Diante disso, faz-se os seguintes comentários:
-%%\begin{itemize}
-%%	\item \textbf{VNIR cam}: o conjunto de câmeras hiperespectrais foram testadas em laboratório, quanto a sua operação e funcionamento, as mesmas apresentaram um bom desempenho mas precisam ser integradas ao sistema; seu desempenho em ambiente externo mostrou-se adequado.
-%%	\item \textbf{SWIR cam}: o conjunto de câmeras hiperespectrais foram testadas em laboratório, quanto a sua operação e funcionamento, as mesmas apresentaram um bom desempenho mas precisam ser integradas ao sistema; seu desempenho em ambiente externo mostrou-se adequado.
-%%	\item \textbf{aquisição}: esta funcionalidade testada e com dados disponibilizados para testes e consultas.
-%%	\item \textbf{calibração}: a funcionalidade apresenta em grande parte a integração com os sensores, testes precisam ser realizados para uma melhor otimização.
-%%	\item \textbf{checking}: funcionalidade isolada no início do desenvolvimento, aumentar atenção para uma aplicação mais profunda.
-%%	\item \textbf{localização}: intermitência no uso, novas técnicas precisam ser testadas para finalizar o desenvolvimento.
-%%	\item \textbf{navegação}: funcionalidade em adaptação pela falta da plataforma móvel.
-%%	\item \textbf{escaneamento}: testes elaborados em laboratório apresentaram uma boa eficiência, precisa ser testado em ambiente relevante.
-%%	\item \textbf{gestão de dados}: funcionalidade desenvolvida sob o framework ROS, necessita maior entendimento entre a troca de informações com o sistema operacional Windows.
-%%	\item \textbf{gestão de log}: algoritmo em otimização, muito da funcionalidade já testada em outros projetos.
-%%	\item \textbf{interface de operação}: apresenta-se de forma simplificada e útil para o contexto de prototipagem.
-%%	\item \textbf{interface de pós-processamento}: necessita desenvolver, a ideia ainda esta baseada em um \textit{draft}.
-%%	\item \textbf{pós-processamento}: funcionalidade ainda não testada, porém apresenta consistência na elaboração do algoritmo.
-%%%	
-%%\end{itemize}
-%
-%Tendo como base do desenvolvimento os requisitos técnicos levantados, deve-se também observar os comentários levantados pela avaliação do BTRL e potencializar o desenvolvimento para atingir o nível 4 ou 3 do BTRL dependendo da tecnologia envolvida; acredita-se que nestes níveis o protótipo poderá ser considerado adequado para o nível de TRL 5/6 estabelecido como objetivo pela direção do projeto.
-%
-%
+Os testes integrados servem para validar o funcionamento do sistema de Percepção como um  todo. Para um sistema de Percepção a validação da interface gráfica é uma confirmação de funcionamento do sistema, uma vez que todos os dados estão sendo exposto em tempo real para o operador. 
+
+Por tanto, o principal teste integrado do sistema de Percepção foi executar os nós do ROS ao mesmo tempo e avaliar o desempenho quantitativo da interface gráfica.
+
+A figura \ref{fig:testint} mostra a interface gráfica do sistema de Percepção com todos os componentes funcionando.
+
+    \begin{figure}[!ht]
+    	\centering
+    	\includegraphics[width=14cm]{Figures/testintegrado.jpg}
+    	\caption{Teste Integrado} \label{fig:testint}
+	\end{figure}
+
+\section{Suporte mecânico dos sensores da Percepção}
+
+A implementação física do sistema de Percepção ocorre no processo de fixação dos sensores que a compõem no protótipo. Por tanto, foram desenvolvidos suportes utilizando impressão 3D com este fim.
+
+Para  fixar  todos  os  sensores  e  componentes  eletrônicos  de  maneira  organizada foi desenhada uma estrutura em forma de prateleira.
+
+ A primeira prateleira comporta os sensores do sistema de georreferenciamento que são o GPS e a IMU. A prateleira central foi projetada para a placa de interface Nucleo F401RE e por último, na terceira prateleira fica a placa de interface Phidgets.
+ 
+As peças foram fabricadas utilizando impressão 3D e o seu desenho pode ser visto nas Figura \ref{Prateleira} e \ref{Prateleiracsensor} .
+
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[width=14cm]{Figures/prateleira.png}
+ 	\caption{Prateleira para suporte dos componentes eletrônicos} \label{Prateleira}
+ \end{figure}
+ 
+  \begin{figure}[h]
+  	\centering
+  	\includegraphics[width=16cm]{Figures/prateleiracsensores.png}
+  	\caption{Prateleira para suporte com sensores} \label{Prateleiracsensor}
+  \end{figure}
+ 
+
+Toda a parte de gerenciamento de energia do robô foi alocada em uma estrutura na parte inferior do mesmo. Esta estrutura foi projetada para comportar as baterias, a \textit{Smart Charger}, a \textit{Power Management} e a placa de interface Nucleo L432. O desenho dessa estrutura está mostrado na figura \ref{pecaaliment}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=14cm]{Figures/pecadebaixo.png}
+	\caption{Prateleira para suporte dos componentes de alimentação} \label{pecaaliment}
+\end{figure}
+
+Todas as peças foram impressas utilizando a impressora 3D da área de robótica do SENAI CIMATEC não implicando em custos para a equipe de projeto.
+
+
+ 
 %--------- NEW SECTION ----------------------
 \section{Trabalhos futuros}
 \label{sec:trabfut}

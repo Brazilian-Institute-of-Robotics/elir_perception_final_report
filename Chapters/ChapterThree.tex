@@ -2,7 +2,7 @@
 \label{chap:mat}
 A criação de uma solução tecnológica vai além de um desenvolvimento e amadurecimento técnico-científico. O olhar sensível a problemática é o primeiro passo para a formação de um conceito. Problemas, desafios, dificuldades sempre existiram e sempre existirão mas a criação de uma solução para estes embates sempre vêm acompanhadas de uma primeira ideia motivadora, subjetiva e totalmente correlacionada às manifestações da natureza humana.
 
-O processo de desenvolvimento de um sistema robótico não é diferente, existe uma motivação da equipe do projeto em cumprir o principal objetivo do conceito arquitetado abordado no capítulo 1. Para garantir que esse objetivo seja alcançado são implementadas metodologias de desenvolvimento de projeto, que ajudam no acompanhamento e definição das atividades como meios para alcançar o fim que é a solução tecnológica.
+O processo de desenvolvimento de um sistema robótico não é diferente, existe uma motivação da equipe do projeto em cumprir o principal objetivo do conceito arquitetado abordado no Capítulo \ref{chap:intro}. Para garantir que esse objetivo seja alcançado são implementadas metodologias de desenvolvimento de projeto, que ajudam no acompanhamento e definição das atividades como meios para alcançar o fim que é a solução tecnológica.
 
 No sistema de Percepção do robô ELIR a metodologia empregada consiste na divisão do projeto em três principais processos de construção de conhecimento, que são eles : a fase de conceitual e design, a fase de desenvolvimento e a fase de testes. O fluxograma com as fases do projeto está mostrado na Figura \ref{Fig:flux_proj}.
 
@@ -23,7 +23,7 @@ A última fase do projeto é a fase de Testes. Nesta fase a solução tecnológi
 
 
 \section{Conceitual e Design}
-Nesta etapa, a partir das premissas, exclusões, necessidades e definições oriundas das reuniões da equipe de projeto com o cliente e orientador técnico são definidas: A arquitetura geral, especificação funcional,  a arquitetura de software do sistema, os wireframes além dos materiais a serem utilizados.
+Nesta etapa, são realizadas reuniões da equipe de projeto com o orientador técnico e cliente para definir os requisitos técnicos do projeto. Com base nos requisitos, a fase de Conceitual e Design busca elaborar: A arquitetura geral do sistema, especificação funcional, a arquitetura de software do sistema, os wireframes além da definição dos materiais a serem utilizados.
 
 A arquitetura geral do sistema de Percepção do ELIR é um diagrama de blocos que mostra o fluxo de informações entre os subsistemas da percepção. Ela busca mostrar como as informações são obtidas, como são processadas e como são mostradas. 
 
@@ -33,24 +33,25 @@ A arquitetura de Software é um esboço de como as funcionalidades são implemen
 
 Por último, a definição dos materiais utilizados possui como base dois aspectos principais que são a disponibilidade dos materiais na instituição e a necessidade das funcionalidades do sistema. 
 
+Após a construção do conceito do sistema, o projeto passa para uma segunda etapa que é a de desenvolvimento, esta etapa torna concreto e implementa as definições realizadas na etapa de  Conceitual e Design, esta nova etapa está explicada em detalhes na seção a seguir.
 
 \section{Desenvolvimento}
-Na etapa de desenvolvimento são realizadas atividades que tornam o conceito idealizado na fase Conceitual e Design  concreto e factível. Nesta etapa são realizados os testes unitários dos sensores do sistema, o projeto  e fabricação de peças mecânicas para suportar os sensores, são implementados os drivers dos sensores e protocolos de comunicação além da implementação das funcionalidades do sistema e da interface gráfica. 
 
-Os teste unitários dos  sensores do projeto servem para validar o funcionamento e avaliar se suas especificações atendem os requisitos impostos pelo cliente. No teste são coletadas amostras dos dados recebidos de cada sensor e esses dados são avaliados a partir de uma distribuição normal. A distribuição normal assim como qualquer distribuição estatística serve para determinar a probabilidade de ocorrência do fenômeno relacionado a curva. Por isso, é usada no ELIR para avaliação da confiabilidade dos sensores. Ou seja, mostra a probabilidade do sensor se comportar da maneira esperada.
+ Nesta etapa são realizados os testes unitários dos sensores do sistema, o projeto  e fabricação de peças mecânicas para suportar os sensores, são implementados os drivers dos sensores e protocolos de comunicação além da implementação das funcionalidades do sistema e da interface gráfica. 
 
-A parte mecânica é projetada para compor todos os sensores que fazem parte do sistema de Percepção, ela representa a integração física do sistema de Percepção no protótipo. Para isso, é necessário estudar as especificações mecânicas de cada sensor do projeto e projetar suportes a serem encaixados na estrutura do robô.
+Os teste unitários dos  sensores do projeto servem para validar o funcionamento e avaliar se suas especificações atendem os requisitos impostos pelo cliente. No teste são coletadas amostras dos dados recebidos de cada sensor e esses dados são avaliados a partir de uma distribuição normal. A distribuição normal assim como qualquer distribuição estatística serve para determinar a probabilidade de ocorrência do fenômeno relacionado aos dados. Logo, é usada no ELIR para avaliação de desempenho dos sensores.
 
-A principal função de um sistema de Percepção é a coleta e tratamento dos dados de seus sensores. Para que estes dados sejam reunidos é necessário que no fim todos os sensores se comuniquem de maneira semelhante, ou seja, utilizando o mesmo protocolo de comunicação. A ferramenta utilizada para a integração destes dados é o framework de robótica. O framework serve para reunir dados de diferentes fontes em um mesmo ambiente, com o mesmo padrão de formatação. Por isso, o desenvolvimento de drivers para cada sensor é extremamente importante pois ele garante a conversão do protocolo de comunicação intrínseco do sensor para o padrão utilizado no framework de robótica.
+O projeto mecânico do ELIR foi fornecido pelo próprio cliente do projeto. Desta forma, o desenvolvimento de partes mecânicas do sistema de percepção se limitou ao projeto de suportes para a integração dos sensores na parte física do robô. Para realizar estes projetos, foi estudado os desenhos mecânicos de cada sensor a fim de projetar peças menos invasivas.
+
+A principal função de um sistema de Percepção é a coleta e tratamento dos dados de seus sensores. Para que estes dados sejam reunidos é necessário que no fim todos os sensores se comuniquem de maneira semelhante, ou seja, utilizando o mesmo protocolo de comunicação. A ferramenta utilizada para a integração destes dados é um framework de robótica. O framework serve para reunir dados de diferentes fontes em um mesmo ambiente, com o mesmo padrão de formatação. Por isso, o desenvolvimento de drivers para cada sensor é extremamente importante pois ele garante a conversão do protocolo de comunicação intrínseco do sensor para o padrão utilizado no framework de robótica.
 
 
 \section{Testes}
-Como descrito anteriormente a fase de testes reflete um processo de coleta de dados e utilização de métodos estatísticos para chegar na probabilidade de ocorrência dos fenômenos. Cada sensor possui sua particularidade e por isso a metodologia de teste para cada sensor é distinta. 
+Como descrito anteriormente a fase de testes reflete um processo de coleta de dados e utilização de métodos estatísticos para chegar na probabilidade de ocorrência dos fenômenos.  
 
-Os testes unitários buscam avaliar o funcionamento dos sensores do sistema de Percepção. Estes teste foram aplicados ao sensor de proximidade, câmera térmica e sonar. 
+Os testes integrados do sistema de Percepção possuem como objetivo a comprovação das funcionalidades do projeto e foram divididos em dois testes principais.
 
-No caso do sensor de proximidade, foi aferido o valor de tensão do pino de dados do sensor ao aproximar um objeto metálico a uma distância de 5cm. Após a coleta de trinta amostras foi aplicada uma distribuição normal.
+O primeiro teste busca a comprovação do sistema de Detecção, neste teste é confirmado se na ocorrência de um ponto quente ou identificação de objetos fora da faixa de servidão geram uma mensagem de alerta no arquivo de log do robô.
 
-No teste unitário da câmera térmica um copo plástico com água quente foi colocado a 1m e 10cm de distância da câmera térmica, com o auxílio de um pirômetro foi aferido o valor de temperatura do copo e paralelamente obtido um frame da câmera. O valor do pixel correspondente a área do copo foi obtido de forma a no final do experimento ter uma tabela de correlação entre temperatura e valor de pixel.
-
-O teste unitário do sonar foi realizado a partir da medição do valor de tensão no pino analógico do sensor para diferentes distâncias de obstáculo. Ao final foi aplicado uma distribuição normal. 
+O segundo teste busca analisar se a interface gráfica mostra em tempo real todas as informações relevantes para o robô. O sucesso deste teste comprova o funcionamento do sistema de Percepção e por isso é considerado o mais relevante para o projeto.
+ 

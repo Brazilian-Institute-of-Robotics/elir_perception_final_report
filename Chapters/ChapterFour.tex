@@ -1,7 +1,175 @@
 \chapter{Desenvolvimento e Testes}
 \label{chap:result}
 
+A etapa de desenvolvimento busca concretizar o planejamento e conceito elaborados na fase de Conceitual e Design. Nesta etapa são mostrados todas as produções técnicas da equipe como  previstas no capítulo \ref{chap:mat}. As próximas seções buscam descrever o que foi realizado e os resultados obtidos durante o processo.
 
+Para validar o funcionamento de um sistema é necessário a realização de testes com embasamento estatístico que comprove as suas funcionalidades. Por isso, neste capítulo também são descritos os procedimentos de testes realizados e os resultados obtidos com eles.
+
+\section{Especificação das funcionalidades}
+\label{sec:espf}
+
+
+As funcionalidades de um robô descrevem os subsistemas e a lógica de operação dos mesmos. No ELIR, o sistema de Percepção possui três funcionalidades principais: Aquisição, Localização e Detecção. A descrição de cada funcionalidade e seu diagrama de funcionamento estão mostrados nos subtópicos a seguir. 
+
+\subsection{Aquisição}
+\label{ssec:func1}
+
+O processo de aquisição de dados envolve a comunicação dos sensores com seus respectivos drivers no ambiente ROS e a disponibilização dos dados para as outras funcionalidades do sistema.
+
+ Os sensores analógicos e digitais terão seus dados tratados pelo driver da interface Phidgets no ambiente ROS. Para os dispositivos relacionados a localização como o GPS e a IMU, serão utilizado drivers já disponibilizados pelos fabricantes.
+
+No caso dos componentes que trabalham com os protocolos de comunicação SPI ou I2C, como é o caso da câmera térmica e da \textit{Smart Charger}, serão utilizadas duas interfaces baseadas em ARM com um \textit{firmware} embarcado para a conversão dos dados para o protocolo UART.
+
+A interface microprocessada utilizada para obter dados da câmera térmica possui uma porta USB dedicada na unidade de processamento Intel NUC. Já a outra interface microprocessada para a \textit{Smart Charger} será conectada a uma porta USB da Phidgets.
+
+No ambiente ROS do projeto há um \textit{package} exclusivo para receber os dados convertidos da câmera térmica, um \textit{package} para receber dados de todos os sensores conectados a Phidgets, um \textit{package} para recebimento de dados da \textit{Smart Charger} e por último um \textit{package} exclusivo para interface gráfica. 
+Pode-se observar o fluxograma da aquisição na Figura \ref{FuncAquisition}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=7cm, width=14cm]{Figures/Fluxograma_Aquisition.jpg}
+	\caption{Fluxograma da Funcionalidade Aquisição} \label{FuncAquisition}
+\end{figure}
+
+Para correta execução desta funcionalidade é necessário o funcionamento dos sensores segundo o nível de prioridade dos mesmos. Logo, um estudo de casos de falhas para cada sensor foi realizado, no qual foi definido um nível de criticidade de acordo com o impacto de sua função no sistema como um todo. Foram elaborados três níveis de criticidade:
+\begin{itemize}
+	\item Level 1 - Sensores com impacto crítico na operação. Em casos de falha, a inspeção não poderá ser realizada.
+	\item Level 2 - Sensores com impacto médio na operação. Em caso de falha, a inspeção poderá ser realizada de forma parcial.
+	\item Level 3 - Sensores com impacto leve na operação. Em caso de falha, não haverá dados de monitoramento da situação de temperatura e consuno energético do robô, porém a inspeção poderá continuar normalmente.
+\end{itemize}
+
+Na figura abaixo, pode-se observar os sensores e suas categorias.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[height=7cm, width=14cm]{Figures/criticidade.jpg}
+	\caption{Nível de criticidade dos sensores} \label{FuncAquisition}
+\end{figure}
+
+\subsubsection{Objetivo}
+Realizar a comunicação e a aquisição dos dados provenientes da câmera térmica, sensores de proximidade, sonar, GPS, IMU, sensor de temperatura, \textit{Smart Charger} e sensores de corrente.
+
+\subsubsection{Dependências}
+Esta funcionalidade não é dependente de nenhum outro processo.
+
+\subsubsection{Premissas}
+\begin{itemize}
+	\item A interface microcontrolada Nucleo STM32F401RE deve estar com firmware embarcado para conversão de dados SPI para UART.
+	\item A câmera térmica deverá estar conectada à interface Nucleo STM32F401RE
+	\item A câmera stereo deve está conectada à NUC através da porta USB
+	\item O sensores de temperatura, corrente e sonar devem estar conectados as entradas analógicas da interface Phidgets
+	\item Os sensores de proximidade devem está conectados as entradas digitais da placa de interface Phidgets
+	\item O GPS e a IMU devem estar conectados a portas USB da Phidgets
+	\item As placas de interface devem estar energizadas.
+\end{itemize}
+
+\subsubsection{Saídas}
+
+Esta funcionalidade possui quatro saídas:
+
+\begin{itemize}
+	\item \textit{Sonar Data Message}: Mensagem de saída exclusiva para os dados do sonar EZ-1.
+	\item \textit{Secutiry Diagnose Message}: Mensagem contendo todos os dados relacionados à segurança e integridade do robô.
+	\item \textit{Thermal Image Data Message}: Mensagem exclusiva para os dados da câmera térmica.
+	\item \textit{Localization and Position Message}: Mensagem contendo os dados relacionados á localização e posicionamento angular do robô.
+\end{itemize}
+
+\subsection{Localização}
+\label{ssec:func2}
+
+O sistema de localização envolve o monitoramento da posição latitudinal e longitudinal do robô, assim como a posição angular através do GPS e da IMU respectivamente.
+
+A localização é um package que ao receber uma requisição de informação, coleta os dados de posicionamento e orientação do robô provenientes do sistema de Aquisição e encaminha para o sistema que requisitou.
+
+O fluxograma deste funcionalidade pode ser visto na Figura \ref{fluxlocal}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=16cm]{Fluxograma_Localization.png}
+	\caption{Fluxograma da Funcionalidade Localização} \label{fluxlocal}
+\end{figure}
+
+
+\subsubsection{Objetivo}
+O objetivo desta funcionalidade é disponibilizar os dados de Localização do robô no ambiente ROS para a funcionalidade de Detecção.
+
+\subsubsection{Dependências}
+O sistema de localização depende dos dados de posicionamento e orientação disponibilizados pelo sistema de Aquisição.
+
+\subsubsection{Premissas}
+\begin{itemize}
+	\item O sistema de Aquisição deve está funcionando corretamente até o Nível 2 de criticidade dos sensores.
+	\item GPS e IMU estão posicionados em uma estrutura rígida e com o menor vibração possível.
+\end{itemize}
+
+\subsubsection{Saídas}
+
+\begin{itemize}
+	\item \textit{Requested Localization Message}: Mensagem que informa os dados de localização para o sistema que os requisitou.
+\end{itemize}
+
+\subsection{Detecção}
+\label{ssec:func3}
+
+A detecção é a funcionalidade responsável por identificar a presença de pontos quentes na linha de transmissão bem como de objetos na faixa de servidão. Ao identificar um destes elementos, o sistema solicita da funcionalidade de Localização os dados posicionamento e orientação do robô e envia uma mensagem de alerta.
+
+A mensagem de detecção de um ponto quente informa a localização do robô e a localização do objeto no frame de imagem. Por isso recebe a mensagem de detecção de obstáculos. 
+
+A mensagem de detecção de objetos na faixa de servidão informa a distância da cota da linha até o objeto e a localização do mesmo. 
+
+\subsubsection{Objetivo}
+
+O objetivo desta funcionalidade é coletar as informações provenientes da câmera infravermelha e do sonar, como presença de pontos quentes e objetos presentes na área de servidão. 
+
+\subsubsection{Dependências}
+O sistema de detecção depende dos dados do sonar e dos \textit{frames} da câmera térmica disponibilizados pelo sistema de Aquisição. Além disto, depende do sistema de Localização para adquirir informações de posicionamento e orientação do robô.
+
+\subsubsection{Premissas}
+\begin{itemize}
+	\item O sistema de Aquisição deve está funcionando corretamente até o Nível 2 de criticidade dos sensores.
+	\item A câmera térmica deve estar calibrada e posicionada com ângulo de visão para as linhas de transmissão e seus obstáculos
+	\item O sonar deve estar posicionado de forma a monitorar objetos abaixo da linha de transmissão.            
+\end{itemize}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=16cm]{Fluxograma_Detection.png}
+	\caption{Fluxograma da Funcionalidade Detecção} \label{FuncDetec}
+\end{figure}
+
+\subsubsection{Saídas}
+
+\begin{itemize}
+	\item \textit{Hotspot Detection Message}: Mensagem que informa a detecção de um ponto quente e informa a sua localização na imagem e localização do robô na linha.
+	\item \textit{Sonar Detection Message}: Mensagem que informa a detecção de objetos na faixa de servidão e sua localização na linha.
+	%\item Localization Request Message: Mensagem de requisição dos dados posicionamento e orientação do robô para o sistema de Localização
+\end{itemize}
+
+
+%--------- NEW SECTION ----------------------
+\section{Interface do Usuário}
+\label{sec:ui}
+
+A interface do usuário é uma forma de expor graficamente as variáveis mais importantes do sistema robótico e quais atividades estão sendo executadas. Ela permite dar previsibilidade ao usuário do comportamento do sistema. 
+
+No ELIR a interface do usuário tem o papel de informar cinco características principais:
+
+\begin{itemize}
+	\item \textit{System Integrity}
+	\item \textit{Robot Status}
+	\item \textit{Thermal view}
+	\item \textit{Ocurrences}
+	\item \textit{Actuators Information}
+\end{itemize}
+
+No campo de \textit{System Integrity} são exibidos em tempo real as variáveis de grande impacto na eficiência e integridade do sistema. Por isso são informados os dados de temperatura, percentual de carga da bateria, consumo, localização e orientação do robô.
+
+O \textit{Robot Status Display} exibe o posicionamento das garras do robô na linha de transmissão. A coloração vermelha indica as garras foras da linha enquanto que a coloração verde indica as garras apoiadas na linha. Essa informação proveniente dos sensores de proximidade é de extrema importância para integridade física do robô.
+
+O \textit{Thermal View} exibe em  tempo real os frames da câmera IR, permitindo o usuário acompanhar a detecção de pontos quentes e visualizar o perfil de temperatura da área exibida. 
+
+O campo de \textit{Ocurrences} mostra as principais ocorrências daquele momento, mostrando eventos de sobretemperatura, sobrecorrente, detecção de pontos quentes e detecção de objetos na área de servidão. Todos os eventos são mostra
+dos com data, horário e localização GPS. 
 
 %--------- NEW SECTION ----------------------
 
@@ -47,9 +215,14 @@ A Power Management Board é uma placa de gerenciamento de energia do sistema rob
 
 
 
-A intel NUC 515RYK é a unidade de processamento central do sistema de Percepção, ela recebe as informações de todos os sensores dos sitema de Percepção e os interpreta.
+A intel NUC 515RYK é a unidade de processamento central do sistema de Percepção, ela recebe as informações de todos os sensores dos sistema de Percepção e os interpreta. 
 \section{Testes unitários}
 \label{sec:testu}
+
+Como mostrado no capítulo \ref{chap:mat}, os teste unitários servem para comprovar o funcionamento dos sensores definidos para o sistema de Percepção além de validar que os mesmos atendem os requisitos técnicos do projeto.
+
+O teste unitário é singular para cada sensor uma vez que cada um deles possui uma forma distinta de funcionamento. Por tanto, os testes unitários são definidos com o nome do sensor o qual o teste será aplicado. A descrição dos testes e os resultados obtidos estão mostrados nas próximas seções.
+
 	\subsection{Câmera Térmica}
 	
 		A câmera térmica foi utilizada no sistema de percepção para detecção de pontos quentes. O modelo utilizado no projeto foi a Lepton, da fabricante FLIR, que é um módulo completo baseado no infra-vermelho de ondas longas feito para ser embutido em dispositivos eletrônicos. O módulo captura radiação térmica na faixa de comprimento de onda de 8-14 micrômetros, tendo como saída uma imagem térmica, a qual a coloração representa a intensidade de radiação infra-vermelha emitida pelo objeto inspecionado.
@@ -64,7 +237,7 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		 A comunicação com a câmera é feita via protocolo VoSPI, sendo necessário a utilização de um driver para adquirir os dados e transmiti-los em protocolo USB para a NUC. Um driver para conversão desses dados foi disponibilizado por \citeonline{groupgets} no GitHub, e foi utilizado no projeto em uma placa de desenvolvimento NUCLEO F401RE.
 		
 		
-		O driver de comunicação coleta os \textit{frames} e verifica a integridade de cada \textit{pixel}, após isso, envia-os para a USB seguindo o padrão de mensagem mostrado na Figura \ref{fig:framemsg}.
+		O driver de comunicação coleta os \textit{frames} e verifica a integridade de cada \textit{pixel}, após isso, envia-os para a USB da NUC seguindo o padrão de mensagem mostrado na Figura \ref{fig:framemsg}.
 		    
 		\begin{figure}[!ht]
 		   \centering
@@ -73,7 +246,7 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		   \label{fig:framemsg}
 		\end{figure}
 	
-	    No início de cada mensagem, há uma sequência de quatro \textit{bytes} para confirmar a transferência dos dados. Após a confirmação por um \textit{script} em Python, inicia-se o processo de aquisição do \textit{frame}. Cada \textit{frame} é composto por 4800 \textit{pixels}, sendo 80 na horizontal e 60 na vertical. Além disso, cada \textit{pixel} possui 2 \textit{bytes} de profundidade de cor, correspondendo a 9600 \textit{bytes} de informação para cada \textit{frame}. Na Figura \ref{fig:frame_esque}, pode-se observar uma representação do \textit{frame} da câmera.
+	    No início de cada mensagem, há uma sequência de quatro \textit{bytes} para confirmar a transferência dos dados. Após a confirmação por um \textit{script} em Python no computador, inicia-se o processo de aquisição do \textit{frame}. Cada \textit{frame} é composto por 4800 \textit{pixels}, sendo 80 na horizontal e 60 na vertical. Além disso, cada \textit{pixel} possui 2 \textit{bytes} de profundidade de cor, correspondendo a 9600 \textit{bytes} de informação para cada \textit{frame}. Na Figura \ref{fig:frame_esque}, pode-se observar uma representação do \textit{frame} da câmera.
 	    
 	%\pagebreak
 	
@@ -150,7 +323,7 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 
 
 		
-		Antes de entrar na etapa de realce, é necessário atenuar esses ruídos da imagem, caso contrário, os mesmos também serão amplificados no procedimentos posteriores. Como se sabe que o fundo da imagem das digitais são uniformes, qualquer componente de alta frequência deve ser removida. Para isso, foi utilizado um filtro passa-baixa comumente chamado de \textit{blur}. Na figura \ref{fig:img_80graus}, pode-se observar a imagem original.
+		Antes de entrar na etapa de realce, é necessário atenuar esses ruídos da imagem, caso contrário, os mesmos também serão amplificados no procedimentos posteriores. As colorações em imagens não são perfeitamente uniformes contendo ruídos de altra frequência que devem ser removidos para não interferirem na análise. Para isso, foi utilizado um filtro passa-baixa comumente chamado de \textit{blur}. Na figura \ref{fig:img_80graus}, pode-se observar a imagem original.
 			
 		\begin{figure}[!ht]
 		   \centering
@@ -225,7 +398,6 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		 A câmera foi posicionada de forma a obter imagens do copo, como pode ser visto na figura \ref{fig:cameratest}. A medida que a temperatura do copo aferida pelo pirômetro sofria variação significativa, os \textit{frames} da câmera foram obtidos para realizar uma correlação. 
 		 
 		 Após a obtenção dos \textit{frames}, o valor do \textit{pixel} correspondente a região de imagem do copo foi adquirido de forma a obter uma tabela de correlação entre temperatura do copo e valor de \textit{pixel} da câmera. A distribuição normal foi aplicada aos dados para obter a probabilidade de correlação do fenômeno.
-		 \pagebreak
 
 		
 		\begin{figure}[!ht]
@@ -234,6 +406,24 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		   \caption{Foto do experimento de calibração da câmera}
 		   \label{fig:cameratest}
 		\end{figure}
+		
+%--------- NEW SECTION ----------------------
+
+\subsection{Phidgets}
+
+
+	Segundo o site da fabricante, a Phidgets é uma das interfaces com melhor usabilidade para controlar e monitorara o ambiente pelo computador. A placa contem 8 saídas e entradas digitais, 8 analógicas e 6 portas de USB. A Phidgets depende apenas de uma alimentação de 12V e ser conectada à um computador com o devido driver instalado. 
+	
+	O driver é multi-plataforma, sendo compatível com Windows, Linux e Mac OS X, além de possuir interfaces de programação em alto nível, como Python, C++, Java, LabVIEW, .NET e entre outras linguagens.
+
+     Após a fase de testes unitários, foi necessário desenvolver o \textit{package} de comunicação da phidgets no ROS. Esse \textit{package} é responsável pela aquisição dos dados de todos os sensores analógicos e digitais conectados a Phidgets.
+     
+     Os nós foram desenvolvidos utilizando como base o módulo \textit{python} da Phidgets. Ele consiste em uma classe e cada objeto desta, representa um componente conectado a placa de interface. Ao declarar o objeto, se faz necessário informar o canal, o nome do dispositivo, o tipo de porta (digital ou analógico) e o nome do tópico a ser disponibilizado os dados. 
+     
+     No construtor da classe os dados referentes aos dispositivos são coletados e um \textit{publisher} do ROS é inicializado. Este  \textit{publisher} faz com que periodicamente os dados de tensão(canais analógicos) ou status da porta(canais digitais) sejam coletados e disponibilizados no tópico escolhido pelo usuário. 
+     
+     No script original foram criados seis objetos da classe no \textit{main loop}, correspondentes aos cinco sensores de proximidade conectados a portas digitais e ao sonar conectado na porta analógica.
+
 		
 	\subsection{Sonar EZ-1}
 		O sonar EZ-1 da MaxBotix possui saída analógica referente a distância medida. Para testa-lo, foi utilizada uma das entradas analógicas da Phidgets.
@@ -271,6 +461,8 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		
 		Para isso, foi utilizada a placa de interfaceamento Phidgets assim como no tópico anterior. O que diferiu nesse teste para o anterior é que o sensor foi acoplado em uma entrada digital, em vez de uma analógica, assim como o \textit{script} executado foi para comunicação com as entradas digitais. O código, também disponibilizado pela fabricante, notifica a mudança de estado da saída dos sensor, dessa maneira podendo ser validada.
 		
+		Para verificar se o sensor possui uma distribuição normal, foi obtido trinta medidas de tensão do sensor detectando um objeto em três distâncias, 10, 20 e 25 centímetros. A partir disso, foi possível gerar o seguinte gráfico apresentado na Figura \ref{}.
+		
 	\subsection{\textit{Smart Charger}}
     
 	    A placa de gerenciamento e carregamento das baterias DS325A, da empresa Inspired Energy, funciona a partir do protocolo de comunicação SMBus. Informações das baterias como temperatura, corrente, carga, entre outras podem ser solicitadas através do seguinte protocolo de leitura.
@@ -284,7 +476,20 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		
 		No qual é necessário enviar primeiro o endereço de 7 bits da bateria de interesse, seguido do comando referente a que informação está se requisitando. Após isso, inicia-se o processo de leitura das informações da bateria.
 		
-		O driver de comunicação foi desenvolvido em uma placa de desenvolvimento Nucleo STM3L432KC para disponibiliza-los na USB do computador. Além disso, um \textit{script} em python foi escrito para requisitar essas informações do microcontrolador.
+		O driver de comunicação foi desenvolvido em uma placa de desenvolvimento Nucleo STM3L432KC para disponibiliza-los na USB do computador. Além disso, um \textit{script} em Python foi escrito para requisitar essas informações do microcontrolador.
+		
+		  O \textit{script} utilizado no teste unitário para receber os dados provenientes do \textit{smart charger} no computador foi utilizado como base para a construção do nó no ambiente ROS.
+     
+     O nó funciona enviando um \textit{byte} pré-definido para dar início ao processo de transmissão de dados da bateria. A recepção do \textit{byte} pela Nucleo L432KC inicia a leitura dos dados da bateria, como mostrado no tópico anterior. Logo após isso, ocorre o envio das informações em sequência para o computador, como pode ser visto abaixo:
+      
+      \begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=16cm]{Figures/batt_protocol_2.png}
+		   \caption{Mensagem entre a Nucleo L432KC e o nó referente às baterias}
+		   \label{fig:battprotocol2}
+		\end{figure}
+		      
+      No nó do ROS essas informações são recebidas via serial e convertidas para sua devidas unidades segundo o \textit{datasheet} do fabricante. Esses dados são colocados em um formato de mensagem chamado de Battery e publicadas em um tópico do ROS. O nó criado para a \textit{smart charger} está mostrado no anexo XX.
 	    
 	    Os dados foram convertidos para suas respectivas grandezas, dessa maneira, foi possível validar as informações obtidas.
     
@@ -306,6 +511,10 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
     \subsection{GPS}
     
 	    O GPS Piksi v2.3.1, da Swift Navigation, possui um console disponibilizado pelo próprio fabricante, porém como se tinha em mãos uma versão antiga do aparelho, foi necessário descobrir qual a versão compatível do \textit{software}.
+	    
+	    Para o GPS, foi utilizado um driver disponibilizado no GitHub por \citeonline{ethz} com licensa livre para embarcar o dispositivo no ROS.
+     
+     O \textit{package} possui nós que publicam em tópicos as informações de coordenadas obtidas do GPS.
 	    
 	    \begin{figure}[!ht]
 				   \centering
@@ -330,70 +539,10 @@ A intel NUC 515RYK é a unidade de processamento central do sistema de Percepç�
 		\end{figure}
 	    
 	     Com o console instalado, foi apenas necessário conectar a IMU a uma das portas USB do computador. Na própria interface gráfica já aparece as informações de orientação do dispositivo, informando a orientação nos três eixos de referência e velocidade angular.
-	
-%--------- NEW SECTION ----------------------
-\section{Integração no ROS}
-\label{sec:rosinte}
 
-	Após os testes unitários de cada sensor, deu-se inicio à integração dos sensores no ambiente ROS para construção do sistema de Percepção. A descrição da metodologia empregada para embarcar cada um dos sensores no framework de robótica está mostrada nos tópicos abaixo.
+		 Foi utilizado o driver da IMU disponibilizada pela própria fabricante Xsens para embarca-la no ROS. O driver de licença livre é disponibilizado no GitHub da própria empresa.	
 
-\subsection{Phidgets}
-     Após a fase de testes unitários, foi necessário desenvolver o \textit{package} de comunicação da phidgets no ROS. Esse \textit{package} é responsável pela aquisição dos dados de todos os sensores analógicos e digitais conectados a Phidgets.
-     
-     Os nós foram desenvolvidos utilizando como base o módulo \textit{python} da Phidgets. Ele consiste em uma classe e cada objeto desta, representa um componente conectado a placa de interface. Ao declarar o objeto, se faz necessário informar o canal, o nome do dispositivo, o tipo de porta (digital ou analógico) e o nome do tópico a ser disponibilizado os dados. 
-     
-     No construtor da classe os dados referentes aos dispositivos são coletados e um \textit{publisher} do ROS é inicializado. Este  \textit{publisher} faz com que periodicamente os dados de tensão(canais analógicos) ou status da porta(canais digitais) sejam coletados e disponibilizados no tópico escolhido pelo usuário. 
-     
-     No script original foram criados seis objetos da classe no \textit{main loop}, correspondentes aos cinco sensores de proximidade conectados a portas digitais e ao sonar conectado na porta analógica.
-     
-\subsection{Smart Charger}
-     
-     O script utilizado no teste unitário para receber os dados provenientes do \textit{smart charger} no computador foi utilizado como base para a construção do nó no ambiente ROS.
-     
-     O nó funciona enviando um \textit{byte} pré-definido para dar início ao processo de transmissão de dados da bateria. A recepção do \textit{byte} pela Nucleo L432KC inicia a leitura dos dados da bateria, como mostrado no tópico anterior. Logo após isso, ocorre o envio das informações em sequência para o computador, como pode ser visto abaixo:
-      
-      \begin{figure}[!ht]
-		   \centering
-		   \includegraphics[width=16cm]{Figures/batt_protocol_2.png}
-		   \caption{Mensagem entre a Nucleo L432KC e o nó referente às baterias}
-		   \label{fig:battprotocol2}
-		\end{figure}
-		      
-      No nó do ROS essas informações são recebidas via serial e convertidas para sua devidas unidades segundo o \textit{datasheet} do fabricante. Esses dados são colocados em um formato de mensagem chamado de Battery e publicadas em um tópico do ROS. O nó criado para a \textit{smart charger} está mostrado no anexo XX.
-     
-     \subsection{Câmera Térmica}
-     
-     A integração da câmera no ROS foi feita em duas etapas, que na prática foram representadas como dois nós:
-     
-     \begin{itemize}
-         \item O primeiro com objetivo da aquisição dos dados da câmera e sua disponibilização em um tópico.
-         \item O segundo nó é responsável por todo o tratamento da imagem e detecção dos pontos quentes.
-     \end{itemize}
-     
-     Para a aquisição dos dados, no primeiro nó, foi utilizado basicamente o mesmo algoritmo que no teste unitário, porém com a integração das bibliotecas do ROS para publicar os \textit{frames} em forma de \textit{Numpy arrays} em seus devido tópico.
-     
-     No segundo nó foi utilizado a biblioteca OpenCV para realizar o processamento da imagem. Primeiramente, o frame disponibilizado pelo nó de aquisição é adquirido subscrevendo do seu respectivo tópico. Para retirar o aspecto "pixelado" da imagem da câmera, devido a sua baixa resolução (80x60 pixeis), foi necessário realizar uma interpolação cúbica para redimensionar a imagem para uma resolução de (400x300 pixeis), obtendo assim uma imagem mais detalhada. 
-     
-     Com a imagem já redimensionada, é aplicado um filtro \textit{blur} para eliminar altas frequências que podem interferir na binarização (\textit{thresholding}) que será feita na imagem.
-     
-     Após o filtro, o frame é binarizado com o objetivo de facilitar a identificação dos pontos quentes através de um algoritmo de busca de contornos.
-     
-     O esquemático abaixo mostra simplificadamente o processo de tratamento da imagem.
-     
-    \begin{figure}[!ht]
-    	\centering
-    	\includegraphics[width=14cm]{Figures/image_proc.png}
-    	\caption{Esquemático do processamento da imagem} \label{imgproc}
-	\end{figure}
-     
-     \subsection{GPS}
-     
-     Para o GPS, foi utilizado um driver disponibilizado no GitHub por \citeonline{ethz} com licensa livre para embarcar o dispositivo no ROS.
-     
-     O \textit{package} possui nós que publicam em tópicos as informações de coordenadas obtidas do GPS.
-     
-     \subsection{IMU}
-    Foi utilizado o driver da IMU disponibilizada pela própria fabricante Xsens para embarcar a IMU no ROS. O driver de licença livre é disponibilizado no GitHub da própria empresa.
+ 
 %--------- NEW SECTION ----------------------
 \section{Testes integrados}
 \label{sec:testi}
@@ -433,7 +582,7 @@ As peças foram fabricadas utilizando impressão 3D e o seu desenho pode ser vis
   \end{figure}
  
 
-Toda a parte de gerenciamento de energia do robô foi alocada em uma estrutura na parte inferior do mesmo. Esta estrutura foi projetada para comportar as baterias, a \textit{Smart Charger}, a \textit{Power Management} e a placa de interface Nucleo L432. O desenho dessa estrutura está mostrado na figura \ref{pecaaliment}.
+Toda a parte de gerenciamento de energia do robô foi alocada em uma estrutura na parte inferior do mesmo. Esta estrutura foi projetada para comportar as baterias, a \textit{Smart Charger}, a \textit{Power Management} e a placa de interface Nucleo L432KC. O desenho dessa estrutura está mostrado na figura \ref{pecaaliment}.
 
 \begin{figure}[h]
 	\centering

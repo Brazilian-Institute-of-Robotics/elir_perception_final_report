@@ -395,18 +395,56 @@ O teste unitário é singular para cada sensor uma vez que cada um deles possui 
 		
 		O teste unitário da câmera térmica teve com objetivo a obtenção da relação de temperatura aferida de um objeto com o valor do \textit{pixel} obtido pela câmera. Para isso, foi utilizado um copo plástico contendo água quente como fonte de calor e um pirômetro para medição da temperatura de referência.
 		
-		 A câmera foi posicionada de forma a obter imagens do copo, como pode ser visto na figura \ref{fig:cameratest}. A medida que a temperatura do copo aferida pelo pirômetro sofria variação significativa, os \textit{frames} da câmera foram obtidos para realizar uma correlação. 
-		 
-		 Após a obtenção dos \textit{frames}, o valor do \textit{pixel} correspondente a região de imagem do copo foi adquirido de forma a obter uma tabela de correlação entre temperatura do copo e valor de \textit{pixel} da câmera. A distribuição normal foi aplicada aos dados para obter a probabilidade de correlação do fenômeno.
-
+		 A câmera foi posicionada de forma a obter imagens do copo, a medida que a temperatura do copo aferida pelo pirômetro sofria variação significativa, os \textit{frames} da câmera foram obtidos para realizar uma correlação. O gráfico das medidas está mostrado na Figura \ref{fig:ircameradata} e \ref{fig:IRcameraGraph}.
 		
 		\begin{figure}[!ht]
 		   \centering
-		   \includegraphics[width=12cm]{Figures/testecamera.jpg}
-		   \caption{Foto do experimento de calibração da câmera}
-		   \label{fig:cameratest}
+		   \includegraphics[width=12cm]{Figures/ircamera_data.png}
+		   \caption{Dados obtidos durante o teste}
+		   \label{fig:ircameradata}
+		\end{figure}
+		 
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=12cm]{Figures/ircamera_test.png}
+		   \caption{Correlação entre a temperatura e intensidade do pixel}
+		   \label{fig:IRcameraGraph}
+		\end{figure}
+		 
+		Com base nos dados retirados no teste, foi possível realizar uma calibração da câmera térmica para a faixa de aproximadamente -40 até 475 graus Celsius. A equação retirada para para essa aproximação está apresentada na Equação \ref{eq:correlacaocamera}.
+		
+		\begin{equation}
+			Pixel_{value} = \frac{Temperature + 40,67}{2,0214}
+			\label{eq:correlacaocamera}
+		\end{equation}
+		 
+		
+		A Figura \ref{fig:pvalue_pixvalue} e \ref{fig:pvalue_temp} mostra os gráficos de distribuição normal obtidos a partir dos dados do teste unitário da câmera IR. O p-valor mostrado nos gráficos,  também conhecido como nível descritivo do teste, é a probabilidade de se observar um valor da estatística de teste maior ou igual ao encontrado. Um p-valor maior do que 0.1 indica correlação entre as grandezas analisadas do teste. Este resultado, comprova a relação entre a temperatura aferida pelo pirômetro com o valor do pixel encontrado para a região de imagem correspondente ao copo.
+		
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=12cm]{Figures/pvalue-pixvalue.png}
+		   \caption{Distribuição normal dos dados de intensidade de cor dos pixels}
+		   \label{fig:pvalue_pixvalue}
 		\end{figure}
 		
+		\begin{figure}[!ht]
+		   \centering
+		   \includegraphics[width=12cm]{Figures/pvalue-temp.png}
+		   \caption{Distribuição normal dos dados de temperatura}
+		   \label{fig:pvalue_temp}
+		\end{figure}
+		
+		\pagebreak
+%		\begin{figure}[!ht]
+%		   \centering
+%		   \includegraphics[width=12cm]{Figures/testecamera.jpg}
+%		   \caption{Foto do experimento de calibração da câmera}
+%		   \label{fig:cameratest}
+%		\end{figure}
+		
+		
+
 %--------- NEW SECTION ----------------------
 
 \subsection{Phidgets}
@@ -444,8 +482,7 @@ O teste unitário é singular para cada sensor uma vez que cada um deles possui 
 		O teste unitário do sonar teve como objetivo obter a relação da tensão de saída do pino analógico do sonar com a distância do obstáculo colocado a frente do mesmo.
 		
 		O valor de tensão foram obtidos através do nó de aquisição de dados da Phidgets, obtendo assim, os valores de tensão obstáculos à 30cm, 60cm e 2,3m. Essas distâncias de referência foram aferidas com uma trena.
-		
-		Após a coleta dos dados foi feito um gráfico de distribuição normal para obter a probabilidade de correlação entre as duas grandezas físicas. Os resultados podem ser vistos na Figura \ref{}.
+
 	
 	\subsection{Sensor de Proximidade}
 		O sensor de proximidade E18-D80NK funciona de maneira bastante simples. O módulo possui um emissor e um receptor de feixes infra-vermelhos, o qual identifica se há ou não um objeto próximo devido a reflexão, liberando assim, um sinal de nível alto caso positivo e nível baixo caso negativo.
@@ -461,7 +498,30 @@ O teste unitário é singular para cada sensor uma vez que cada um deles possui 
 		
 		Para isso, foi utilizada a placa de interfaceamento Phidgets assim como no tópico anterior. O que diferiu nesse teste para o anterior é que o sensor foi acoplado em uma entrada digital, em vez de uma analógica, assim como o \textit{script} executado foi para comunicação com as entradas digitais. O código, também disponibilizado pela fabricante, notifica a mudança de estado da saída dos sensor, dessa maneira podendo ser validada.
 		
-		Para verificar se o sensor possui uma distribuição normal, foi obtido trinta medidas de tensão do sensor detectando um objeto em três distâncias, 10, 20 e 25 centímetros. A partir disso, foi possível gerar o seguinte gráfico apresentado na Figura \ref{}.
+		Para verificar se o sensor possui uma distribuição normal, foi obtido trinta medidas de tensão do sensor detectando um objeto em três distâncias, 10, 20 e 25 centímetros. A partir disso, foi possível gerar os seguintes gráficos apresentados nas Figuras \ref{fig:DNgraph5}, \ref{fig:DNgraph10} e \ref{fig:DNgraph15}.
+		
+		
+		\begin{figure}[!ht]
+			   \centering
+			   \includegraphics[width=14cm]{Figures/DNsensor5.png}
+			   \caption{Distribuição Normal do sensor de proximidade para uma distância de 5cm}
+			   \label{fig:DNgraph5}
+		\end{figure}   
+		
+		\pagebreak
+		\begin{figure}[!ht]
+			   \centering
+			   \includegraphics[width=14cm]{Figures/DNsensor10.png}
+			   \caption{Distribuição Normal do sensor de proximidade para uma distância de 10cm}
+			   \label{fig:DNgraph10}
+		\end{figure}    
+		
+		\begin{figure}[!ht]
+			   \centering
+			   \includegraphics[width=14cm]{Figures/DNsensor15.png}
+			   \caption{Distribuição Normal do sensor de proximidade para uma distância de 15cm}
+			   \label{fig:DNgraph15}
+		\end{figure}      
 		
 	\subsection{\textit{Smart Charger}}
     
@@ -489,7 +549,7 @@ O teste unitário é singular para cada sensor uma vez que cada um deles possui 
 		   \label{fig:battprotocol2}
 		\end{figure}
 		      
-      No nó do ROS essas informações são recebidas via serial e convertidas para sua devidas unidades segundo o \textit{datasheet} do fabricante. Esses dados são colocados em um formato de mensagem chamado de Battery e publicadas em um tópico do ROS. O nó criado para a \textit{smart charger} está mostrado no anexo XX.
+      No nó do ROS essas informações são recebidas via serial e convertidas para sua devidas unidades segundo o \textit{datasheet} do fabricante. Esses dados são colocados em um formato de mensagem chamado de Battery e publicadas em um tópico do ROS.
 	    
 	    Os dados foram convertidos para suas respectivas grandezas, dessa maneira, foi possível validar as informações obtidas.
     
@@ -595,9 +655,7 @@ Todas as peças foram impressas utilizando a impressora 3D da área de robótica
 
  
 %--------- NEW SECTION ----------------------
-\section{Trabalhos futuros}
-\label{sec:trabfut}
-asdfadsfsdfs
+
 
 
 
